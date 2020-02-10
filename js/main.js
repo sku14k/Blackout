@@ -1,13 +1,12 @@
-/* =================================
-------------------------------------
-	EndGam - Gaming Magazine Template
+/* ===================================
+--------------------------------------
+	Cassi | Photo Studio HTML Template
 	Version: 1.0
- ------------------------------------
- ====================================*/
+--------------------------------------
+======================================*/
 
 
 'use strict';
-
 
 $(window).on('load', function() {
 	/*------------------
@@ -16,18 +15,27 @@ $(window).on('load', function() {
 	$(".loader").fadeOut();
 	$("#preloder").delay(400).fadeOut("slow");
 
+	/*------------------
+		Masonry
+	--------------------*/
+	$('.gallery-gird').masonry();
+
 });
 
 (function($) {
 	/*------------------
 		Navigation
 	--------------------*/
-	$('.primary-menu').slicknav({
-		appendTo:'.header-warp',
-		closedSymbol: '<i class="fa fa-angle-down"></i>',
-		openedSymbol: '<i class="fa fa-angle-up"></i>'
+	$("#menu-canvas-show").on('click', function () {
+		$('.offcanvas-menu-wrapper').fadeIn(400, function () {
+			$('.offcanvas-menu-wrapper').addClass('active');
+		}).css("display", "flex");
 	});
-
+	$("#menu-canvas-close").on('click', function () {
+		$('.offcanvas-menu-wrapper').removeClass('active').delay(1100);
+		$('.offcanvas-menu-wrapper').fadeOut(400);
+	});
+	
 
 	/*------------------
 		Background Set
@@ -38,6 +46,27 @@ $(window).on('load', function() {
 	});
 
 
+	/*------------------
+		Hero Item Size
+	--------------------*/
+	function heroItemSize () {
+		if($(window).width() > 767) {
+			var header_h = $('.header-section').innerHeight();
+			var footer_h = $('.footer-section').innerHeight();
+			var window_h = $(window).innerHeight();
+			var hero_item_h = ((window_h) - (header_h + footer_h + 5));
+			$('.hero-item').each(function() {
+				$(this).height(hero_item_h);
+			});
+			
+		}
+	}
+	if($(window).width() > 767) {
+		heroItemSize ();
+		$(window).resize(function(){
+			heroItemSize ();
+		});
+	}
 
 	/*------------------
 		Hero Slider
@@ -45,39 +74,15 @@ $(window).on('load', function() {
 	$('.hero-slider').owlCarousel({
 		loop: true,
 		nav: true,
-		dots: true,
-		navText: ['', '<img src="img/icons/solid-right-arrow.png">'],
+		dots: false,
+		navText:['<i class="arrow_left"></i>','<i class="arrow_right"></i>'],
 		mouseDrag: false,
 		animateOut: 'fadeOut',
 		animateIn: 'fadeIn',
 		items: 1,
-		//autoplay: true,
-		autoplayTimeout: 10000,
+		autoplay: true,
+		smartSpeed: 1000,
 	});
-
-	var dot = $('.hero-slider .owl-dot');
-	dot.each(function() {
-		var index = $(this).index() + 1;
-		if(index < 10){
-			$(this).html('0').append(index + '.');
-		}else{
-			$(this).html(index + '.');
-		}
-	});
-
-
-
-	/*------------------
-		Video Popup
-	--------------------*/
-	$('.video-popup').magnificPopup({
-  		type: 'iframe'
-	});
-
-	$('#stickySidebar').stickySidebar({
-	    topSpacing: 60,
-	    bottomSpacing: 60
-	});
-
 
 })(jQuery);
+
