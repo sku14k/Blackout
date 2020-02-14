@@ -107,7 +107,7 @@ ul, ol {
 	padding: 17px 25px;
 	min-width: 170px;
 	color: #fff;
-	background: #242deb;
+	background: #ff0000;
 	line-height: 1;
 	letter-spacing: 1px;
 	text-transform: uppercase;
@@ -575,7 +575,7 @@ ul, ol {
 	padding-top: 3px;
 }
 .copyright a {
-	color: #969696;
+	color: #ff0000;
 }
 .copyright a:hover {
 	text-decoration: underline;
@@ -1217,7 +1217,7 @@ ul, ol {
 	left: 0;
 	top: 2px;
 	font-size: 18px;
-	color: #242deb;
+	color: #ff0000;
 }
 .contact-form label {
 	font-size: 18px;
