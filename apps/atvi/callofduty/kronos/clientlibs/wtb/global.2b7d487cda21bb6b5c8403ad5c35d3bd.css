@@ -1,0 +1,1619 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,700');
+.noise-gif {
+  content: "";
+  display: block;
+  width: 100vw;
+  height: 100vh;
+  opacity: .17;
+  background-image: url('../../../../../../content/dam/atvi/callofduty/cod-touchui/kronos/home/common/noise-gif-square-anim.gif');
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  z-index: 10;
+}
+@keyframes arrow {
+  0% {
+    -webkit-transform: translate(0, 0);
+    -moz-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    -o-transform: translate(0, 0);
+    transform: translate(0, 0);
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+    -webkit-transform: translate(0, 2px);
+    -moz-transform: translate(0, 2px);
+    -ms-transform: translate(0, 2px);
+    -o-transform: translate(0, 2px);
+    transform: translate(0, 2px);
+  }
+  50% {
+    opacity: 1;
+    -webkit-transform: translate(0, 8px);
+    -moz-transform: translate(0, 8px);
+    -ms-transform: translate(0, 8px);
+    -o-transform: translate(0, 8px);
+    transform: translate(0, 8px);
+  }
+  75%,
+  100% {
+    -webkit-transform: translate(0, 10px);
+    -moz-transform: translate(0, 10px);
+    -ms-transform: translate(0, 10px);
+    -o-transform: translate(0, 10px);
+    transform: translate(0, 10px);
+    opacity: 0;
+  }
+}
+.selectricWrapper {
+  border-top: 1px solid #2a2e31;
+  position: relative;
+  margin: .25rem 0 20px;
+  min-width: 220px;
+  cursor: pointer;
+  border-radius: 2px;
+  -webkit-transition: all 0.8s;
+  -moz-transition: all 0.8s;
+  -ms-transition: all 0.8s;
+  -o-transition: all 0.8s;
+  transition: all 0.8s;
+}
+.selectricWrapper:hover {
+  border-top: 1px solid #79d9ff;
+}
+.selectricResponsive {
+  width: 100%;
+}
+.selectric {
+  background-color: #000000;
+  position: relative;
+  color: #a9a6a1;
+  background-image: url('../../../../../../content/dam/atvi/callofduty/cod-touchui/kronos/common/ui-elements/input-bg.png');
+}
+.selectric .label {
+  font-size: 1rem;
+  text-align: left;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: #a9a6a1;
+  margin: 0;
+  line-height: 1.15;
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  padding: 0 12px 0 0;
+  line-height: 37px;
+  text-indent: 20px;
+}
+.selectric .button {
+  padding: 0;
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  width: 12px;
+  height: 10px;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  display: block;
+  letter-spacing: 0;
+  -webkit-transform: translate(0, -50%);
+  -moz-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  -o-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+}
+.selectric .button:after {
+  -webkit-transition: all 0.75s ease;
+  -moz-transition: all 0.75s ease;
+  -ms-transition: all 0.75s ease;
+  -o-transition: all 0.75s ease;
+  transition: all 0.75s ease;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  content: "";
+  position: absolute;
+  top: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-image: url('../../../../../../content/dam/atvi/callofduty/cod-touchui/kronos/common/ui-elements/button-arrow.svg');
+}
+.selectric-empty {
+  display: none;
+}
+.selectric-empty .button {
+  display: none;
+}
+.selectricOpen {
+  z-index: 9999;
+}
+.selectricOpen .selectric {
+  z-index: 9999;
+}
+.selectricOpen .selectricItems {
+  display: block;
+}
+.selectricOpen .label {
+  color: #a9a6a1;
+}
+.selectricOpen .button:after {
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+.selectricDisabled {
+  opacity: 0.5;
+  cursor: default;
+  -webkit-touch-callout: none;
+  user-select: none;
+}
+.selectricHideSelect {
+  position: relative;
+  overflow: hidden;
+  width: 0;
+  height: 0;
+}
+.selectricHideSelect select {
+  position: absolute;
+  left: -100%;
+  display: none;
+}
+.selectricInput {
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  width: 1px !important;
+  height: 1px !important;
+  outline: none !important;
+  border: none !important;
+  *font: NaN a !important;
+  background: none !important;
+}
+/* Items box */
+.selectricItems {
+  display: none;
+  position: absolute;
+  overflow-y: auto;
+  overflow-x: hidden;
+  top: 100%;
+  left: -1px;
+  width: 100.5% !important;
+  background: #000000;
+  z-index: 9998;
+}
+.selectricItems .selectricScroll {
+  height: 100%;
+  overflow: auto;
+  border-bottom: 1px solid #2a2e31;
+}
+.selectricAbove .selectricItems {
+  top: auto;
+  bottom: 100%;
+}
+.selectricItems ul,
+.selectricItems li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  line-height: 29.6px;
+  min-height: 29.6px;
+}
+.selectricItems li {
+  font-size: 1rem;
+  text-align: left;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: #a9a6a1;
+  margin: 0;
+  line-height: 1.15;
+  color: inherit;
+  position: relative;
+  display: block;
+  padding: 9px 0;
+  text-indent: 20px;
+  border-bottom: 1px solid #2a2e31;
+  cursor: pointer;
+  -webkit-transition: all 1.2s ease;
+  -moz-transition: all 1.2s ease;
+  -ms-transition: all 1.2s ease;
+  -o-transition: all 1.2s ease;
+  transition: all 1.2s ease;
+  background-image: url('../../../../../../content/dam/atvi/callofduty/cod-touchui/kronos/common/ui-elements/input-bg.png');
+}
+.selectricItems li:hover {
+  background-color: #282828;
+  border-bottom: 1px solid #79d9ff;
+}
+.selectricItems li.selected {
+  color: #a9a6a1;
+}
+.selectricItems li.disabled {
+  cursor: default;
+}
+.selectricItems li.hidden {
+  display: none;
+}
+.selectricWrapper .beta {
+  padding: 0;
+  position: absolute;
+  right: 6px;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  display: block;
+  letter-spacing: 0;
+}
+.selectricWrapper .label .beta {
+  display: none;
+}
+.selectricScroll::-webkit-scrollbar {
+  width: 8px;
+}
+.selectricScroll::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+}
+.selectricScroll::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+  background: #597985;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+}
+.selectricScroll::-webkit-scrollbar-thumb:window-inactive {
+  background: rgba(51, 51, 51, 0.4);
+}
+@media screen and (max-width: 640px) {
+  body.ru .selectric .label {
+    font-size: 8px;
+  }
+}
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,700');
+.noise-gif {
+  content: "";
+  display: block;
+  width: 100vw;
+  height: 100vh;
+  opacity: .17;
+  background-image: url('../../../../../../content/dam/atvi/callofduty/cod-touchui/kronos/home/common/noise-gif-square-anim.gif');
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  z-index: 10;
+}
+@keyframes arrow {
+  0% {
+    -webkit-transform: translate(0, 0);
+    -moz-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    -o-transform: translate(0, 0);
+    transform: translate(0, 0);
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+    -webkit-transform: translate(0, 2px);
+    -moz-transform: translate(0, 2px);
+    -ms-transform: translate(0, 2px);
+    -o-transform: translate(0, 2px);
+    transform: translate(0, 2px);
+  }
+  50% {
+    opacity: 1;
+    -webkit-transform: translate(0, 8px);
+    -moz-transform: translate(0, 8px);
+    -ms-transform: translate(0, 8px);
+    -o-transform: translate(0, 8px);
+    transform: translate(0, 8px);
+  }
+  75%,
+  100% {
+    -webkit-transform: translate(0, 10px);
+    -moz-transform: translate(0, 10px);
+    -ms-transform: translate(0, 10px);
+    -o-transform: translate(0, 10px);
+    transform: translate(0, 10px);
+    opacity: 0;
+  }
+}
+.bundle-incentive-collection {
+  position: relative;
+  opacity: 0;
+  transition-property: opacity;
+  transition-duration: 1s;
+}
+.bundle-incentive-collection img {
+  max-width: 100%;
+}
+.bundle-selected.battle-pass {
+  height: 100%;
+}
+.bundle-selected.battle-pass .incentive-item.one {
+  background-image: url(../../../../../../content/dam/atvi/callofduty/cod-touchui/kronos/buy/incentives/item-1.png);
+}
+.bundle-selected.battle-pass .incentive-item.two {
+  background-image: url(../../../../../../content/dam/atvi/callofduty/cod-touchui/kronos/buy/incentives/item-2.png);
+}
+.bundle-selected.battle-pass .incentive-item.three {
+  z-index: 5;
+  background-image: url(../../../../../../content/dam/atvi/callofduty/cod-touchui/kronos/buy/incentives/item-3.png);
+}
+.bundle-selected.battle-pass .incentive-item.four {
+  background-image: url(../../../../../../content/dam/atvi/callofduty/cod-touchui/kronos/buy/incentives/item-4.png);
+}
+.bundle-selected.operator .incentive-item.one {
+  background-image: url(../../../../../../content/dam/atvi/callofduty/cod-touchui/kronos/buy/incentives/item-1.png);
+}
+.bundle-selected.operator .incentive-item.two {
+  background-image: url(../../../../../../content/dam/atvi/callofduty/cod-touchui/kronos/buy/incentives/item-2.png);
+}
+.bundle-selected.operator .incentive-item.three {
+  z-index: 5;
+  background-image: url(../../../../../../content/dam/atvi/callofduty/cod-touchui/kronos/buy/incentives/item-3.png);
+}
+.bundle-selected.operator .incentive-item.four {
+  width: 0;
+  height: 0;
+}
+.bundle-selected.precision .incentive-item.one {
+  background-image: url(../../../../../../content/dam/atvi/callofduty/cod-touchui/kronos/buy/incentives/item-1.png);
+}
+.bundle-selected.precision .incentive-item.two {
+  background-image: url(../../../../../../content/dam/atvi/callofduty/cod-touchui/kronos/buy/incentives/item-2.png);
+}
+.bundle-selected.precision .incentive-item.three {
+  z-index: 5;
+  background-image: url(../../../../../../content/dam/atvi/callofduty/cod-touchui/kronos/buy/incentives/item-3.png);
+}
+.bundle-selected.precision .incentive-item.four {
+  width: 0;
+  height: 0;
+}
+.bundle-incentive-item {
+  position: absolute;
+  opacity: 0;
+  transition-property: opacity;
+  transition-duration: 1s;
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.beauty-shot-drop-in .incentive-item {
+  opacity: 0;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
+}
+@media screen and (max-width: 767px) {
+  .atvi-wheretobuy .incentive-item.one {
+    width: 25vw;
+    height: 51.8vw;
+    top: calc(0vw + -13px);
+    left: 31%;
+  }
+  .atvi-wheretobuy .incentive-item.two {
+    width: 23vw;
+    height: 46.8vw;
+    top: calc(0vw + -7px);
+    left: 15%;
+  }
+  .atvi-wheretobuy .incentive-item.three {
+    width: 28vw;
+    height: 47.8vw;
+    top: calc(0vw + 4px);
+    left: 19%;
+  }
+  .atvi-wheretobuy .incentive-item.four {
+    width: 23vw;
+    height: 22.8vw;
+    top: calc(0vw + 33vw);
+    left: 12%;
+  }
+  .atvi-wheretobuy.anim-incentives.anim-items .incentive-item.five {
+    width: 80vw;
+    height: auto;
+    top: 45.55vw;
+    top: 15vw;
+    left: 0;
+    -webkit-transform: none;
+    -moz-transform: none;
+    -ms-transform: none;
+    -o-transform: none;
+    transform: none;
+  }
+  .atvi-wheretobuy[data-current-platform="ps4"].anim-incentives.anim-items .incentive-item.five {
+    top: 47.55vw;
+  }
+  .atvi-wheretobuy[data-current-platform="pc"].anim-incentives.anim-items .incentive-item.five {
+    top: 50vw;
+  }
+  .atvi-wheretobuy[data-current-platform="xboxone"].anim-incentives.anim-items .incentive-item.five {
+    top: 47.5vw;
+  }
+  .atvi-wheretobuy[data-current-bundle="battle-pass"].anim-incentives.anim-items .incentive-item.five {
+    top: 50.55vw;
+  }
+  .atvi-wheretobuy .incentive-item.six {
+    z-index: 6;
+    width: 100%;
+    right: 99vw;
+    bottom: 9vw;
+  }
+}
+@media screen and (min-width: 768px) {
+  .atvi-wheretobuy .incentive-item.one {
+    width: 14vw;
+    height: 31.8vw;
+    top: calc(0vw + -31px);
+    left: 43%;
+  }
+  .atvi-wheretobuy .incentive-item.two {
+    width: 12.5vw;
+    height: 25.8vw;
+    top: calc(0vw + -16px);
+    left: 23.5%;
+  }
+  .atvi-wheretobuy .incentive-item.three {
+    width: 16vw;
+    height: 29.8vw;
+    top: calc(0vw + -12px);
+    left: 23.75%;
+  }
+  .atvi-wheretobuy .incentive-item.four {
+    width: 13vw;
+    height: 22.8vw;
+    top: calc(0vw + 17vw);
+    left: 16%;
+  }
+  .atvi-wheretobuy.anim-incentives.anim-items .incentive-item.five {
+    width: 40vw;
+    height: auto;
+    top: 15vw;
+    left: -5%;
+    text-align: center;
+    -webkit-transform: scale(0.434) translate(0, 0);
+    transform: scale(0.434) translate(0, 0);
+  }
+  .atvi-wheretobuy.anim-incentives.anim-items .incentive-item.five img {
+    width: 100%;
+  }
+  .atvi-wheretobuy[data-current-bundle="digital"].anim-incentives .incentive-item.five,
+  .atvi-wheretobuy[data-current-bundle="physical"].anim-incentives .incentive-item.five {
+    top: 16.5vw;
+  }
+  .atvi-wheretobuy[data-current-bundle="digital"].anim-incentives .bundle-boxart,
+  .atvi-wheretobuy[data-current-bundle="physical"].anim-incentives .bundle-boxart,
+  .atvi-wheretobuy[data-current-bundle="digital"].anim-incentives .incentive-item.five,
+  .atvi-wheretobuy[data-current-bundle="physical"].anim-incentives .incentive-item.five {
+    left: 27%;
+    -webkit-transform: scale(0.434) translate(-50%, 0) !important;
+    transform: scale(0.434) translate(-50%, 0) !important;
+  }
+  .atvi-wheretobuy[data-current-platform="pc"].anim-incentives.anim-items .incentive-item.five {
+    top: 19vw;
+  }
+  .atvi-wheretobuy[data-current-platform="xboxone"].anim-incentives.anim-items .incentive-item.five {
+    top: 16.85vw;
+  }
+  .atvi-wheretobuy[data-current-region="kw"][data-current-bundle="battle-pass"].anim-incentives.anim-items .incentive-item.five {
+    top: 19.5vw;
+  }
+  .atvi-wheretobuy .incentive-item.six {
+    left: 30%;
+    bottom: 43%;
+    width: 16.5vw;
+    z-index: 6;
+  }
+  .atvi-wheretobuy[data-current-bundle="battle-pass"].anim-incentives.anim-items[data-current-platform="ps4"] .incentive-item.five {
+    top: 16vw;
+  }
+  .atvi-wheretobuy[data-current-bundle="battle-pass"].anim-incentives.anim-items[data-current-platform="xboxone"] .incentive-item.five {
+    top: 16vw;
+  }
+  .atvi-wheretobuy[data-current-bundle="battle-pass"].anim-incentives.anim-items[data-current-platform="pc"] .incentive-item.five {
+    top: 16vw;
+  }
+}
+@media screen and (width: 768px) {
+  .atvi-wheretobuy .incentive-item.six {
+    bottom: -2%;
+  }
+}
+@media screen and (min-width: 980px) {
+  .atvi-wheretobuy .incentive-item.six {
+    bottom: 36%;
+  }
+}
+@media screen and (min-width: 1090px) {
+  .atvi-wheretobuy .incentive-item.six {
+    bottom: 31%;
+  }
+}
+@media screen and (min-width: 1150px) {
+  .atvi-wheretobuy .incentive-item.six {
+    bottom: 26%;
+  }
+}
+@media screen and (min-width: 1285px) {
+  .atvi-wheretobuy .incentive-item.six {
+    left: 25%;
+    bottom: 19%;
+    width: 18vw;
+  }
+}
+@media screen and (min-width: 1360px) {
+  .atvi-wheretobuy .incentive-item.six {
+    left: 11vw;
+    bottom: 5vw;
+  }
+}
+@media screen and (min-width: 1485px) {
+  .atvi-wheretobuy .anim-incentives.anim-items .incentive-item.five {
+    top: 20.5vw;
+  }
+  .atvi-wheretobuy .incentive-item.six {
+    bottom: 6%;
+  }
+}
+@media screen and (min-width: 1650px) {
+  .atvi-wheretobuy .incentive-item.six {
+    bottom: -6%;
+  }
+}
+@media screen and (min-width: 1750px) {
+  .atvi-wheretobuy .incentive-item.six {
+    bottom: -10%;
+  }
+}
+@media screen and (max-width: 767px) {
+  body.region-modal-active {
+    height: 100vh;
+    overflow: hidden;
+  }
+}
+.atvi-wheretobuy {
+  display: block;
+  width: 100vw;
+  margin: 0px auto;
+  background-color: #000;
+}
+.atvi-wheretobuy:after {
+  content: "";
+  clear: both;
+  height: 0;
+  visibility: hidden;
+  display: block;
+}
+.atvi-wheretobuy .desktop-only {
+  display: block;
+}
+.atvi-wheretobuy .mobile-only {
+  display: none;
+}
+.atvi-wheretobuy .ir {
+  white-space: nowrap;
+  overflow: hidden;
+  display: block;
+  letter-spacing: 0;
+  text-indent: 100%;
+}
+.atvi-wheretobuy .region-col,
+.atvi-wheretobuy .change-region {
+  display: inline-block;
+}
+.atvi-wheretobuy .current-region {
+  margin-top: 20px;
+  line-height: 1.2rem;
+}
+.atvi-wheretobuy .change-region {
+  margin-left: 5px;
+}
+.atvi-wheretobuy .cta.change-region {
+  color: #94bbc2;
+}
+.atvi-wheretobuy .wtb-module-title {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 60px;
+  color: #a59d95;
+  margin: 0px 0px 16px 0px;
+  line-height: 1.15;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+@media screen and (max-width: 768px) {
+  .atvi-wheretobuy .wtb-module-title {
+    font-size: 28px;
+    letter-spacing: 1px;
+  }
+}
+.atvi-wheretobuy p,
+.atvi-wheretobuy li,
+.atvi-wheretobuy a,
+.atvi-wheretobuy .current-region {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+}
+.atvi-wheretobuy .wtb-form-container {
+  width: 80vw;
+  margin: 0px auto;
+}
+.atvi-wheretobuy .wtb-select.platforms-entry ul,
+.atvi-wheretobuy .wtb-select.retailerType-entry ul {
+  margin: 20px 0;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+.atvi-wheretobuy .wtb-select.platforms-entry ul li:nth-child(n+2),
+.atvi-wheretobuy .wtb-select.retailerType-entry ul li:nth-child(n+2) {
+  margin-left: 12px;
+}
+.atvi-wheretobuy .wtb-select.platforms-entry ul li.selected a,
+.atvi-wheretobuy .wtb-select.retailerType-entry ul li.selected a {
+  border-top: 1px solid #79d9ff;
+  background-color: #282828;
+}
+.atvi-wheretobuy .wtb-select.platforms-entry ul a,
+.atvi-wheretobuy .wtb-select.retailerType-entry ul a {
+  display: block;
+  min-width: 135px;
+  color: #a9a6a1;
+  background-color: #111;
+  background-size: 2px;
+  border-top: 1px solid #2a2e31;
+  padding: 0 20px;
+  line-height: 40px;
+  white-space: nowrap;
+  background-image: url('../../../../../../content/dam/atvi/callofduty/cod-touchui/kronos/common/ui-elements/input-bg.png');
+  -webkit-transition: all 0.8s;
+  -moz-transition: all 0.8s;
+  -ms-transition: all 0.8s;
+  -o-transition: all 0.8s;
+  transition: all 0.8s;
+  text-transform: capitalize;
+  min-width: auto;
+}
+.atvi-wheretobuy .wtb-select.platforms-entry ul a:hover,
+.atvi-wheretobuy .wtb-select.retailerType-entry ul a:hover {
+  border-top: 1px solid #79d9ff;
+  background-color: #282828;
+}
+@media screen and (max-width: 1190px) {
+  .atvi-wheretobuy .wtb-select.platforms-entry ul a.xboxone {
+    font-size: 0.7rem;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .atvi-wheretobuy .wtb-select.platforms-entry ul a.xboxone {
+    font-size: 0.6rem;
+  }
+}
+@media screen and (max-width: 900px) {
+  .atvi-wheretobuy .wtb-select.platforms-entry ul a.xboxone {
+    font-size: 0.5rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  .atvi-wheretobuy .wtb-select.platforms-entry ul a.xboxone {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 505px) {
+  .atvi-wheretobuy .wtb-select.platforms-entry ul a.xboxone {
+    font-size: 0.7rem;
+  }
+}
+@media screen and (max-width: 420px) {
+  .atvi-wheretobuy .wtb-select.platforms-entry ul a.xboxone {
+    padding: 0 15px;
+  }
+}
+@media screen and (max-width: 368px) {
+  .atvi-wheretobuy .wtb-select.platforms-entry ul a.xboxone {
+    font-size: 0.6rem;
+  }
+}
+.atvi-wheretobuy .wtb-select.platforms-entry .selection-type-platforms li {
+  width: calc(100%/3);
+  -webkit-transition: opacity 0.5s ease;
+  -moz-transition: opacity 0.5s ease;
+  -ms-transition: opacity 0.5s ease;
+  -o-transition: opacity 0.5s ease;
+  transition: opacity 0.5s ease;
+}
+.atvi-wheretobuy .wtb-select.platforms-entry .selection-type-platforms li.unavailable {
+  opacity: .5;
+  cursor: not-allowed;
+}
+.atvi-wheretobuy .wtb-select.platforms-entry .selection-type-platforms li.unavailable a {
+  pointer-events: none;
+}
+.atvi-wheretobuy .wtb-select.retailerType-entry .selection-type-retailerTypes li {
+  width: 50%;
+}
+.atvi-wheretobuy .wtb-select.retailerType-entry .selection-type-retailerTypes li.unavailable {
+  opacity: .5;
+  cursor: not-allowed;
+}
+.atvi-wheretobuy .wtb-select.retailerType-entry .selection-type-retailerTypes li.unavailable a {
+  pointer-events: none;
+}
+.atvi-wheretobuy .wtb-select.retailerType-entry a {
+  text-transform: uppercase;
+}
+.atvi-wheretobuy .modal .modal-btn {
+  display: inline-block;
+  text-shadow: 0px 0px 0px #97cde1;
+  background-image: url('../../../../../../content/dam/atvi/callofduty/cod-touchui/kronos/common/ui-elements/blue-tile.png');
+  background-color: #242424;
+  color: #94bbc2;
+  box-shadow: inset 0px 0px 5px #597985;
+  border: 1px solid #597985;
+  line-height: 42px;
+  padding: 0 20px;
+  min-width: 150px;
+  transition-property: text-shadow, background-color, border, color;
+  transition-duration: 1s;
+  position: relative;
+  font-size: 16px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.atvi-wheretobuy .modal .modal-btn:before,
+.atvi-wheretobuy .modal .modal-btn:after {
+  content: "";
+  width: 100%;
+  left: 0;
+  height: 2px;
+  display: block;
+  position: absolute;
+  background-image: linear-gradient(to right, rgba(151, 205, 225, 0.5), #79d9ff 20%, #79d9ff 80%, rgba(151, 205, 225, 0.5));
+  transform: scaleX(0);
+  -webkit-transition: all ease 0.8s;
+  -moz-transition: all ease 0.8s;
+  -ms-transition: all ease 0.8s;
+  -o-transition: all ease 0.8s;
+  transition: all ease 0.8s;
+}
+.atvi-wheretobuy .modal .modal-btn:before {
+  bottom: -1px;
+}
+.atvi-wheretobuy .modal .modal-btn:after {
+  top: -1px;
+}
+.atvi-wheretobuy .modal .modal-btn:hover {
+  background-color: #282828;
+  text-shadow: 0px 0px 10px #79d9ff;
+  color: #79d9ff;
+}
+.atvi-wheretobuy .modal .modal-btn:hover:before,
+.atvi-wheretobuy .modal .modal-btn:hover:after {
+  transform: scaleX(1);
+  box-shadow: 0px 0px 10px;
+  -webkit-transition: all ease 0.8s;
+  -moz-transition: all ease 0.8s;
+  -ms-transition: all ease 0.8s;
+  -o-transition: all ease 0.8s;
+  transition: all ease 0.8s;
+}
+.atvi-wheretobuy .order-button .wtb-button {
+  display: inline-block;
+  text-shadow: 0px 0px 0px #97cde1;
+  background-image: url('../../../../../../content/dam/atvi/callofduty/cod-touchui/kronos/common/ui-elements/blue-tile.png');
+  background-color: #242424;
+  color: #94bbc2;
+  box-shadow: inset 0px 0px 5px #597985;
+  border: 1px solid #597985;
+  line-height: 42px;
+  padding: 0 20px;
+  min-width: 150px;
+  transition-property: text-shadow, background-color, border, color;
+  transition-duration: 1s;
+  position: relative;
+  font-size: 16px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.atvi-wheretobuy .order-button .wtb-button:before,
+.atvi-wheretobuy .order-button .wtb-button:after {
+  content: "";
+  width: 100%;
+  left: 0;
+  height: 2px;
+  display: block;
+  position: absolute;
+  background-image: linear-gradient(to right, rgba(151, 205, 225, 0.5), #79d9ff 20%, #79d9ff 80%, rgba(151, 205, 225, 0.5));
+  transform: scaleX(0);
+  -webkit-transition: all ease 0.8s;
+  -moz-transition: all ease 0.8s;
+  -ms-transition: all ease 0.8s;
+  -o-transition: all ease 0.8s;
+  transition: all ease 0.8s;
+}
+.atvi-wheretobuy .order-button .wtb-button:before {
+  bottom: -1px;
+}
+.atvi-wheretobuy .order-button .wtb-button:after {
+  top: -1px;
+}
+.atvi-wheretobuy .order-button .wtb-button:hover {
+  background-color: #282828;
+  text-shadow: 0px 0px 10px #79d9ff;
+  color: #79d9ff;
+}
+.atvi-wheretobuy .order-button .wtb-button:hover:before,
+.atvi-wheretobuy .order-button .wtb-button:hover:after {
+  transform: scaleX(1);
+  box-shadow: 0px 0px 10px;
+  -webkit-transition: all ease 0.8s;
+  -moz-transition: all ease 0.8s;
+  -ms-transition: all ease 0.8s;
+  -o-transition: all ease 0.8s;
+  transition: all ease 0.8s;
+}
+.atvi-wheretobuy .bundle-descriptions-container {
+  margin: 0 0 20px;
+}
+.atvi-wheretobuy .bundle-descriptions-container ul {
+  padding-left: 9px;
+}
+.atvi-wheretobuy .bundle-descriptions-container .bundle-description li {
+  position: relative;
+}
+.atvi-wheretobuy .bundle-descriptions-container .bundle-description li:before {
+  content: ">";
+  position: absolute;
+  left: -16px;
+}
+.atvi-wheretobuy .empty-retailers {
+  color: #773535;
+}
+.atvi-wheretobuy .change-region.cta-container a {
+  text-transform: uppercase;
+}
+.atvi-wheretobuy .disclaimers-container {
+  font-size: .8em;
+  line-height: 1.2rem;
+}
+.atvi-wheretobuy .wtb-boxart-container {
+  width: 100vw;
+  height: 800px;
+  position: relative;
+  min-width: 420px;
+}
+.atvi-wheretobuy .bundle-incentives-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.atvi-wheretobuy .bundle-incentive-collection {
+  overflow: hidden;
+}
+.atvi-wheretobuy .bundle-incentive-collection.bundle-selected {
+  overflow: unset;
+}
+.atvi-wheretobuy .bundle-boxart {
+  width: 80vw;
+  height: 115vw;
+  position: absolute;
+  left: calc(50vw - 40vw);
+  top: 0px;
+  transform-origin: top center;
+  box-shadow: 0px 0px 50px black;
+}
+.atvi-wheretobuy .bundle-boxart.operator-enhanced,
+.atvi-wheretobuy .bundle-boxart.operator,
+.atvi-wheretobuy .bundle-boxart.precision {
+  display: none;
+  left: 0;
+  -webkit-transform: translate(0, 0);
+  -moz-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  -o-transform: translate(0, 0);
+  transform: translate(0, 0);
+  -webkit-transition: 1s all;
+  -moz-transition: 1s all;
+  -ms-transition: 1s all;
+  -o-transition: 1s all;
+  transition: 1s all;
+}
+.atvi-wheretobuy .bundle-boxart .product-img {
+  content: "";
+  background-size: 100%;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+}
+.atvi-wheretobuy .region-select-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  z-index: 10;
+  overflow: hidden;
+  -webkit-transition: opacity 0.5s ease 0.2s;
+  -moz-transition: opacity 0.5s ease 0.2s;
+  -ms-transition: opacity 0.5s ease 0.2s;
+  -o-transition: opacity 0.5s ease 0.2s;
+  transition: opacity 0.5s ease 0.2s;
+}
+.atvi-wheretobuy .region-select-modal.active {
+  width: 100vw;
+  height: 100vh;
+  opacity: 1;
+  z-index: 9999;
+}
+.atvi-wheretobuy .region-select-modal.active > .inner {
+  width: 90vw;
+  max-width: 400px;
+  height: 200px;
+  opacity: 1;
+}
+@media screen and (max-width: 767px) {
+  .atvi-wheretobuy .region-select-modal.active > .inner {
+    margin-top: 0;
+    overflow: unset;
+  }
+}
+.atvi-wheretobuy .region-select-modal.active .background-container {
+  background-color: rgba(0, 0, 0, 0.875);
+}
+.atvi-wheretobuy .region-select-modal .background-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.01);
+  -webkit-transition: background-color 1s ease 0.2s;
+  -moz-transition: background-color 1s ease 0.2s;
+  -ms-transition: background-color 1s ease 0.2s;
+  -o-transition: background-color 1s ease 0.2s;
+  transition: background-color 1s ease 0.2s;
+}
+.atvi-wheretobuy .region-select-modal > .inner {
+  position: absolute;
+  padding: 2rem 1rem;
+  border-top: 2px solid #79d9ff;
+  border-left: 2px solid #2a2e31;
+  background-color: rgba(0, 0, 0, 0.95);
+  width: 0;
+  height: 0;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  -webkit-transition: opacity 1.3s ease 1s;
+  -moz-transition: opacity 1.3s ease 1s;
+  -ms-transition: opacity 1.3s ease 1s;
+  -o-transition: opacity 1.3s ease 1s;
+  transition: opacity 1.3s ease 1s;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.atvi-wheretobuy .region-select-modal .modal-message {
+  margin-bottom: 1rem;
+}
+.atvi-wheretobuy .region-select-modal .button-container.close {
+  position: absolute;
+  top: 1.25rem;
+  right: 1.25rem;
+  width: 60px;
+  height: 60px;
+}
+.atvi-wheretobuy .region-select-modal .button-container.close .button-icon.close {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.atvi-wheretobuy .region-select-modal .button-container.close .button-icon.close:before,
+.atvi-wheretobuy .region-select-modal .button-container.close .button-icon.close:after {
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: 1;
+  height: 1px;
+  width: 30px;
+  background-color: #597985;
+  left: calc(50% - 15px);
+  top: 50%;
+  -webkit-transition: all ease 0.2s;
+  -moz-transition: all ease 0.2s;
+  -ms-transition: all ease 0.2s;
+  -o-transition: all ease 0.2s;
+  transition: all ease 0.2s;
+}
+.atvi-wheretobuy .region-select-modal .button-container.close .button-icon.close:before {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.atvi-wheretobuy .region-select-modal .button-container.close .button-icon.close:after {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+.atvi-wheretobuy .region-select-modal .button-container.close:hover .button-icon.close:before,
+.atvi-wheretobuy .region-select-modal .button-container.close:hover .button-icon.close:after {
+  width: 36px;
+  left: calc(50% - 18px);
+  background-color: #79d9ff;
+}
+.atvi-wheretobuy .region-select-modal .button-container.close a {
+  display: block;
+  position: relative;
+  border: 1px solid #597985;
+  background-color: #242424;
+  background-size: 2px;
+  background-image: url('../../../../../../content/dam/atvi/callofduty/cod-touchui/kronos/common/ui-elements/blue-tile.png');
+  box-shadow: inset 0px 0px 5px #597985;
+  transition-property: text-shadow, background-color, border, color;
+  transition-duration: 1s;
+  width: 60px;
+  height: 60px;
+}
+.atvi-wheretobuy .region-select-modal .button-container.close a:before,
+.atvi-wheretobuy .region-select-modal .button-container.close a:after {
+  content: "";
+  width: 100%;
+  height: 2px;
+  display: block;
+  position: absolute;
+  left: 0;
+  background-image: linear-gradient(to right, rgba(151, 205, 225, 0.5), #79d9ff 20%, #79d9ff 80%, rgba(151, 205, 225, 0.5));
+  -webkit-transition: all ease 0.8s;
+  -moz-transition: all ease 0.8s;
+  -ms-transition: all ease 0.8s;
+  -o-transition: all ease 0.8s;
+  transition: all ease 0.8s;
+}
+.atvi-wheretobuy .region-select-modal .button-container.close a:before {
+  bottom: -1px;
+}
+.atvi-wheretobuy .region-select-modal .button-container.close a:after {
+  top: -1px;
+}
+.atvi-wheretobuy .region-select-modal .button-container.close a:hover:before,
+.atvi-wheretobuy .region-select-modal .button-container.close a:hover:after {
+  transform: scaleX(1);
+  box-shadow: 0px 0px 10px;
+  -webkit-transition: all ease 0.8s;
+  -moz-transition: all ease 0.8s;
+  -ms-transition: all ease 0.8s;
+  -o-transition: all ease 0.8s;
+  transition: all ease 0.8s;
+}
+.atvi-wheretobuy .region-select-modal .button-container.close {
+  position: absolute;
+  top: 1.25rem;
+  right: 1.25rem;
+  width: 60px;
+  height: 60px;
+}
+.atvi-wheretobuy .region-select-modal .button-container.close .button-icon.close {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.atvi-wheretobuy .region-select-modal .button-container.close .button-icon.close:before,
+.atvi-wheretobuy .region-select-modal .button-container.close .button-icon.close:after {
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: 1;
+  height: 1px;
+  width: 30px;
+  background-color: #597985;
+  left: calc(50% - 15px);
+  top: 50%;
+  -webkit-transition: all ease 0.2s;
+  -moz-transition: all ease 0.2s;
+  -ms-transition: all ease 0.2s;
+  -o-transition: all ease 0.2s;
+  transition: all ease 0.2s;
+}
+.atvi-wheretobuy .region-select-modal .button-container.close .button-icon.close:before {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.atvi-wheretobuy .region-select-modal .button-container.close .button-icon.close:after {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+.atvi-wheretobuy .region-select-modal .button-container.close:hover .button-icon.close:before,
+.atvi-wheretobuy .region-select-modal .button-container.close:hover .button-icon.close:after {
+  width: 36px;
+  left: calc(50% - 18px);
+  background-color: #79d9ff;
+}
+.atvi-wheretobuy .region-select-modal .button-container.close a {
+  display: block;
+  position: relative;
+  border: 1px solid #597985;
+  background-color: #242424;
+  background-size: 2px;
+  background-image: url('../../../../../../content/dam/atvi/callofduty/cod-touchui/kronos/common/ui-elements/blue-tile.png');
+  box-shadow: inset 0px 0px 5px #597985;
+  transition-property: text-shadow, background-color, border, color;
+  transition-duration: 1s;
+  width: 60px;
+  height: 60px;
+}
+.atvi-wheretobuy .region-select-modal .button-container.close a:before,
+.atvi-wheretobuy .region-select-modal .button-container.close a:after {
+  content: "";
+  width: 100%;
+  height: 2px;
+  display: block;
+  position: absolute;
+  left: 0;
+  background-image: linear-gradient(to right, rgba(151, 205, 225, 0.5), #79d9ff 20%, #79d9ff 80%, rgba(151, 205, 225, 0.5));
+  -webkit-transition: all ease 0.8s;
+  -moz-transition: all ease 0.8s;
+  -ms-transition: all ease 0.8s;
+  -o-transition: all ease 0.8s;
+  transition: all ease 0.8s;
+}
+.atvi-wheretobuy .region-select-modal .button-container.close a:before {
+  bottom: -1px;
+}
+.atvi-wheretobuy .region-select-modal .button-container.close a:after {
+  top: -1px;
+}
+.atvi-wheretobuy .region-select-modal .button-container.close a:hover:before,
+.atvi-wheretobuy .region-select-modal .button-container.close a:hover:after {
+  transform: scaleX(1);
+  box-shadow: 0px 0px 10px;
+  -webkit-transition: all ease 0.8s;
+  -moz-transition: all ease 0.8s;
+  -ms-transition: all ease 0.8s;
+  -o-transition: all ease 0.8s;
+  transition: all ease 0.8s;
+}
+@media screen and (max-width: 767px) {
+  .atvi-wheretobuy {
+    padding: 60px 0;
+  }
+  .atvi-wheretobuy .desktop-only {
+    display: none;
+  }
+  .atvi-wheretobuy .mobile-only {
+    display: block;
+  }
+  .atvi-wheretobuy.fixed-post > div {
+    position: relative;
+    margin-top: calc(50vh + 360px);
+  }
+  .atvi-wheretobuy.fixed > div {
+    top: 0;
+    overflow-x: hidden;
+  }
+  .atvi-wheretobuy > .inner {
+    margin-top: 0;
+  }
+  .atvi-wheretobuy .wtb-form-container {
+    width: 80vw;
+    margin: 0px 10vw;
+  }
+  .atvi-wheretobuy .order-button,
+  .atvi-wheretobuy .current-region,
+  .atvi-wheretobuy .disclaimers-container {
+    margin-bottom: 20px;
+  }
+  .atvi-wheretobuy .wtb-boxart-container {
+    height: 125vw;
+    min-width: 100%;
+    max-width: 100%;
+  }
+  .atvi-wheretobuy .bundle-boxart {
+    left: 0;
+    opacity: 1;
+  }
+  .atvi-wheretobuy .disclaimers-container {
+    width: 80vw;
+    margin: 24px auto 12px;
+  }
+}
+@media screen and (max-width: 460px) and (max-height: 600px) {
+  .atvi-wheretobuy .region-select-modal.active > .inner {
+    margin-top: 3.25rem;
+  }
+}
+@media screen and (max-width: 874px) and (min-width: 768px) {
+  .atvi-wheretobuy .wtb-form-container.buy-column {
+    width: 80%;
+  }
+  .atvi-wheretobuy .wtb-boxart-container.buy-column {
+    margin-top: 50px;
+    height: 30vw;
+  }
+}
+@media screen and (min-width: 768px) {
+  .atvi-wheretobuy {
+    padding: 150px 0;
+  }
+  .atvi-wheretobuy.fixed-post {
+    padding-top: 100px;
+  }
+  .atvi-wheretobuy > .inner {
+    position: relative;
+    width: 80vw;
+    left: 10vw;
+    right: 10vw;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    -webkit-box-lines: multiple;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+  .atvi-wheretobuy .wtb-header-container {
+    margin-bottom: 25px;
+    max-width: 1450px;
+  }
+  .atvi-wheretobuy .wtb-form-container {
+    width: 40%;
+  }
+  .atvi-wheretobuy .wtb-boxart-container {
+    width: 60%;
+    height: 500px;
+    position: relative;
+  }
+  .atvi-wheretobuy .bundle-boxart {
+    width: 40vw;
+    height: 60vw;
+  }
+  .atvi-wheretobuy .disclaimers-container {
+    width: 100%;
+    margin-top: 125px;
+  }
+  .atvi-wheretobuy .disclaimers-platform-list {
+    width: 100%;
+    position: relative;
+  }
+  .atvi-wheretobuy .disclaimers-platform-list > li {
+    position: relative;
+  }
+  .atvi-wheretobuy .disclaimers-platform-list > li > ul {
+    width: 100%;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    display: -webkit-box;
+    display: flex;
+    justify-content: space-between;
+  }
+  .atvi-wheretobuy .disclaimers-platform-list > li > ul > li {
+    width: 50%;
+  }
+  .atvi-wheretobuy .disclaimers-platform-list > li > ul > li:nth-child(n+2) {
+    margin-left: 1%;
+  }
+  .atvi-wheretobuy .disclaimers-platform-list > li > ul > li p:nth-child(n+2) {
+    margin-top: 24px;
+  }
+}
+@media screen and (min-width: 1919px) {
+  .atvi-wheretobuy .wtb-boxart-container {
+    height: 31vw;
+  }
+}
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,700');
+.noise-gif {
+  content: "";
+  display: block;
+  width: 100vw;
+  height: 100vh;
+  opacity: .17;
+  background-image: url('../../../../../../content/dam/atvi/callofduty/cod-touchui/kronos/home/common/noise-gif-square-anim.gif');
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  z-index: 10;
+}
+@keyframes arrow {
+  0% {
+    -webkit-transform: translate(0, 0);
+    -moz-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    -o-transform: translate(0, 0);
+    transform: translate(0, 0);
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+    -webkit-transform: translate(0, 2px);
+    -moz-transform: translate(0, 2px);
+    -ms-transform: translate(0, 2px);
+    -o-transform: translate(0, 2px);
+    transform: translate(0, 2px);
+  }
+  50% {
+    opacity: 1;
+    -webkit-transform: translate(0, 8px);
+    -moz-transform: translate(0, 8px);
+    -ms-transform: translate(0, 8px);
+    -o-transform: translate(0, 8px);
+    transform: translate(0, 8px);
+  }
+  75%,
+  100% {
+    -webkit-transform: translate(0, 10px);
+    -moz-transform: translate(0, 10px);
+    -ms-transform: translate(0, 10px);
+    -o-transform: translate(0, 10px);
+    transform: translate(0, 10px);
+    opacity: 0;
+  }
+}
+@media screen and (orientation: portrait) and (max-width: 1023px) {
+  .wtb-component .atvi-wheretobuy .wtb-form-container {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  .wtb-component .atvi-wheretobuy .wtb-header-container {
+    -webkit-box-ordinal-group: 1;
+    -moz-box-ordinal-group: 1;
+    -ms-flex-order: 1;
+    -webkit-order: 1;
+    order: 1;
+  }
+  .wtb-component .atvi-wheretobuy .wtb-header-container .wtb-module-title {
+    margin: 0;
+  }
+  .wtb-component .atvi-wheretobuy .wtb-form-list {
+    -webkit-box-ordinal-group: 2;
+    -moz-box-ordinal-group: 2;
+    -ms-flex-order: 2;
+    -webkit-order: 2;
+    order: 2;
+  }
+  .wtb-component .atvi-wheretobuy .order-button {
+    -webkit-box-ordinal-group: 3;
+    -moz-box-ordinal-group: 3;
+    -ms-flex-order: 3;
+    -webkit-order: 3;
+    order: 3;
+  }
+  .wtb-component .atvi-wheretobuy .wtb-boxart-container {
+    -webkit-box-ordinal-group: 4;
+    -moz-box-ordinal-group: 4;
+    -ms-flex-order: 4;
+    -webkit-order: 4;
+    order: 4;
+  }
+  .wtb-component .atvi-wheretobuy .bundle-descriptions-container {
+    -webkit-box-ordinal-group: 5;
+    -moz-box-ordinal-group: 5;
+    -ms-flex-order: 5;
+    -webkit-order: 5;
+    order: 5;
+  }
+  .wtb-component .atvi-wheretobuy .message.current-region {
+    -webkit-box-ordinal-group: 6;
+    -moz-box-ordinal-group: 6;
+    -ms-flex-order: 6;
+    -webkit-order: 6;
+    order: 6;
+  }
+}
+@media screen and (max-width: 768px) and (orientation: portrait) {
+  .wtb-component .atvi-wheretobuy[data-current-bundle="physical"].anim-incentives .bundle-boxart {
+    left: -1%;
+  }
+  .wtb-component .atvi-wheretobuy[data-current-bundle="digital"].anim-incentives .bundle-boxart,
+  .wtb-component .atvi-wheretobuy[data-current-bundle="digital"].anim-incentives .incentive-item.five {
+    left: 50%;
+  }
+}
+@media screen and (max-width: 767px) and (orientation: portrait) {
+  .wtb-component .atvi-wheretobuy .wtb-boxart-container {
+    height: 125vw;
+  }
+  .wtb-component .atvi-wheretobuy.anim-incentives.anim-items .incentive-item.five {
+    width: 100%;
+  }
+  .wtb-component .atvi-wheretobuy[data-current-bundle="digital"].anim-incentives .bundle-boxart {
+    left: 0;
+  }
+  .wtb-component .atvi-wheretobuy[data-current-bundle="digital"].anim-incentives .incentive-item.five {
+    left: 0;
+  }
+}
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,700');
+.noise-gif {
+  content: "";
+  display: block;
+  width: 100vw;
+  height: 100vh;
+  opacity: .17;
+  background-image: url('../../../../../../content/dam/atvi/callofduty/cod-touchui/kronos/home/common/noise-gif-square-anim.gif');
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  z-index: 10;
+}
+@keyframes arrow {
+  0% {
+    -webkit-transform: translate(0, 0);
+    -moz-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    -o-transform: translate(0, 0);
+    transform: translate(0, 0);
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+    -webkit-transform: translate(0, 2px);
+    -moz-transform: translate(0, 2px);
+    -ms-transform: translate(0, 2px);
+    -o-transform: translate(0, 2px);
+    transform: translate(0, 2px);
+  }
+  50% {
+    opacity: 1;
+    -webkit-transform: translate(0, 8px);
+    -moz-transform: translate(0, 8px);
+    -ms-transform: translate(0, 8px);
+    -o-transform: translate(0, 8px);
+    transform: translate(0, 8px);
+  }
+  75%,
+  100% {
+    -webkit-transform: translate(0, 10px);
+    -moz-transform: translate(0, 10px);
+    -ms-transform: translate(0, 10px);
+    -o-transform: translate(0, 10px);
+    transform: translate(0, 10px);
+    opacity: 0;
+  }
+}
+.atvi-wheretobuy.anim-incentives .bundle-boxart {
+  left: -5%;
+  -webkit-transform: scale(0.434);
+  -moz-transform: scale(0.434);
+  -ms-transform: scale(0.434);
+  -o-transform: scale(0.434);
+  transform: scale(0.434);
+  -webkit-transition: left ease 1s;
+  -moz-transition: left ease 1s;
+  -ms-transition: left ease 1s;
+  -o-transition: left ease 1s;
+  transition: left ease 1s;
+}
+.atvi-wheretobuy.anim-incentives .bundle-boxart.standard {
+  left: 20%;
+}
+.atvi-wheretobuy.anim-incentives.anim-items .bundle-incentive-collection.bundle-selected {
+  opacity: 1;
+}
+.atvi-wheretobuy.anim-incentives.anim-items .incentive-item {
+  opacity: 1;
+  -webkit-transform: translate(120%, 0);
+  -moz-transform: translate(120%, 0);
+  -ms-transform: translate(120%, 0);
+  -o-transform: translate(120%, 0);
+  transform: translate(120%, 0);
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
+}
+.atvi-wheretobuy.anim-incentives.anim-items .incentive-item.one {
+  transition-delay: .4s, .4s, 0s, 0s;
+}
+.atvi-wheretobuy.anim-incentives.anim-items .incentive-item.five {
+  transition-delay: .5s, .5s, 0s, 0s;
+}
+.atvi-wheretobuy.anim-incentives.anim-items .incentive-item.three {
+  transition-delay: .6s, .6s, 0s, 0s;
+}
+.atvi-wheretobuy.anim-incentives.anim-items .incentive-item.two {
+  transition-delay: .7s, .7s, 0s, 0s;
+}
+.atvi-wheretobuy.anim-incentives.anim-items .incentive-item.four {
+  transition-delay: .8s, .8s, 0s, 0s;
+}
+.atvi-wheretobuy .incentive-item.four {
+  transition-delay: .4s, .4s, 0s, 0s;
+}
+.atvi-wheretobuy .incentive-item.two {
+  transition-delay: .5s, .5s, 0s, 0s;
+}
+.atvi-wheretobuy .incentive-item.three {
+  transition-delay: .6s, .6s, 0s, 0s;
+}
+.atvi-wheretobuy .incentive-item.five {
+  transition-delay: .7s, .7s, 0s, 0s;
+}
+.atvi-wheretobuy .incentive-item.one {
+  transition-delay: .8s, .8s, 0s, 0s;
+}
+@media screen and (max-width: 767px) {
+  .atvi-wheretobuy.anim-incentives .bundle-boxart {
+    left: -20vw;
+  }
+  .atvi-wheretobuy.anim-incentives .bundle-boxart.standard {
+    left: 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  [lang='ar'] .atvi-wheretobuy .wtb-boxart-container {
+    left: 0;
+  }
+}
+@media screen and (max-width: 767px) {
+  [lang='ar'] .atvi-wheretobuy .wtb-boxart-container {
+    left: 0;
+  }
+}
+

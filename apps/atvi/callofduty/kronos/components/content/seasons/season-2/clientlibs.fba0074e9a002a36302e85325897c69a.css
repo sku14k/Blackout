@@ -1,0 +1,3331 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,700');
+.noise-gif {
+  content: "";
+  display: block;
+  width: 100vw;
+  height: 100vh;
+  opacity: .17;
+  background-image: url('../../../../../../../../content/dam/atvi/callofduty/cod-touchui/kronos/home/common/noise-gif-square-anim.gif');
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  z-index: 10;
+}
+@keyframes arrow {
+  0% {
+    -webkit-transform: translate(0, 0);
+    -moz-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    -o-transform: translate(0, 0);
+    transform: translate(0, 0);
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+    -webkit-transform: translate(0, 2px);
+    -moz-transform: translate(0, 2px);
+    -ms-transform: translate(0, 2px);
+    -o-transform: translate(0, 2px);
+    transform: translate(0, 2px);
+  }
+  50% {
+    opacity: 1;
+    -webkit-transform: translate(0, 8px);
+    -moz-transform: translate(0, 8px);
+    -ms-transform: translate(0, 8px);
+    -o-transform: translate(0, 8px);
+    transform: translate(0, 8px);
+  }
+  75%,
+  100% {
+    -webkit-transform: translate(0, 10px);
+    -moz-transform: translate(0, 10px);
+    -ms-transform: translate(0, 10px);
+    -o-transform: translate(0, 10px);
+    transform: translate(0, 10px);
+    opacity: 0;
+  }
+}
+#hero {
+  background-color: black;
+  overflow: hidden;
+}
+#hero .hero-wrapper {
+  height: 100vh;
+  position: relative;
+}
+#hero .background-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+#hero .background-container .bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center -50px;
+}
+#hero .background-container .bg.mobile {
+  display: none;
+  background-size: cover;
+}
+@media screen and (max-width: 768px) {
+  #hero .background-container .bg.mobile {
+    display: block;
+  }
+  #hero .background-container .bg.desktop {
+    display: none;
+  }
+}
+#hero .content-container {
+  width: 40%;
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+@media screen and (max-width: 768px) {
+  #hero .content-container {
+    width: 80%;
+  }
+}
+#hero .content-container .season-logo {
+  width: 100%;
+  -webkit-transform: scale(1.3);
+  -ms-transform: scale(1.3);
+  transform: scale(1.3);
+  opacity: 0;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+#hero .content-container .hero-text {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 60px;
+  color: #a59d95;
+  margin: 0px 0px 16px 0px;
+  line-height: 1.15;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 40px;
+  font-weight: 300;
+  opacity: 0;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  -webkit-transition-delay: .5s;
+  -o-transition-delay: .5s;
+  transition-delay: .5s;
+  position: relative;
+  bottom: 50px;
+}
+@media screen and (max-width: 768px) {
+  #hero .content-container .hero-text {
+    font-size: 28px;
+    letter-spacing: 1px;
+  }
+}
+#hero .content-container .watch-trailer {
+  min-height: 16px;
+  padding: 12px 20px;
+  transition-property: text-shadow, background-color, border, color;
+  transition-duration: 1s;
+  background-color: #282828;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: #81898c;
+  line-height: 1.15;
+  text-transform: uppercase;
+  margin: 0 0 40px 0;
+  width: fit-content;
+  background-image: url('../../../../../../../../content/dam/atvi/callofduty/cod-touchui/kronos/home/common/global-nav-bg-mobile.png');
+  background-size: 2px;
+  box-shadow: inset 0px 0px 5px #81898c;
+  border: 1px solid #81898c;
+  cursor: pointer;
+  text-decoration: none;
+  text-shadow: 0px 0px 0px #97cde1;
+  background-color: transparent;
+  background-image: url('../../../../../../../../content/dam/atvi/callofduty/cod-touchui/kronos/home/common/blue-tile.png');
+  background-color: #242424;
+  color: #94bbc2;
+  box-shadow: inset 0px 0px 5px #597985;
+  border: 1px solid #597985;
+  margin-bottom: 0;
+  opacity: 0;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  -webkit-transition-delay: .6s;
+  -o-transition-delay: .6s;
+  transition-delay: .6s;
+  position: relative;
+  bottom: 50px;
+}
+#hero .content-container .watch-trailer:after,
+#hero .content-container .watch-trailer:before {
+  width: 100%;
+  content: "";
+  height: 2px;
+  display: block;
+  position: absolute;
+  background-image: linear-gradient(to right, rgba(250, 250, 250, 0.5), #ffffff 20%, #ffffff 80%, rgba(250, 250, 250, 0.5));
+  transition: all ease .8s;
+  transform: scaleX(0);
+  top: -1px;
+  left: 0;
+}
+#hero .content-container .watch-trailer:after {
+  bottom: -1px;
+  top: initial;
+}
+#hero .content-container .watch-trailer:before {
+  color: #b6bec0;
+  text-shadow: 0px 0px 10px #ffffff;
+}
+#hero .content-container .watch-trailer:hover {
+  background-color: #627f53;
+  color: #c7cac6;
+}
+#hero .content-container .watch-trailer:hover:after,
+#hero .content-container .watch-trailer:hover:before {
+  -webkit-transition: all ease 0.8s;
+  -moz-transition: all ease 0.8s;
+  -ms-transition: all ease 0.8s;
+  -o-transition: all ease 0.8s;
+  transition: all ease 0.8s;
+  transform: scaleX(1);
+  box-shadow: 0px 0px 10px;
+}
+#hero .content-container .watch-trailer:before,
+#hero .content-container .watch-trailer:after {
+  background-image: linear-gradient(to right, rgba(151, 205, 225, 0.5), #79d9ff 20%, #79d9ff 80%, rgba(151, 205, 225, 0.5));
+}
+#hero .content-container .watch-trailer:hover {
+  background-color: #282828;
+  text-shadow: 0px 0px 10px #79d9ff;
+  color: #79d9ff;
+}
+#hero .content-container .scroll-arrow {
+  position: absolute;
+  top: 92%;
+  width: 30px;
+  height: 30px;
+  left: calc(50% - 15px);
+  animation: arrow 2s infinite;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  -webkit-transition-delay: .7s;
+  -o-transition-delay: .7s;
+  transition-delay: .7s;
+  position: relative;
+  top: initial;
+  left: initial;
+  margin: 20px auto 0;
+  opacity: 0;
+  bottom: 50px;
+}
+#hero .content-container .scroll-arrow img {
+  width: 30px;
+  height: 30px;
+}
+#hero .content-container.animate .season-logo {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  opacity: 1;
+}
+#hero .content-container.animate .hero-text {
+  opacity: 1;
+  bottom: 0;
+}
+#hero .content-container.animate .watch-trailer {
+  opacity: 1;
+  bottom: 0;
+}
+#hero .content-container.animate .scroll-arrow {
+  opacity: 1;
+  bottom: 0;
+}
+html.aem-AuthorLayer-Edit #hero .hero-wrapper {
+  height: 900px;
+}
+html.aem-AuthorLayer-Edit #hero .embers-img {
+  display: none;
+}
+html.aem-AuthorLayer-Edit #hero .smoke {
+  display: none;
+}
+
+/*-------------------------embers-begins--------------------*/
+.embers-img {
+  width: 100%;
+  height: 100vh;
+  overflow-y: hidden;
+  mix-blend-mode: screen;
+}
+.embers {
+  position: absolute;
+  left: 0;
+  width: 40%;
+  height: 100%;
+  z-index: 2;
+  left: 30%;
+  top: 0;
+  opacity: 0.5;
+}
+.embers.back-row {
+  display: block;
+  z-index: 1;
+  bottom: 25%;
+}
+.flicker {
+  position: absolute;
+  bottom: 100%;
+  pointer-events: none;
+  -webkit-animation: flicker .75s linear infinite;
+  animation: flicker .75s linear infinite;
+}
+@-webkit-keyframes flicker {
+  0% {
+    -webkit-transform: translate(100px, 100vh);
+    transform: translate(100px, 100vh);
+  }
+  25% {
+    -webkit-transform: translate(-65px, 70vh);
+    transform: translate(-65px, 70vh);
+  }
+  50% {
+    -webkit-transform: translate(-140px, 40vh);
+    transform: translate(-140px, 40vh);
+  }
+  75% {
+    -webkit-transform: translate(-280px, 20vh);
+    transform: translate(-280px, 20vh);
+  }
+  100% {
+    -webkit-transform: translate(-335px, 0vh);
+    transform: translate(-335px, 0vh);
+  }
+}
+@keyframes flicker {
+  0% {
+    -webkit-transform: translate(100px, 100vh);
+    transform: translate(100px, 100vh);
+  }
+  25% {
+    -webkit-transform: translate(-65px, 70vh);
+    transform: translate(-65px, 70vh);
+  }
+  50% {
+    -webkit-transform: translate(-140px, 40vh);
+    transform: translate(-140px, 40vh);
+  }
+  75% {
+    -webkit-transform: translate(-280px, 20vh);
+    transform: translate(-280px, 20vh);
+  }
+  100% {
+    -webkit-transform: translate(-335px, 0vh);
+    transform: translate(-335px, 0vh);
+  }
+}
+.stem {
+  border-radius: 50% 50% 50% 0.83333333% 60% 40% 40%;
+  background: -o-radial-gradient(#ffd94d 20%, rgba(255, 0, 0, 0.8) 60%, rgba(255, 0, 0, 0) 100%);
+  background: radial-gradient(#ffd94d 20%, rgba(255, 0, 0, 0.8) 60%, rgba(255, 0, 0, 0) 100%);
+  -webkit-animation: stem .75s linear infinite;
+  animation: stem .75s linear infinite;
+}
+@-webkit-keyframes stem {
+  0% {
+    -webkit-transform: rotate(-35deg);
+    transform: rotate(-35deg);
+    opacity: 0;
+    height: 0px;
+    width: 0px;
+  }
+  15% {
+    -webkit-transform: rotate(-25deg);
+    transform: rotate(-25deg);
+    opacity: 1;
+    height: 40px;
+    width: 9px;
+  }
+  50% {
+    -webkit-transform: rotate(-15deg);
+    transform: rotate(-15deg);
+    opacity: 75;
+    height: 15px;
+    width: 8px;
+  }
+  75% {
+    -webkit-transform: rotate(-5deg);
+    transform: rotate(-5deg);
+    opacity: .5;
+    height: 5px;
+    width: 7px;
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+    opacity: 0;
+    height: 0px;
+    width: 7px;
+  }
+}
+@keyframes stem {
+  0% {
+    -webkit-transform: rotate(-35deg);
+    transform: rotate(-35deg);
+    opacity: 0;
+    height: 0px;
+    width: 0px;
+  }
+  15% {
+    -webkit-transform: rotate(-25deg);
+    transform: rotate(-25deg);
+    opacity: 1;
+    height: 40px;
+    width: 9px;
+  }
+  50% {
+    -webkit-transform: rotate(-15deg);
+    transform: rotate(-15deg);
+    opacity: 75;
+    height: 15px;
+    width: 8px;
+  }
+  75% {
+    -webkit-transform: rotate(-5deg);
+    transform: rotate(-5deg);
+    opacity: .5;
+    height: 5px;
+    width: 7px;
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+    opacity: 0;
+    height: 0px;
+    width: 7px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .embers-img {
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    max-height: 600px;
+  }
+  .embers {
+    width: 90%;
+    height: 50%;
+  }
+  .flicker {
+    -webkit-animation: flicker 1.5s linear infinite;
+    animation: flicker 1.5s linear infinite;
+  }
+  .stem {
+    -webkit-animation: stem 1.5s linear infinite;
+    animation: stem 1.5s linear infinite;
+  }
+  @-webkit-keyframes stem {
+    0% {
+      -webkit-transform: rotate(-35deg);
+      transform: rotate(-35deg);
+      opacity: 0;
+      height: 0px;
+      width: 0px;
+    }
+    15% {
+      -webkit-transform: rotate(-25deg);
+      transform: rotate(-25deg);
+      opacity: 1;
+      height: 20px;
+      width: 5px;
+    }
+    50% {
+      -webkit-transform: rotate(-15deg);
+      transform: rotate(-15deg);
+      opacity: 75;
+      height: 10px;
+      width: 4px;
+    }
+    75% {
+      -webkit-transform: rotate(-5deg);
+      transform: rotate(-5deg);
+      opacity: .5;
+      height: 5px;
+      width: 4px;
+    }
+    100% {
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+      opacity: 0;
+      height: 0px;
+      width: 4px;
+    }
+  }
+  @keyframes stem {
+    0% {
+      -webkit-transform: rotate(-35deg);
+      transform: rotate(-35deg);
+      opacity: 0;
+      height: 0px;
+      width: 0px;
+    }
+    15% {
+      -webkit-transform: rotate(-25deg);
+      transform: rotate(-25deg);
+      opacity: 1;
+      height: 20px;
+      width: 5px;
+    }
+    50% {
+      -webkit-transform: rotate(-15deg);
+      transform: rotate(-15deg);
+      opacity: 75;
+      height: 10px;
+      width: 4px;
+    }
+    75% {
+      -webkit-transform: rotate(-5deg);
+      transform: rotate(-5deg);
+      opacity: .5;
+      height: 5px;
+      width: 4px;
+    }
+    100% {
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+      opacity: 0;
+      height: 0px;
+      width: 4px;
+    }
+  }
+}
+.animate .flicker,
+.animate .stem {
+  -webkit-animation: none;
+  animation: none;
+}
+/*--------------smoke------------------*/
+.smoke {
+  content: "";
+  width: 300px;
+  height: 200px;
+  background-image: url("../../../../../../../../content/dam/atvi/callofduty/cod-touchui/kronos/seasons/season-2/hero/smoke-s2.png");
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: contain;
+  position: absolute;
+  -webkit-animation: 10s ease-out smoke infinite;
+  animation: 10s ease-out smoke infinite;
+  left: 40%;
+  top: 65%;
+  opacity: 0;
+  pointer-events: none;
+  -webkit-transition: all .5s;
+  -o-transition: all .5s;
+  transition: all .5s;
+}
+.smoke.two {
+  -webkit-animation: 10s ease-out smoke infinite 5s;
+  animation: 10s ease-out smoke infinite 5s;
+}
+.smoke.three {
+  -webkit-animation: 10s ease-out smoke-two infinite 2s;
+  animation: 10s ease-out smoke-two infinite 2s;
+  left: 20%;
+  top: 65%;
+}
+.smoke.four {
+  -webkit-animation: 10s ease-out smoke-two infinite 7s;
+  animation: 10s ease-out smoke-two infinite 7s;
+  left: 15%;
+  top: 65%;
+}
+.animate .smoke {
+  opacity: 0;
+  -webkit-animation: none;
+  animation: none;
+  -webkit-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
+}
+@-webkit-keyframes smoke {
+  0% {
+    -webkit-transform: rotate(0deg) scale(5) translateY(0px) translateX(80px);
+    transform: rotate(0deg) scale(5) translateY(0px) translateX(80px);
+    opacity: 0;
+  }
+  20%,
+  80% {
+    opacity: .5;
+  }
+  100% {
+    -webkit-transform: rotate(0deg) scale(5) translateY(-100px) translateX(120px);
+    transform: rotate(0deg) scale(5) translateY(-100px) translateX(120px);
+    opacity: 0;
+  }
+}
+@keyframes smoke {
+  0% {
+    -webkit-transform: rotate(0deg) scale(5) translateY(0px) translateX(80px);
+    transform: rotate(0deg) scale(5) translateY(0px) translateX(80px);
+    opacity: 0;
+  }
+  20%,
+  80% {
+    opacity: .5;
+  }
+  100% {
+    -webkit-transform: rotate(0deg) scale(5) translateY(-100px) translateX(120px);
+    transform: rotate(0deg) scale(5) translateY(-100px) translateX(120px);
+    opacity: 0;
+  }
+}
+@-webkit-keyframes smoke-two {
+  0% {
+    -webkit-transform: rotate(180deg) scale(5) translateY(0) translateX(0px);
+    transform: rotate(180deg) scale(5) translateY(0) translateX(0px);
+    opacity: 0;
+  }
+  20%,
+  80% {
+    opacity: .5;
+  }
+  100% {
+    -webkit-transform: rotate(180deg) scale(5) translateY(80px) translateX(50px);
+    transform: rotate(180deg) scale(5) translateY(80px) translateX(50px);
+    opacity: 0;
+  }
+}
+@keyframes smoke-two {
+  0% {
+    -webkit-transform: rotate(180deg) scale(5) translateY(0) translateX(0px);
+    transform: rotate(180deg) scale(5) translateY(0) translateX(0px);
+    opacity: 0;
+  }
+  20%,
+  80% {
+    opacity: .5;
+  }
+  100% {
+    -webkit-transform: rotate(180deg) scale(5) translateY(80px) translateX(50px);
+    transform: rotate(180deg) scale(5) translateY(80px) translateX(50px);
+    opacity: 0;
+  }
+}
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,700');
+.noise-gif {
+  content: "";
+  display: block;
+  width: 100vw;
+  height: 100vh;
+  opacity: .17;
+  background-image: url('../../../../../../../../content/dam/atvi/callofduty/cod-touchui/kronos/home/common/noise-gif-square-anim.gif');
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  z-index: 10;
+}
+@keyframes arrow {
+  0% {
+    -webkit-transform: translate(0, 0);
+    -moz-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    -o-transform: translate(0, 0);
+    transform: translate(0, 0);
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+    -webkit-transform: translate(0, 2px);
+    -moz-transform: translate(0, 2px);
+    -ms-transform: translate(0, 2px);
+    -o-transform: translate(0, 2px);
+    transform: translate(0, 2px);
+  }
+  50% {
+    opacity: 1;
+    -webkit-transform: translate(0, 8px);
+    -moz-transform: translate(0, 8px);
+    -ms-transform: translate(0, 8px);
+    -o-transform: translate(0, 8px);
+    transform: translate(0, 8px);
+  }
+  75%,
+  100% {
+    -webkit-transform: translate(0, 10px);
+    -moz-transform: translate(0, 10px);
+    -ms-transform: translate(0, 10px);
+    -o-transform: translate(0, 10px);
+    transform: translate(0, 10px);
+    opacity: 0;
+  }
+}
+.atvi-modal {
+  display: none;
+  opacity: 0;
+  -webkit-transition: opacity 0.5s ease;
+  -moz-transition: opacity 0.5s ease;
+  -ms-transition: opacity 0.5s ease;
+  -o-transition: opacity 0.5s ease;
+  transition: opacity 0.5s ease;
+}
+.atvi-modal.active {
+  display: block;
+  opacity: 1;
+}
+.atvi-modal .background-container {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  top: 0;
+  left: 0;
+  z-index: 9999;
+}
+.atvi-modal .button-container.close {
+  min-height: 16px;
+  padding: 12px 20px;
+  transition-property: text-shadow, background-color, border, color;
+  transition-duration: 1s;
+  position: relative;
+  background-color: #282828;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: #81898c;
+  line-height: 1.15;
+  text-transform: uppercase;
+  margin: 0 0 40px 0;
+  width: fit-content;
+  background-image: url('../../../../../../../../content/dam/atvi/callofduty/cod-touchui/kronos/home/common/global-nav-bg-mobile.png');
+  background-size: 2px;
+  box-shadow: inset 0px 0px 5px #81898c;
+  border: 1px solid #81898c;
+  cursor: pointer;
+  text-decoration: none;
+  width: 60px;
+  height: 60px;
+  padding: 0px;
+  background-color: transparent;
+  background-image: url('../../../../../../../../content/dam/atvi/callofduty/cod-touchui/kronos/home/common/blue-tile.png');
+  background-color: #242424;
+  box-shadow: inset 0px 0px 5px #597985;
+  border: 1px solid #597985;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 10000;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  display: block;
+  letter-spacing: 0;
+}
+.atvi-modal .button-container.close:after,
+.atvi-modal .button-container.close:before {
+  width: 100%;
+  content: "";
+  height: 2px;
+  display: block;
+  position: absolute;
+  background-image: linear-gradient(to right, rgba(250, 250, 250, 0.5), #ffffff 20%, #ffffff 80%, rgba(250, 250, 250, 0.5));
+  transition: all ease .8s;
+  transform: scaleX(0);
+  top: -1px;
+  left: 0;
+}
+.atvi-modal .button-container.close:after {
+  bottom: -1px;
+  top: initial;
+}
+.atvi-modal .button-container.close:before {
+  color: #b6bec0;
+  text-shadow: 0px 0px 10px #ffffff;
+}
+.atvi-modal .button-container.close:hover {
+  background-color: #627f53;
+  color: #c7cac6;
+}
+.atvi-modal .button-container.close:hover:after,
+.atvi-modal .button-container.close:hover:before {
+  -webkit-transition: all ease 0.8s;
+  -moz-transition: all ease 0.8s;
+  -ms-transition: all ease 0.8s;
+  -o-transition: all ease 0.8s;
+  transition: all ease 0.8s;
+  transform: scaleX(1);
+  box-shadow: 0px 0px 10px;
+}
+.atvi-modal .button-container.close:before,
+.atvi-modal .button-container.close:after {
+  background-image: linear-gradient(to right, rgba(151, 205, 225, 0.5), #79d9ff 20%, #79d9ff 80%, rgba(151, 205, 225, 0.5));
+}
+.atvi-modal .button-container.close:hover {
+  background-color: #282828;
+}
+.atvi-modal .button-container.close .close {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  content: "";
+  display: block;
+}
+.atvi-modal .button-container.close .close:after,
+.atvi-modal .button-container.close .close:before {
+  content: "";
+  display: block;
+  height: 1px;
+  width: 30px;
+  position: absolute;
+  background-color: #597985;
+  left: calc(50% - 15px);
+  top: 50%;
+  -webkit-transition: all ease 0.2s;
+  -moz-transition: all ease 0.2s;
+  -ms-transition: all ease 0.2s;
+  -o-transition: all ease 0.2s;
+  transition: all ease 0.2s;
+}
+.atvi-modal .button-container.close .close:before {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.atvi-modal .button-container.close .close:after {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+.atvi-modal .button-container.close .close:hover:after,
+.atvi-modal .button-container.close .close:hover:before {
+  width: 36px;
+  left: calc(50% - 18px);
+  background-color: #79d9ff;
+}
+.atvi-modal > .inner {
+  width: 100%;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  z-index: 10000;
+}
+.atvi-modal > .inner .modal-content-container .external-link-overlay {
+  display: none;
+}
+.atvi-modal > .inner .modal-content-container .controls {
+  position: relative;
+}
+.atvi-modal > .inner .modal-content-container .controls .controls-container {
+  display: block;
+}
+.atvi-modal img {
+  width: 100%;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,700');
+.noise-gif {
+  content: "";
+  display: block;
+  width: 100vw;
+  height: 100vh;
+  opacity: .17;
+  background-image: url('../../../../../../../../content/dam/atvi/callofduty/cod-touchui/kronos/home/common/noise-gif-square-anim.gif');
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  z-index: 10;
+}
+@keyframes arrow {
+  0% {
+    -webkit-transform: translate(0, 0);
+    -moz-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    -o-transform: translate(0, 0);
+    transform: translate(0, 0);
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+    -webkit-transform: translate(0, 2px);
+    -moz-transform: translate(0, 2px);
+    -ms-transform: translate(0, 2px);
+    -o-transform: translate(0, 2px);
+    transform: translate(0, 2px);
+  }
+  50% {
+    opacity: 1;
+    -webkit-transform: translate(0, 8px);
+    -moz-transform: translate(0, 8px);
+    -ms-transform: translate(0, 8px);
+    -o-transform: translate(0, 8px);
+    transform: translate(0, 8px);
+  }
+  75%,
+  100% {
+    -webkit-transform: translate(0, 10px);
+    -moz-transform: translate(0, 10px);
+    -ms-transform: translate(0, 10px);
+    -o-transform: translate(0, 10px);
+    transform: translate(0, 10px);
+    opacity: 0;
+  }
+}
+#weapons {
+  position: relative;
+  background-color: black;
+}
+#weapons .weapons-wrapper .weapons-header {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 60px;
+  color: #a59d95;
+  margin: 0px 0px 16px 0px;
+  line-height: 1.15;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 50px;
+  text-align: center;
+  position: relative;
+  bottom: 50px;
+  opacity: 0;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+@media screen and (max-width: 768px) {
+  #weapons .weapons-wrapper .weapons-header {
+    font-size: 28px;
+    letter-spacing: 1px;
+  }
+}
+#weapons .weapons-wrapper .weapons-container {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -moz-box-orient: horizontal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  opacity: 0;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  min-height: 450px;
+}
+#weapons .weapons-wrapper .weapons-container .weapon {
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  position: relative;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  margin: 20px;
+}
+#weapons .weapons-wrapper .weapons-container .weapon:before {
+  display: block;
+  content: '';
+  width: 100%;
+  height: 0;
+  padding-top: 54.54545455%;
+}
+@media screen and (max-width: 768px) {
+  #weapons .weapons-wrapper .weapons-container {
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+}
+#weapons .weapons-wrapper .content-container {
+  width: 50%;
+  position: absolute;
+  top: 5%;
+  left: 5%;
+}
+#weapons .weapons-wrapper .content-container .weapon-name {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 60px;
+  color: #a59d95;
+  margin: 0px 0px 16px 0px;
+  line-height: 1.15;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 30px;
+}
+@media screen and (max-width: 768px) {
+  #weapons .weapons-wrapper .content-container .weapon-name {
+    font-size: 28px;
+    letter-spacing: 1px;
+  }
+}
+#weapons .weapons-wrapper .content-container .weapon-description {
+  font-size: 24px;
+  font-weight: 300;
+}
+@media screen and (max-width: 768px) {
+  #weapons .weapons-wrapper .content-container .weapon-name {
+    font-size: 18px;
+  }
+  #weapons .weapons-wrapper .content-container .weapon-description {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 480px) {
+  #weapons .weapons-wrapper .content-container {
+    width: 90%;
+  }
+}
+#weapons .weapons-wrapper .border {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+}
+#weapons .weapons-wrapper .border.border-top {
+  border-top: 1px white solid;
+  top: 0;
+}
+#weapons .weapons-wrapper .border.border-bottom {
+  border-bottom: 1px white solid;
+  bottom: 0;
+}
+#weapons .weapons-wrapper .border.right {
+  right: 0;
+  border-right: 1px white solid;
+}
+#weapons .weapons-wrapper .border.left {
+  left: 0;
+  border-left: 1px white solid;
+}
+#weapons.animate .weapons-wrapper .weapons-header {
+  opacity: 1;
+  bottom: 0;
+}
+#weapons.animate .weapons-wrapper .weapons-container {
+  opacity: 1;
+  -webkit-transition-delay: .2s;
+  -o-transition-delay: .2s;
+  transition-delay: 0.2s;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,700');
+.noise-gif {
+  content: "";
+  display: block;
+  width: 100vw;
+  height: 100vh;
+  opacity: .17;
+  background-image: url('../../../../../../../../content/dam/atvi/callofduty/cod-touchui/kronos/home/common/noise-gif-square-anim.gif');
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  z-index: 10;
+}
+@keyframes arrow {
+  0% {
+    -webkit-transform: translate(0, 0);
+    -moz-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    -o-transform: translate(0, 0);
+    transform: translate(0, 0);
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+    -webkit-transform: translate(0, 2px);
+    -moz-transform: translate(0, 2px);
+    -ms-transform: translate(0, 2px);
+    -o-transform: translate(0, 2px);
+    transform: translate(0, 2px);
+  }
+  50% {
+    opacity: 1;
+    -webkit-transform: translate(0, 8px);
+    -moz-transform: translate(0, 8px);
+    -ms-transform: translate(0, 8px);
+    -o-transform: translate(0, 8px);
+    transform: translate(0, 8px);
+  }
+  75%,
+  100% {
+    -webkit-transform: translate(0, 10px);
+    -moz-transform: translate(0, 10px);
+    -ms-transform: translate(0, 10px);
+    -o-transform: translate(0, 10px);
+    transform: translate(0, 10px);
+    opacity: 0;
+  }
+}
+.gunfight-maps {
+  background-color: black;
+}
+#gunfightMaps {
+  background-color: black;
+  position: relative;
+  -webkit-transition: opacity 0.8s ease;
+  -moz-transition: opacity 0.8s ease;
+  -ms-transition: opacity 0.8s ease;
+  -o-transition: opacity 0.8s ease;
+  transition: opacity 0.8s ease;
+}
+#gunfightMaps .header {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 60px;
+  color: #a59d95;
+  margin: 0px 0px 16px 0px;
+  line-height: 1.15;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 50px;
+  text-align: center;
+  position: relative;
+  bottom: 50px;
+  opacity: 0;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+@media screen and (max-width: 768px) {
+  #gunfightMaps .header {
+    font-size: 28px;
+    letter-spacing: 1px;
+  }
+}
+#gunfightMaps .allPillars {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -moz-box-orient: horizontal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  opacity: 0;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+@media screen and (max-width: 972px) {
+  #gunfightMaps .allPillars {
+    display: none;
+  }
+}
+#gunfightMaps .allPillars .pillar {
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-transition: all ease 1s;
+  -moz-transition: all ease 1s;
+  -ms-transition: all ease 1s;
+  -o-transition: all ease 1s;
+  transition: all ease 1s;
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+}
+@media screen and (max-width: 768px) {
+  #gunfightMaps .allPillars .pillar {
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    width: 100%;
+    min-height: 50vh;
+  }
+}
+#gunfightMaps .allPillars .pillar p {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 100;
+  letter-spacing: .03em;
+  -webkit-transition: all ease 1s;
+  -moz-transition: all ease 1s;
+  -ms-transition: all ease 1s;
+  -o-transition: all ease 1s;
+  transition: all ease 1s;
+}
+#gunfightMaps .allPillars .pillar .icon,
+#gunfightMaps .allPillars .pillar .title {
+  width: 100%;
+}
+#gunfightMaps .allPillars .pillar .icon {
+  background-color: #000;
+  height: 100%;
+  width: 100%;
+  -webkit-transition: opacity ease 1s;
+  -moz-transition: opacity ease 1s;
+  -ms-transition: opacity ease 1s;
+  -o-transition: opacity ease 1s;
+  transition: opacity ease 1s;
+  /*&:after {
+                    content: "";
+                    width: 100%;
+                    height: 50%;
+                    position: absolute;
+                    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1) 60%);
+                    display: block;
+                    bottom: 0;
+                    left: 0;
+                    z-index: 0;
+                    opacity: 1;
+                    transition: all ease .5s;
+                }
+
+                @media screen and (max-width: 1280px) {
+                    &:after {
+                        content: '';
+                        position: absolute;
+                        bottom: 0;
+                        height:5em;
+                        width: 100%;
+                        background-image: linear-gradient(to bottom, 
+                            rgba(0,0,0,0), 
+                            #000000 60%);
+                        z-index: 0;
+                    }
+                }
+
+                @media screen and (max-width: 768px) {
+                    &:after {bottom: 0;}
+                }
+
+                @media screen and (max-width: 350px) {
+                    &:after {
+						height: 15em;
+                    }
+                }*/
+}
+#gunfightMaps .allPillars .pillar .icon img {
+  width: 100%;
+  -webkit-transition: all 0.8s ease;
+  -moz-transition: all 0.8s ease;
+  -ms-transition: all 0.8s ease;
+  -o-transition: all 0.8s ease;
+  transition: all 0.8s ease;
+}
+#gunfightMaps .allPillars .pillar .description {
+  width: 80%;
+  margin-left: 5vw;
+  position: absolute;
+  bottom: 0;
+  z-index: 50;
+}
+#gunfightMaps .allPillars .pillar .description h1 {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 60px;
+  color: #a59d95;
+  margin: 0px 0px 16px 0px;
+  line-height: 1.15;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 50px;
+  text-align: center;
+  position: relative;
+  bottom: 50px;
+  opacity: 0;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  padding: 0;
+  width: 100%;
+  font-size: 25px;
+  text-align: left;
+  min-height: 65px;
+  opacity: 1;
+  margin-bottom: 0;
+}
+@media screen and (max-width: 768px) {
+  #gunfightMaps .allPillars .pillar .description h1 {
+    font-size: 28px;
+    letter-spacing: 1px;
+  }
+}
+@media screen and (max-width: 768px) {
+  #gunfightMaps .allPillars .pillar .description h1 {
+    font-size: 28px;
+    font-weight: 700;
+  }
+}
+#gunfightMaps .allPillars .pillar .description p {
+  text-align: left;
+  font-size: 20px;
+  font-weight: 300;
+  width: 50vw;
+  max-width: 500px;
+  font-weight: 200;
+}
+@media screen and (max-width: 1480px) {
+  #gunfightMaps .allPillars .pillar .description p {
+    width: 30vw;
+  }
+}
+@media screen and (max-width: 768px) {
+  #gunfightMaps .allPillars .pillar .description p {
+    opacity: 1 !important;
+    width: 80%;
+  }
+}
+@media screen and (max-width: 1280px) {
+  #gunfightMaps .allPillars .pillar .description {
+    margin-left: 5%;
+  }
+}
+#gunfightMaps .allPillars .pillar:hover .icon img {
+  opacity: 1;
+  left: 0;
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+}
+#gunfightMaps .allPillars .pillar:hover .description p {
+  opacity: 1;
+}
+#gunfightMaps .allPillars:hover .pillar:not(:hover) .icon {
+  opacity: .5;
+}
+@media screen and (max-width: 768px) {
+  #gunfightMaps .allPillars:hover {
+    opacity: 1;
+  }
+}
+#gunfightMaps.animate .header {
+  opacity: 1;
+  bottom: 0;
+}
+#gunfightMaps.animate .allPillars {
+  opacity: 1;
+  -webkit-transition-delay: .2s;
+  -o-transition-delay: .2s;
+  transition-delay: 0.2s;
+}
+html.aem-AuthorLayer-Edit #gunfightMaps {
+  opacity: 1 !important;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,700');
+.noise-gif {
+  content: "";
+  display: block;
+  width: 100vw;
+  height: 100vh;
+  opacity: .17;
+  background-image: url('../../../../../../../../content/dam/atvi/callofduty/cod-touchui/kronos/home/common/noise-gif-square-anim.gif');
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  z-index: 10;
+}
+@keyframes arrow {
+  0% {
+    -webkit-transform: translate(0, 0);
+    -moz-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    -o-transform: translate(0, 0);
+    transform: translate(0, 0);
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+    -webkit-transform: translate(0, 2px);
+    -moz-transform: translate(0, 2px);
+    -ms-transform: translate(0, 2px);
+    -o-transform: translate(0, 2px);
+    transform: translate(0, 2px);
+  }
+  50% {
+    opacity: 1;
+    -webkit-transform: translate(0, 8px);
+    -moz-transform: translate(0, 8px);
+    -ms-transform: translate(0, 8px);
+    -o-transform: translate(0, 8px);
+    transform: translate(0, 8px);
+  }
+  75%,
+  100% {
+    -webkit-transform: translate(0, 10px);
+    -moz-transform: translate(0, 10px);
+    -ms-transform: translate(0, 10px);
+    -o-transform: translate(0, 10px);
+    transform: translate(0, 10px);
+    opacity: 0;
+  }
+}
+#gunfightMaps .mobile-pillars {
+  max-height: 500px;
+}
+#gunfightMaps .mobile-pillars .pillars-carousel {
+  display: none;
+  overflow: hidden;
+}
+#gunfightMaps .mobile-pillars .pillars-carousel .slick-list {
+  overflow: hidden;
+}
+#gunfightMaps .mobile-pillars .pillars-carousel .pillar {
+  /*&:after {
+                    content: '';
+                    position: absolute;
+                    bottom: 0;
+                    height: 25em;
+                    width: 100%;
+                    background-image: linear-gradient(to bottom, 
+                        rgba(0,0,0,0), 
+                        #000000 65%);
+                    z-index: 0;
+                }*/
+}
+#gunfightMaps .mobile-pillars .pillars-carousel .pillar .icon {
+  text-align: center;
+  overflow: hidden;
+}
+#gunfightMaps .mobile-pillars .pillars-carousel .pillar img {
+  width: 100%;
+  height: 100%;
+}
+@media screen and (max-width: 480px) {
+  #gunfightMaps .mobile-pillars .pillars-carousel .pillar img {
+    width: initial;
+    margin-left: -60%;
+  }
+}
+#gunfightMaps .mobile-pillars .pillars-carousel .pillar .description {
+  width: 80%;
+  margin-left: 5vw;
+  position: absolute;
+  bottom: 15%;
+  z-index: 50;
+}
+#gunfightMaps .mobile-pillars .pillars-carousel .pillar .description h1 {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 60px;
+  color: #a59d95;
+  margin: 0px 0px 16px 0px;
+  line-height: 1.15;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  width: 100%;
+  font-size: 28px;
+  text-align: left;
+  min-height: 70px;
+  margin-bottom: 0;
+}
+@media screen and (max-width: 768px) {
+  #gunfightMaps .mobile-pillars .pillars-carousel .pillar .description h1 {
+    font-size: 28px;
+    letter-spacing: 1px;
+  }
+}
+#gunfightMaps .mobile-pillars .pillars-carousel .pillar .description p {
+  text-align: left;
+  font-size: 20px;
+  font-weight: 300;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  width: 100%;
+  max-width: 500px;
+}
+@media screen and (max-width: 972px) {
+  #gunfightMaps .mobile-pillars .pillars-carousel {
+    display: block;
+  }
+}
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,700');
+.noise-gif {
+  content: "";
+  display: block;
+  width: 100vw;
+  height: 100vh;
+  opacity: .17;
+  background-image: url('../../../../../../../../content/dam/atvi/callofduty/cod-touchui/kronos/home/common/noise-gif-square-anim.gif');
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  z-index: 10;
+}
+@keyframes arrow {
+  0% {
+    -webkit-transform: translate(0, 0);
+    -moz-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    -o-transform: translate(0, 0);
+    transform: translate(0, 0);
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+    -webkit-transform: translate(0, 2px);
+    -moz-transform: translate(0, 2px);
+    -ms-transform: translate(0, 2px);
+    -o-transform: translate(0, 2px);
+    transform: translate(0, 2px);
+  }
+  50% {
+    opacity: 1;
+    -webkit-transform: translate(0, 8px);
+    -moz-transform: translate(0, 8px);
+    -ms-transform: translate(0, 8px);
+    -o-transform: translate(0, 8px);
+    transform: translate(0, 8px);
+  }
+  75%,
+  100% {
+    -webkit-transform: translate(0, 10px);
+    -moz-transform: translate(0, 10px);
+    -ms-transform: translate(0, 10px);
+    -o-transform: translate(0, 10px);
+    transform: translate(0, 10px);
+    opacity: 0;
+  }
+}
+/* Arrows */
+.slick-prev,
+.slick-next {
+  position: absolute;
+  display: block;
+  width: 75px;
+  height: 75px;
+  background: transparent;
+  line-height: 0px;
+  font-size: 0px;
+  cursor: pointer;
+  color: transparent;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+  -moz-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  -o-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  padding: 0;
+  border: none;
+  outline: none;
+  z-index: 10;
+}
+.slick-prev.slick-disabled:before,
+.slick-next.slick-disabled:before {
+  opacity: 0.25;
+}
+.slick-next {
+  right: 10px;
+  width: 0;
+  height: 0;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  border-left: 30px solid #a59d95;
+}
+.slick-prev {
+  left: 10px;
+  width: 0;
+  height: 0;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  border-right: 30px solid #a59d95;
+}
+.slick-prev:before,
+.slick-next:before {
+  font-size: 20px;
+  line-height: 1;
+  color: #ffffff;
+  opacity: 0.75;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+/* Dots */
+.slick-dotted .slick-slider {
+  margin-bottom: 30px;
+}
+.slick-dots {
+  position: absolute;
+  bottom: -50px;
+  list-style: none;
+  display: block;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  z-index: 50;
+}
+.slick-dots li {
+  position: relative;
+  display: inline-block;
+  height: 15px;
+  width: 15px;
+  margin: 0 5px;
+  padding: 0;
+  cursor: pointer;
+}
+.slick-dots li button {
+  border: 0;
+  background: transparent;
+  display: block;
+  height: 15px;
+  width: 15px;
+  outline: none;
+  line-height: 0px;
+  font-size: 0px;
+  color: transparent;
+  padding: 5px;
+  cursor: pointer;
+  /*&:before {
+                position: absolute;
+                top: 0;
+                left: 0;
+                content: @slick-dot-character;
+                width: 20px;
+                height: 20px;
+                font-size: @slick-dot-size;
+                line-height: 20px;
+                text-align: center;
+                color: @slick-dot-color;
+                opacity: @slick-opacity-not-active;
+                -webkit-font-smoothing: antialiased;
+                -moz-osx-font-smoothing: grayscale;
+            }*/
+}
+.slick-dots li button:hover,
+.slick-dots li button:focus {
+  outline: none;
+}
+.slick-dots li button:hover:before,
+.slick-dots li button:focus:before {
+  opacity: 1;
+}
+.slick-dots li.slick-active button:before {
+  color: #000000;
+  opacity: 0.75;
+}
+/* Slider */
+.slick-slider {
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -ms-touch-action: pan-y;
+  touch-action: pan-y;
+  -webkit-tap-highlight-color: transparent;
+}
+.slick-list {
+  position: relative;
+  display: block;
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+.slick-list:focus {
+  outline: none;
+}
+.slick-list.dragging {
+  cursor: pointer;
+  cursor: hand;
+}
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+.slick-track {
+  position: relative;
+  left: 0;
+  top: 0;
+  display: block;
+}
+.slick-track:before,
+.slick-track:after {
+  content: "";
+  display: table;
+}
+.slick-track:after {
+  content: "";
+  clear: both;
+  height: 0;
+  visibility: hidden;
+  display: block;
+}
+.slick-loading .slick-track {
+  visibility: hidden;
+}
+.slick-slide {
+  float: left;
+  height: 100%;
+  margin: 0;
+  min-height: 0px;
+  position: relative;
+  display: none;
+}
+[dir="rtl"] .slick-slide {
+  float: right;
+}
+.slick-slide img {
+  display: block;
+}
+.slick-slide.slick-loading img {
+  display: none;
+}
+.slick-slide.dragging img {
+  pointer-events: none;
+}
+.slick-initialized .slick-slide {
+  display: block;
+}
+.slick-loading .slick-slide {
+  visibility: hidden;
+}
+.slick-vertical .slick-slide {
+  display: block;
+  height: auto;
+  border: 1px solid transparent;
+}
+.slick-slide:not(.slick-active):before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 5;
+}
+.slick-slide:focus {
+  outline: none;
+}
+.slick-arrow.slick-hidden {
+  display: none;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,700');
+.noise-gif {
+  content: "";
+  display: block;
+  width: 100vw;
+  height: 100vh;
+  opacity: .17;
+  background-image: url('../../../../../../../../content/dam/atvi/callofduty/cod-touchui/kronos/home/common/noise-gif-square-anim.gif');
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  z-index: 10;
+}
+@keyframes arrow {
+  0% {
+    -webkit-transform: translate(0, 0);
+    -moz-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    -o-transform: translate(0, 0);
+    transform: translate(0, 0);
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+    -webkit-transform: translate(0, 2px);
+    -moz-transform: translate(0, 2px);
+    -ms-transform: translate(0, 2px);
+    -o-transform: translate(0, 2px);
+    transform: translate(0, 2px);
+  }
+  50% {
+    opacity: 1;
+    -webkit-transform: translate(0, 8px);
+    -moz-transform: translate(0, 8px);
+    -ms-transform: translate(0, 8px);
+    -o-transform: translate(0, 8px);
+    transform: translate(0, 8px);
+  }
+  75%,
+  100% {
+    -webkit-transform: translate(0, 10px);
+    -moz-transform: translate(0, 10px);
+    -ms-transform: translate(0, 10px);
+    -o-transform: translate(0, 10px);
+    transform: translate(0, 10px);
+    opacity: 0;
+  }
+}
+#groundwar {
+  background-color: #000;
+}
+#groundwar.textimage-container {
+  -webkit-transition: all 0.8s;
+  -moz-transition: all 0.8s;
+  -ms-transition: all 0.8s;
+  -o-transition: all 0.8s;
+  transition: all 0.8s;
+}
+#groundwar.textimage-container .textimage-bg {
+  height: 100%;
+  background-position: right center;
+}
+#groundwar.textimage-container .bg-container {
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  -webkit-transition: opacity 0.5s ease-in-out;
+  -moz-transition: opacity 0.5s ease-in-out;
+  -ms-transition: opacity 0.5s ease-in-out;
+  -o-transition: opacity 0.5s ease-in-out;
+  transition: opacity 0.5s ease-in-out;
+  position: relative;
+}
+#groundwar.textimage-container .bg-container:before {
+  display: block;
+  content: '';
+  width: 100%;
+  height: 0;
+  padding-top: 36.45833333%;
+}
+#groundwar.textimage-container .bg-container .textimage-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+#groundwar.textimage-container .bg-container .mobile {
+  display: none;
+}
+@media screen and (max-width: 1024px) {
+  #groundwar.textimage-container .bg-container {
+    position: relative;
+  }
+  #groundwar.textimage-container .bg-container .desktop {
+    display: none;
+  }
+  #groundwar.textimage-container .bg-container .mobile {
+    display: block;
+  }
+  #groundwar.textimage-container .bg-container:before {
+    display: block;
+    content: '';
+    width: 100%;
+    height: 0;
+    padding-top: 145.83333333%;
+  }
+}
+#groundwar.textimage-container {
+  position: relative;
+  width: 100%;
+}
+#groundwar.textimage-container .header {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 60px;
+  color: #a59d95;
+  margin: 0px 0px 16px 0px;
+  line-height: 1.15;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 50px;
+  text-align: center;
+  position: relative;
+  bottom: 50px;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+@media screen and (max-width: 768px) {
+  #groundwar.textimage-container .header {
+    font-size: 28px;
+    letter-spacing: 1px;
+  }
+}
+#groundwar.textimage-container .header-title {
+  position: absolute;
+  bottom: 20%;
+  margin-left: 5vw;
+  -webkit-transform: translate(0, -50%);
+  -moz-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  -o-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  width: 30vw;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+#groundwar.textimage-container .header-title h1 {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 60px;
+  padding: 50px;
+  text-align: center;
+  position: relative;
+  bottom: 50px;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  font-size: 40px;
+  color: #a59d95;
+  margin: 0px 0px 16px 0px;
+  padding: 0;
+  text-align: left;
+  line-height: 1.15;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  opacity: 1;
+}
+@media screen and (max-width: 768px) {
+  #groundwar.textimage-container .header-title h1 {
+    font-size: 28px;
+    letter-spacing: 1px;
+  }
+}
+#groundwar.textimage-container .desc-container {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -10px;
+}
+#groundwar.textimage-container .desc {
+  margin-left: 10px;
+}
+#groundwar.textimage-container .desc p {
+  font-size: 20px;
+  text-transform: initial;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  color: #878076;
+  line-height: 1.15;
+}
+@media screen and (max-width: 1250px) {
+  #groundwar.textimage-container .header-title h1 {
+    font-size: 48px;
+  }
+  #groundwar.textimage-container .desc p {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  #groundwar.textimage-container .header-title {
+    -webkit-transform: translate(0, 0);
+    -moz-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    -o-transform: translate(0, 0);
+    transform: translate(0, 0);
+    width: 80vw;
+  }
+  #groundwar.textimage-container .header-title h1 {
+    font-size: 28px;
+    letter-spacing: 1px;
+  }
+  #groundwar.textimage-container .desc p {
+    text-transform: initial;
+  }
+}
+#groundwar.animate .header {
+  opacity: 1;
+  bottom: 0;
+}
+#groundwar.animate .bg-container {
+  opacity: 1;
+  -webkit-transition-delay: .2s;
+  -o-transition-delay: .2s;
+  transition-delay: 0.2s;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,700');
+.noise-gif {
+  content: "";
+  display: block;
+  width: 100vw;
+  height: 100vh;
+  opacity: .17;
+  background-image: url('../../../../../../../../content/dam/atvi/callofduty/cod-touchui/kronos/home/common/noise-gif-square-anim.gif');
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  z-index: 10;
+}
+@keyframes arrow {
+  0% {
+    -webkit-transform: translate(0, 0);
+    -moz-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    -o-transform: translate(0, 0);
+    transform: translate(0, 0);
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+    -webkit-transform: translate(0, 2px);
+    -moz-transform: translate(0, 2px);
+    -ms-transform: translate(0, 2px);
+    -o-transform: translate(0, 2px);
+    transform: translate(0, 2px);
+  }
+  50% {
+    opacity: 1;
+    -webkit-transform: translate(0, 8px);
+    -moz-transform: translate(0, 8px);
+    -ms-transform: translate(0, 8px);
+    -o-transform: translate(0, 8px);
+    transform: translate(0, 8px);
+  }
+  75%,
+  100% {
+    -webkit-transform: translate(0, 10px);
+    -moz-transform: translate(0, 10px);
+    -ms-transform: translate(0, 10px);
+    -o-transform: translate(0, 10px);
+    transform: translate(0, 10px);
+    opacity: 0;
+  }
+}
+#spec-ops {
+  background-color: #000;
+}
+#spec-ops.textimage-container {
+  -webkit-transition: all 0.8s;
+  -moz-transition: all 0.8s;
+  -ms-transition: all 0.8s;
+  -o-transition: all 0.8s;
+  transition: all 0.8s;
+  /*&.anim-textimage {
+        opacity: 1;
+    }*/
+}
+#spec-ops.textimage-container .textimage-bg {
+  height: 100%;
+  background-position: right center;
+}
+#spec-ops.textimage-container .bg-container {
+  width: 100%;
+}
+#spec-ops.textimage-container .bg-container .mobile {
+  display: none;
+}
+@media screen and (max-width: 1024px) {
+  #spec-ops.textimage-container .bg-container .desktop {
+    display: none;
+  }
+  #spec-ops.textimage-container .bg-container .mobile {
+    display: block;
+  }
+}
+#spec-ops.textimage-container {
+  position: relative;
+  width: 100%;
+  height: 30vw;
+  min-height: 450px;
+  overflow-x: hidden;
+  opacity: 1;
+}
+#spec-ops.textimage-container .bg-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  z-index: 0;
+}
+#spec-ops.textimage-container .header-title {
+  position: absolute;
+  top: 50%;
+  left: calc(10%);
+  -webkit-transform: translate(0, -50%);
+  -moz-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  -o-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  width: 30vw;
+  pointer-events: none;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+#spec-ops.textimage-container .header-title h1 {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 60px;
+  font-size: 40px;
+  color: #a59d95;
+  margin: 0px 0px 16px 0px;
+  line-height: 1.15;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+@media screen and (max-width: 768px) {
+  #spec-ops.textimage-container .header-title h1 {
+    font-size: 28px;
+    letter-spacing: 1px;
+  }
+}
+#spec-ops.textimage-container .desc-container {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -10px;
+}
+#spec-ops.textimage-container .desc {
+  margin-left: 10px;
+}
+#spec-ops.textimage-container .desc p {
+  font-size: 20px;
+  text-transform: initial;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  color: #878076;
+  line-height: 1.15;
+}
+#spec-ops.textimage-container.right-align .header-title {
+  left: initial;
+  right: calc(10%);
+}
+@media screen and (max-width: 1250px) {
+  #spec-ops.textimage-container .header-title h1 {
+    font-size: 48px;
+  }
+  #spec-ops.textimage-container .desc p {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  #spec-ops.textimage-container {
+    width: 100vw;
+    height: 100vh;
+  }
+  #spec-ops.textimage-container .header-title {
+    top: unset;
+    bottom: 140px;
+    -webkit-transform: translate(0, 0);
+    -moz-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    -o-transform: translate(0, 0);
+    transform: translate(0, 0);
+    width: 80vw;
+  }
+  #spec-ops.textimage-container .header-title h1 {
+    font-size: 28px;
+    letter-spacing: 1px;
+  }
+  #spec-ops.textimage-container .desc p {
+    text-transform: initial;
+  }
+}
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,700');
+.noise-gif {
+  content: "";
+  display: block;
+  width: 100vw;
+  height: 100vh;
+  opacity: .17;
+  background-image: url('../../../../../../../../content/dam/atvi/callofduty/cod-touchui/kronos/home/common/noise-gif-square-anim.gif');
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  z-index: 10;
+}
+@keyframes arrow {
+  0% {
+    -webkit-transform: translate(0, 0);
+    -moz-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    -o-transform: translate(0, 0);
+    transform: translate(0, 0);
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+    -webkit-transform: translate(0, 2px);
+    -moz-transform: translate(0, 2px);
+    -ms-transform: translate(0, 2px);
+    -o-transform: translate(0, 2px);
+    transform: translate(0, 2px);
+  }
+  50% {
+    opacity: 1;
+    -webkit-transform: translate(0, 8px);
+    -moz-transform: translate(0, 8px);
+    -ms-transform: translate(0, 8px);
+    -o-transform: translate(0, 8px);
+    transform: translate(0, 8px);
+  }
+  75%,
+  100% {
+    -webkit-transform: translate(0, 10px);
+    -moz-transform: translate(0, 10px);
+    -ms-transform: translate(0, 10px);
+    -o-transform: translate(0, 10px);
+    transform: translate(0, 10px);
+    opacity: 0;
+  }
+}
+#battlepass {
+  position: relative;
+}
+#battlepass:before {
+  display: block;
+  content: '';
+  width: 100%;
+  height: 0;
+  padding-top: 41.66666667%;
+}
+@media screen and (max-width: 1024px) {
+  #battlepass {
+    position: relative;
+  }
+  #battlepass:before {
+    display: block;
+    content: '';
+    width: 100%;
+    height: 0;
+    padding-top: 87.890625%;
+  }
+}
+@media screen and (max-width: 768px) {
+  #battlepass {
+    position: relative;
+  }
+  #battlepass:before {
+    display: block;
+    content: '';
+    width: 100%;
+    height: 0;
+    padding-top: 135.41666667%;
+  }
+}
+@media screen and (max-width: 480px) {
+  #battlepass {
+    position: relative;
+  }
+  #battlepass:before {
+    display: block;
+    content: '';
+    width: 100%;
+    height: 0;
+    padding-top: 171.875%;
+  }
+}
+#battlepass .bp-wrapper .background-container .bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+#battlepass .bp-wrapper .background-container .bg.mobile {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  #battlepass .bp-wrapper .background-container .bg.mobile {
+    display: block;
+  }
+  #battlepass .bp-wrapper .background-container .bg.desktop {
+    display: none;
+  }
+}
+#battlepass .bp-wrapper .content-container {
+  position: absolute;
+  width: 50%;
+  max-width: 650px;
+  margin-left: 5vw;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+  -moz-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  -o-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+}
+#battlepass .bp-wrapper .content-container .header {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 60px;
+  color: #a59d95;
+  margin: 0px 0px 16px 0px;
+  line-height: 1.15;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+@media screen and (max-width: 768px) {
+  #battlepass .bp-wrapper .content-container .header {
+    font-size: 28px;
+    letter-spacing: 1px;
+  }
+}
+#battlepass .bp-wrapper .content-container .sku-items .bullet-item {
+  position: relative;
+  margin-bottom: 5px;
+}
+#battlepass .bp-wrapper .content-container .sku-items .bullet-item p {
+  padding-left: 16px;
+}
+#battlepass .bp-wrapper .content-container .sku-items .bullet-item:before {
+  content: ">";
+  position: absolute;
+}
+#battlepass .bp-wrapper .content-container .cta-container {
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  -webkit-box-orient: horizontal;
+  -moz-box-orient: horizontal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  display: -webkit-box;
+  display: flex;
+  justify-content: space-between;
+  width: 55%;
+}
+@media screen and (max-width: 768px) {
+  #battlepass .bp-wrapper .content-container .cta-container {
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 20px;
+  }
+}
+#battlepass .bp-wrapper .content-container .cta {
+  min-height: 45px;
+  margin: 40px 10px 0 0;
+}
+@media screen and (max-width: 768px) {
+  #battlepass .bp-wrapper .content-container .cta {
+    margin: 0;
+  }
+}
+#battlepass .bp-wrapper .content-container .cta a {
+  min-height: 16px;
+  padding: 12px 20px;
+  transition-property: text-shadow, background-color, border, color;
+  transition-duration: 1s;
+  position: relative;
+  background-color: #282828;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: #81898c;
+  line-height: 1.15;
+  text-transform: uppercase;
+  margin: 0 0 40px 0;
+  width: fit-content;
+  background-image: url('../../../../../../../../content/dam/atvi/callofduty/cod-touchui/kronos/home/common/global-nav-bg-mobile.png');
+  background-size: 2px;
+  box-shadow: inset 0px 0px 5px #81898c;
+  border: 1px solid #81898c;
+  cursor: pointer;
+  text-decoration: none;
+  text-shadow: 0px 0px 0px #97cde1;
+  background-color: transparent;
+  background-image: url('../../../../../../../../content/dam/atvi/callofduty/cod-touchui/kronos/home/common/blue-tile.png');
+  background-color: #242424;
+  color: #94bbc2;
+  box-shadow: inset 0px 0px 5px #597985;
+  border: 1px solid #597985;
+  display: block;
+  min-width: 150px;
+  text-align: center;
+}
+#battlepass .bp-wrapper .content-container .cta a:after,
+#battlepass .bp-wrapper .content-container .cta a:before {
+  width: 100%;
+  content: "";
+  height: 2px;
+  display: block;
+  position: absolute;
+  background-image: linear-gradient(to right, rgba(250, 250, 250, 0.5), #ffffff 20%, #ffffff 80%, rgba(250, 250, 250, 0.5));
+  transition: all ease .8s;
+  transform: scaleX(0);
+  top: -1px;
+  left: 0;
+}
+#battlepass .bp-wrapper .content-container .cta a:after {
+  bottom: -1px;
+  top: initial;
+}
+#battlepass .bp-wrapper .content-container .cta a:before {
+  color: #b6bec0;
+  text-shadow: 0px 0px 10px #ffffff;
+}
+#battlepass .bp-wrapper .content-container .cta a:hover {
+  background-color: #627f53;
+  color: #c7cac6;
+}
+#battlepass .bp-wrapper .content-container .cta a:hover:after,
+#battlepass .bp-wrapper .content-container .cta a:hover:before {
+  -webkit-transition: all ease 0.8s;
+  -moz-transition: all ease 0.8s;
+  -ms-transition: all ease 0.8s;
+  -o-transition: all ease 0.8s;
+  transition: all ease 0.8s;
+  transform: scaleX(1);
+  box-shadow: 0px 0px 10px;
+}
+#battlepass .bp-wrapper .content-container .cta a:before,
+#battlepass .bp-wrapper .content-container .cta a:after {
+  background-image: linear-gradient(to right, rgba(151, 205, 225, 0.5), #79d9ff 20%, #79d9ff 80%, rgba(151, 205, 225, 0.5));
+}
+#battlepass .bp-wrapper .content-container .cta a:hover {
+  background-color: #282828;
+  text-shadow: 0px 0px 10px #79d9ff;
+  color: #79d9ff;
+}
+@media screen and (max-width: 768px) {
+  #battlepass .bp-wrapper .content-container .cta a {
+    margin: 0 0 15px 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  #battlepass .bp-wrapper .content-container {
+    width: 75%;
+    top: 70%;
+  }
+}
+
+@media screen and (max-width: 1120px) {
+  html:lang(fr) #battlepass {
+    position: relative;
+  }
+  html:lang(fr) #battlepass:before {
+    display: block;
+    content: '';
+    width: 100%;
+    height: 0;
+    padding-top: 87.890625%;
+  }
+}
+@media screen and (max-width: 768px) {
+  html:lang(fr) #battlepass {
+    position: relative;
+    min-height: 600px;
+  }
+}
+@media screen and (max-width: 1080px) {
+  html:lang(de) #battlepass,
+  html:lang(ru) #battlepass,
+  html:lang(es) #battlepass {
+    position: relative;
+  }
+  html:lang(de) #battlepass:before,
+  html:lang(ru) #battlepass:before,
+  html:lang(es) #battlepass:before {
+    display: block;
+    content: '';
+    width: 100%;
+    height: 0;
+    padding-top: 87.890625%;
+  }
+}
+@media screen and (max-width: 768px) {
+  html:lang(de) #battlepass,
+  html:lang(ru) #battlepass,
+  html:lang(es) #battlepass {
+    position: relative;
+    min-height: 600px;
+  }
+}
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,700');
+.noise-gif {
+  content: "";
+  display: block;
+  width: 100vw;
+  height: 100vh;
+  opacity: .17;
+  background-image: url('../../../../../../../../content/dam/atvi/callofduty/cod-touchui/kronos/home/common/noise-gif-square-anim.gif');
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  z-index: 10;
+}
+@keyframes arrow {
+  0% {
+    -webkit-transform: translate(0, 0);
+    -moz-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    -o-transform: translate(0, 0);
+    transform: translate(0, 0);
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+    -webkit-transform: translate(0, 2px);
+    -moz-transform: translate(0, 2px);
+    -ms-transform: translate(0, 2px);
+    -o-transform: translate(0, 2px);
+    transform: translate(0, 2px);
+  }
+  50% {
+    opacity: 1;
+    -webkit-transform: translate(0, 8px);
+    -moz-transform: translate(0, 8px);
+    -ms-transform: translate(0, 8px);
+    -o-transform: translate(0, 8px);
+    transform: translate(0, 8px);
+  }
+  75%,
+  100% {
+    -webkit-transform: translate(0, 10px);
+    -moz-transform: translate(0, 10px);
+    -ms-transform: translate(0, 10px);
+    -o-transform: translate(0, 10px);
+    transform: translate(0, 10px);
+    opacity: 0;
+  }
+}
+.traditional-maps {
+  background-color: black;
+}
+#traditionalMaps {
+  background-color: black;
+  position: relative;
+  -webkit-transition: opacity 0.8s ease;
+  -moz-transition: opacity 0.8s ease;
+  -ms-transition: opacity 0.8s ease;
+  -o-transition: opacity 0.8s ease;
+  transition: opacity 0.8s ease;
+}
+#traditionalMaps .header {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 60px;
+  color: #a59d95;
+  margin: 0px 0px 16px 0px;
+  line-height: 1.15;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 50px;
+  text-align: center;
+  position: relative;
+  bottom: 50px;
+  opacity: 0;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+@media screen and (max-width: 768px) {
+  #traditionalMaps .header {
+    font-size: 28px;
+    letter-spacing: 1px;
+  }
+}
+#traditionalMaps .allPillars {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -moz-box-orient: horizontal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  opacity: 0;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+@media screen and (max-width: 972px) {
+  #traditionalMaps .allPillars {
+    display: none;
+  }
+}
+#traditionalMaps .allPillars .pillar {
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-transition: all ease 1s;
+  -moz-transition: all ease 1s;
+  -ms-transition: all ease 1s;
+  -o-transition: all ease 1s;
+  transition: all ease 1s;
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+}
+@media screen and (max-width: 768px) {
+  #traditionalMaps .allPillars .pillar {
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    width: 100%;
+    min-height: 50vh;
+  }
+}
+#traditionalMaps .allPillars .pillar p {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 100;
+  letter-spacing: .03em;
+  -webkit-transition: all ease 1s;
+  -moz-transition: all ease 1s;
+  -ms-transition: all ease 1s;
+  -o-transition: all ease 1s;
+  transition: all ease 1s;
+}
+#traditionalMaps .allPillars .pillar .icon,
+#traditionalMaps .allPillars .pillar .title {
+  width: 100%;
+}
+#traditionalMaps .allPillars .pillar .icon {
+  background-color: #000;
+  height: 100%;
+  width: 100%;
+  -webkit-transition: opacity ease 1s;
+  -moz-transition: opacity ease 1s;
+  -ms-transition: opacity ease 1s;
+  -o-transition: opacity ease 1s;
+  transition: opacity ease 1s;
+  /*&:after {
+                    content: "";
+                    width: 100%;
+                    height: 50%;
+                    position: absolute;
+                    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1) 60%);
+                    display: block;
+                    bottom: 0;
+                    left: 0;
+                    z-index: 0;
+                    opacity: 1;
+                    transition: all ease .5s;
+                }
+
+                @media screen and (max-width: 1280px) {
+                    &:after {
+                        content: '';
+                        position: absolute;
+                        bottom: 0;
+                        height:5em;
+                        width: 100%;
+                        background-image: linear-gradient(to bottom, 
+                            rgba(0,0,0,0), 
+                            #000000 60%);
+                        z-index: 0;
+                    }
+                }
+
+                @media screen and (max-width: 768px) {
+                    &:after {bottom: 0;}
+                }
+
+                @media screen and (max-width: 350px) {
+                    &:after {
+						height: 15em;
+                    }
+                }*/
+}
+#traditionalMaps .allPillars .pillar .icon img {
+  width: 100%;
+  -webkit-transition: all 0.8s ease;
+  -moz-transition: all 0.8s ease;
+  -ms-transition: all 0.8s ease;
+  -o-transition: all 0.8s ease;
+  transition: all 0.8s ease;
+}
+#traditionalMaps .allPillars .pillar .description {
+  width: 80%;
+  margin-left: 5vw;
+  position: absolute;
+  bottom: 0;
+  z-index: 50;
+}
+#traditionalMaps .allPillars .pillar .description h1 {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 60px;
+  color: #a59d95;
+  margin: 0px 0px 16px 0px;
+  line-height: 1.15;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 50px;
+  text-align: center;
+  position: relative;
+  bottom: 50px;
+  opacity: 0;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  padding: 0;
+  width: 100%;
+  font-size: 25px;
+  text-align: left;
+  min-height: 65px;
+  opacity: 1;
+  margin-bottom: 0;
+}
+@media screen and (max-width: 768px) {
+  #traditionalMaps .allPillars .pillar .description h1 {
+    font-size: 28px;
+    letter-spacing: 1px;
+  }
+}
+@media screen and (max-width: 768px) {
+  #traditionalMaps .allPillars .pillar .description h1 {
+    font-size: 28px;
+    font-weight: 700;
+  }
+}
+#traditionalMaps .allPillars .pillar .description p {
+  text-align: left;
+  font-size: 20px;
+  font-weight: 300;
+  width: 50vw;
+  max-width: 500px;
+  font-weight: 200;
+}
+@media screen and (max-width: 1480px) {
+  #traditionalMaps .allPillars .pillar .description p {
+    width: 30vw;
+  }
+}
+@media screen and (max-width: 768px) {
+  #traditionalMaps .allPillars .pillar .description p {
+    opacity: 1 !important;
+    width: 80%;
+  }
+}
+@media screen and (max-width: 1280px) {
+  #traditionalMaps .allPillars .pillar .description {
+    margin-left: 5%;
+  }
+}
+#traditionalMaps .allPillars .pillar:hover .icon img {
+  opacity: 1;
+  left: 0;
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+}
+#traditionalMaps .allPillars .pillar:hover .description p {
+  opacity: 1;
+}
+#traditionalMaps .allPillars:hover .pillar:not(:hover) .icon {
+  opacity: .5;
+}
+@media screen and (max-width: 768px) {
+  #traditionalMaps .allPillars:hover {
+    opacity: 1;
+  }
+}
+#traditionalMaps.animate .header {
+  opacity: 1;
+  bottom: 0;
+}
+#traditionalMaps.animate .allPillars {
+  opacity: 1;
+  -webkit-transition-delay: .2s;
+  -o-transition-delay: .2s;
+  transition-delay: 0.2s;
+}
+html.aem-AuthorLayer-Edit #traditionalMaps {
+  opacity: 1 !important;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,700');
+.noise-gif {
+  content: "";
+  display: block;
+  width: 100vw;
+  height: 100vh;
+  opacity: .17;
+  background-image: url('../../../../../../../../content/dam/atvi/callofduty/cod-touchui/kronos/home/common/noise-gif-square-anim.gif');
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  z-index: 10;
+}
+@keyframes arrow {
+  0% {
+    -webkit-transform: translate(0, 0);
+    -moz-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    -o-transform: translate(0, 0);
+    transform: translate(0, 0);
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+    -webkit-transform: translate(0, 2px);
+    -moz-transform: translate(0, 2px);
+    -ms-transform: translate(0, 2px);
+    -o-transform: translate(0, 2px);
+    transform: translate(0, 2px);
+  }
+  50% {
+    opacity: 1;
+    -webkit-transform: translate(0, 8px);
+    -moz-transform: translate(0, 8px);
+    -ms-transform: translate(0, 8px);
+    -o-transform: translate(0, 8px);
+    transform: translate(0, 8px);
+  }
+  75%,
+  100% {
+    -webkit-transform: translate(0, 10px);
+    -moz-transform: translate(0, 10px);
+    -ms-transform: translate(0, 10px);
+    -o-transform: translate(0, 10px);
+    transform: translate(0, 10px);
+    opacity: 0;
+  }
+}
+#traditionalMaps .mobile-pillars {
+  max-height: 500px;
+}
+#traditionalMaps .mobile-pillars .pillars-carousel {
+  display: none;
+  overflow: hidden;
+}
+#traditionalMaps .mobile-pillars .pillars-carousel .slick-list {
+  overflow: hidden;
+}
+#traditionalMaps .mobile-pillars .pillars-carousel .pillar {
+  /*&:after {
+                    content: '';
+                    position: absolute;
+                    bottom: 0;
+                    height: 25em;
+                    width: 100%;
+                    background-image: linear-gradient(to bottom, 
+                        rgba(0,0,0,0), 
+                        #000000 65%);
+                    z-index: 0;
+                }*/
+}
+#traditionalMaps .mobile-pillars .pillars-carousel .pillar .icon {
+  text-align: center;
+  overflow: hidden;
+}
+#traditionalMaps .mobile-pillars .pillars-carousel .pillar img {
+  width: 100%;
+  height: 100%;
+}
+@media screen and (max-width: 480px) {
+  #traditionalMaps .mobile-pillars .pillars-carousel .pillar img {
+    width: initial;
+    margin-left: -60%;
+  }
+}
+#traditionalMaps .mobile-pillars .pillars-carousel .pillar .description {
+  width: 80%;
+  margin-left: 5vw;
+  position: absolute;
+  bottom: 15%;
+  z-index: 50;
+}
+#traditionalMaps .mobile-pillars .pillars-carousel .pillar .description h1 {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 60px;
+  color: #a59d95;
+  margin: 0px 0px 16px 0px;
+  line-height: 1.15;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  width: 100%;
+  font-size: 28px;
+  text-align: left;
+  min-height: 70px;
+  margin-bottom: 0;
+}
+@media screen and (max-width: 768px) {
+  #traditionalMaps .mobile-pillars .pillars-carousel .pillar .description h1 {
+    font-size: 28px;
+    letter-spacing: 1px;
+  }
+}
+#traditionalMaps .mobile-pillars .pillars-carousel .pillar .description p {
+  text-align: left;
+  font-size: 20px;
+  font-weight: 300;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  width: 100%;
+  max-width: 500px;
+}
+@media screen and (max-width: 972px) {
+  #traditionalMaps .mobile-pillars .pillars-carousel {
+    display: block;
+  }
+}
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,700');
+.noise-gif {
+  content: "";
+  display: block;
+  width: 100vw;
+  height: 100vh;
+  opacity: .17;
+  background-image: url('../../../../../../../../content/dam/atvi/callofduty/cod-touchui/kronos/home/common/noise-gif-square-anim.gif');
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  z-index: 10;
+}
+@keyframes arrow {
+  0% {
+    -webkit-transform: translate(0, 0);
+    -moz-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    -o-transform: translate(0, 0);
+    transform: translate(0, 0);
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+    -webkit-transform: translate(0, 2px);
+    -moz-transform: translate(0, 2px);
+    -ms-transform: translate(0, 2px);
+    -o-transform: translate(0, 2px);
+    transform: translate(0, 2px);
+  }
+  50% {
+    opacity: 1;
+    -webkit-transform: translate(0, 8px);
+    -moz-transform: translate(0, 8px);
+    -ms-transform: translate(0, 8px);
+    -o-transform: translate(0, 8px);
+    transform: translate(0, 8px);
+  }
+  75%,
+  100% {
+    -webkit-transform: translate(0, 10px);
+    -moz-transform: translate(0, 10px);
+    -ms-transform: translate(0, 10px);
+    -o-transform: translate(0, 10px);
+    transform: translate(0, 10px);
+    opacity: 0;
+  }
+}
+/* Arrows */
+.slick-prev,
+.slick-next {
+  position: absolute;
+  display: block;
+  width: 75px;
+  height: 75px;
+  background: transparent;
+  line-height: 0px;
+  font-size: 0px;
+  cursor: pointer;
+  color: transparent;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+  -moz-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  -o-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  padding: 0;
+  border: none;
+  outline: none;
+  z-index: 10;
+}
+.slick-prev.slick-disabled:before,
+.slick-next.slick-disabled:before {
+  opacity: 0.25;
+}
+.slick-next {
+  right: 10px;
+  width: 0;
+  height: 0;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  border-left: 30px solid #a59d95;
+}
+.slick-prev {
+  left: 10px;
+  width: 0;
+  height: 0;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  border-right: 30px solid #a59d95;
+}
+.slick-prev:before,
+.slick-next:before {
+  font-size: 20px;
+  line-height: 1;
+  color: #ffffff;
+  opacity: 0.75;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+/* Dots */
+.slick-dotted .slick-slider {
+  margin-bottom: 30px;
+}
+.slick-dots {
+  position: absolute;
+  bottom: -50px;
+  list-style: none;
+  display: block;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  z-index: 50;
+}
+.slick-dots li {
+  position: relative;
+  display: inline-block;
+  height: 15px;
+  width: 15px;
+  margin: 0 5px;
+  padding: 0;
+  cursor: pointer;
+}
+.slick-dots li button {
+  border: 0;
+  background: transparent;
+  display: block;
+  height: 15px;
+  width: 15px;
+  outline: none;
+  line-height: 0px;
+  font-size: 0px;
+  color: transparent;
+  padding: 5px;
+  cursor: pointer;
+  /*&:before {
+                position: absolute;
+                top: 0;
+                left: 0;
+                content: @slick-dot-character;
+                width: 20px;
+                height: 20px;
+                font-size: @slick-dot-size;
+                line-height: 20px;
+                text-align: center;
+                color: @slick-dot-color;
+                opacity: @slick-opacity-not-active;
+                -webkit-font-smoothing: antialiased;
+                -moz-osx-font-smoothing: grayscale;
+            }*/
+}
+.slick-dots li button:hover,
+.slick-dots li button:focus {
+  outline: none;
+}
+.slick-dots li button:hover:before,
+.slick-dots li button:focus:before {
+  opacity: 1;
+}
+.slick-dots li.slick-active button:before {
+  color: #000000;
+  opacity: 0.75;
+}
+/* Slider */
+.slick-slider {
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -ms-touch-action: pan-y;
+  touch-action: pan-y;
+  -webkit-tap-highlight-color: transparent;
+}
+.slick-list {
+  position: relative;
+  display: block;
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+.slick-list:focus {
+  outline: none;
+}
+.slick-list.dragging {
+  cursor: pointer;
+  cursor: hand;
+}
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+.slick-track {
+  position: relative;
+  left: 0;
+  top: 0;
+  display: block;
+}
+.slick-track:before,
+.slick-track:after {
+  content: "";
+  display: table;
+}
+.slick-track:after {
+  content: "";
+  clear: both;
+  height: 0;
+  visibility: hidden;
+  display: block;
+}
+.slick-loading .slick-track {
+  visibility: hidden;
+}
+.slick-slide {
+  float: left;
+  height: 100%;
+  margin: 0;
+  min-height: 0px;
+  position: relative;
+  display: none;
+}
+[dir="rtl"] .slick-slide {
+  float: right;
+}
+.slick-slide img {
+  display: block;
+}
+.slick-slide.slick-loading img {
+  display: none;
+}
+.slick-slide.dragging img {
+  pointer-events: none;
+}
+.slick-initialized .slick-slide {
+  display: block;
+}
+.slick-loading .slick-slide {
+  visibility: hidden;
+}
+.slick-vertical .slick-slide {
+  display: block;
+  height: auto;
+  border: 1px solid transparent;
+}
+.slick-slide:not(.slick-active):before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 5;
+}
+.slick-slide:focus {
+  outline: none;
+}
+.slick-arrow.slick-hidden {
+  display: none;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,700');
+.noise-gif {
+  content: "";
+  display: block;
+  width: 100vw;
+  height: 100vh;
+  opacity: .17;
+  background-image: url('../../../../../../../../content/dam/atvi/callofduty/cod-touchui/kronos/home/common/noise-gif-square-anim.gif');
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  z-index: 10;
+}
+@keyframes arrow {
+  0% {
+    -webkit-transform: translate(0, 0);
+    -moz-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    -o-transform: translate(0, 0);
+    transform: translate(0, 0);
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+    -webkit-transform: translate(0, 2px);
+    -moz-transform: translate(0, 2px);
+    -ms-transform: translate(0, 2px);
+    -o-transform: translate(0, 2px);
+    transform: translate(0, 2px);
+  }
+  50% {
+    opacity: 1;
+    -webkit-transform: translate(0, 8px);
+    -moz-transform: translate(0, 8px);
+    -ms-transform: translate(0, 8px);
+    -o-transform: translate(0, 8px);
+    transform: translate(0, 8px);
+  }
+  75%,
+  100% {
+    -webkit-transform: translate(0, 10px);
+    -moz-transform: translate(0, 10px);
+    -ms-transform: translate(0, 10px);
+    -o-transform: translate(0, 10px);
+    transform: translate(0, 10px);
+    opacity: 0;
+  }
+}
+body.menu-active {
+  position: initial;
+}
+.textimage-bg.desktop {
+  background-position: center center !important;
+}
+#hero .background-container .bg.mobile {
+  background-position: center 5px;
+}
+

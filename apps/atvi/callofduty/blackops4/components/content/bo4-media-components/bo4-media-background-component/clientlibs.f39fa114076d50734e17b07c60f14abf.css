@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Open+Sans|Open+Sans+Condensed:700');
+@import url('https://fonts.googleapis.com/css?family=Electrolize');
+.media-lp-background {
+  background-color: black;
+  position: relative;
+  height: 800px;
+}
+.media-lp-background .cq-Editable-dom,
+.media-lp-background .atvi-component.atvi-video {
+  height: 100%;
+}
+.media-lp-background .video {
+  opacity: 0;
+  background-color: black;
+  position: fixed;
+  width: 100%;
+  height: 0%;
+  z-index: 0;
+  transition: all ease-in-out 0.5s;
+}
+.media-lp-background .video.active {
+  opacity: 1;
+  z-index: 10000;
+  height: 100%;
+}
+.media-lp-background .video .close-btn {
+  position: absolute;
+  top: -15px;
+  right: 5px;
+  font-size: 60px;
+  color: white;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+}
+.media-lp-background:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  height: 25em;
+  width: 100%;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), #000000 85%);
+}
+.media-lp-background .bg {
+  width: 100%;
+  height: 100%;
+}
+@media screen and (max-width: 767px) {
+  .media-lp-background .bg.desktop {
+    display: none;
+  }
+}
+.media-lp-background .bg.mobile {
+  display: none;
+}
+@media screen and (max-width: 767px) {
+  .media-lp-background .bg.mobile {
+    display: block;
+    background-position-y: 10% !important;
+  }
+}
+.media-lp-background .content {
+  width: 80%;
+  position: absolute;
+  left: 50%;
+  top: 30%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+@media screen and (max-width: 767px) {
+  .media-lp-background .content {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 475px) {
+  .media-lp-background .content {
+    top: 25%;
+  }
+}
+.media-lp-background .content > button {
+  content: "";
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  cursor: pointer;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  margin: 0 auto;
+  background-color: rgba(0, 0, 0, 0.8);
+  -webkit-transition: all ease 0.3s;
+  -moz-transition: all ease 0.3s;
+  -ms-transition: all ease 0.3s;
+  -o-transition: all ease 0.3s;
+  transition: all ease 0.3s;
+}
+.media-lp-background .content > button:after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid #fff;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.media-lp-background .content > button:hover {
+  width: 66px;
+  height: 66px;
+}
+/* Hacky solution to position the media landing page "main" content */
+.media-lp-body-1 {
+  margin-bottom: -30em;
+}
+@media screen and (max-width: 475px) {
+  .media-lp-body-1 {
+    margin-bottom: -32em;
+  }
+}
+.media-lp-body-1 .content {
+  bottom: 30em;
+}
+@media screen and (max-width: 475px) {
+  .media-lp-body-1 .content {
+    bottom: 34em;
+  }
+}
+#bo4-wtb-default {
+  margin-bottom: -30em;
+  background-image: none;
+}
+@media screen and (max-width: 475px) {
+  #bo4-wtb-default {
+    margin-bottom: -36em;
+  }
+}
+#bo4-wtb-default .inner {
+  bottom: 45em;
+  /* WTB module style changes specific only to media landing pages */
+}
+@media screen and (max-width: 475px) {
+  #bo4-wtb-default .inner {
+    bottom: 54em;
+  }
+}
+#bo4-wtb-default .inner .wtb-module-title {
+  font-family: "Montserrat", Verdana, Arial, Helvetica, sans-serif;
+  font-weight: 800;
+  color: #fff;
+  text-shadow: 0px 0px 10px #34322e, 0px 0px 10px #fff;
+}

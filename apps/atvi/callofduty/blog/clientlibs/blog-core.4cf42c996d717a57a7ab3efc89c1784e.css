@@ -1,0 +1,43 @@
+.cod-game-header-container .desktop-header .nav-left .game-logo {
+  width: 65px !important;
+}
+.cod-game-header-container .desktop-header .nav-left .game-top-nav {
+  margin-left: 76px !important;
+}
+.cod-game-header-container .mobile-header .mobile-top-nav .mobile-game-logo {
+  width: 65px !important;
+}
+.cod-game-header-container .mobile-header .mobile-top-nav .mobile-purchase {
+  display: none !important;
+}
+.cod-game-header-container .mobile-header .mobile-top-nav {
+  height: 50px !important;
+}
+.cod-game-header-container .desktop-header .nav-left .game-top-nav li a {
+  font-size: 10px !important;
+}
+.blog-body .image.parbase img {
+  width: 100%;
+}
+body > .root > .aem-Grid > .experiencefragment:last-of-type {
+  margin-top: 100px;
+}
+.cod-global-footer .atvi-locale-selector .locale-list {
+  background: #434343;
+}
+.atvi-video .agegate h2.dob-prompt {
+  color: #FFF;
+  text-transform: uppercase;
+}
+.atvi-video .agegate .submit-wrapper a {
+  background-color: #FFF;
+  color: #000;
+  text-transform: uppercase;
+}
+.top-game-menu .top-game-left .top-game-logo .logo-desktop {
+  width: 65px;
+  height: 40px;
+}
+.top-game-menu .top-game-left .top-game-logo {
+  margin-right: 20px !important;
+}

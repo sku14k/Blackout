@@ -1,0 +1,517 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,700');
+.noise-gif {
+  content: "";
+  display: block;
+  width: 100vw;
+  height: 100vh;
+  opacity: .17;
+  background-image: url('../../../../../../content/dam/atvi/callofduty/cod-touchui/kronos/home/common/noise-gif-square-anim.gif');
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  z-index: 10;
+}
+@keyframes arrow {
+  0% {
+    -webkit-transform: translate(0, 0);
+    -moz-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    -o-transform: translate(0, 0);
+    transform: translate(0, 0);
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+    -webkit-transform: translate(0, 2px);
+    -moz-transform: translate(0, 2px);
+    -ms-transform: translate(0, 2px);
+    -o-transform: translate(0, 2px);
+    transform: translate(0, 2px);
+  }
+  50% {
+    opacity: 1;
+    -webkit-transform: translate(0, 8px);
+    -moz-transform: translate(0, 8px);
+    -ms-transform: translate(0, 8px);
+    -o-transform: translate(0, 8px);
+    transform: translate(0, 8px);
+  }
+  75%,
+  100% {
+    -webkit-transform: translate(0, 10px);
+    -moz-transform: translate(0, 10px);
+    -ms-transform: translate(0, 10px);
+    -o-transform: translate(0, 10px);
+    transform: translate(0, 10px);
+    opacity: 0;
+  }
+}
+html {
+  font-size: 16px;
+}
+body {
+  overflow-x: hidden;
+  color: #a9a6a1;
+  line-height: 1.15;
+  font-size: 1rem;
+  margin-top: 100px !important;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  background-color: #111111;
+}
+@media screen and (max-width: 1024px) {
+  body {
+    margin-top: 0 !important;
+  }
+}
+a {
+  text-decoration: none;
+  font-size: 1rem;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+}
+ul,
+li {
+  list-style: none;
+}
+body {
+  /*.root .responsivegrid > .aem-Grid .experiencefragment {
+        position: initial !important;
+        top: initial !important;
+        z-index: initial !important;
+    }
+
+    > .root .aem-Grid > .experiencefragment:first-of-type {
+        .transition(.5s all);
+    }
+
+    &.header-collapse {
+
+		> .root > .aem-Grid > .experiencefragment:first-of-type {
+			.translate(0,-50px);
+        }
+
+        .cod-game-header.g-collapse {
+			.translate(0,0);
+        }
+
+    }*/
+}
+html[lang='zh-CN'] .cod-game-header-container .desktop-header .nav-right {
+  display: none;
+}
+.global-small-header .cod-global-header-container .desktop-header .nav-right .purchase {
+  min-width: 220px;
+}
+.cod-game-header-container .desktop-header .nav-right .purchase a {
+  min-height: 16px;
+  padding: 12px 20px;
+  transition-property: text-shadow, background-color, border, color;
+  transition-duration: 1s;
+  position: relative;
+  background-color: #282828;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: #81898c;
+  line-height: 1.15;
+  text-transform: uppercase;
+  margin: 0 0 40px 0;
+  width: fit-content;
+  background-image: url('../../../../../../content/dam/atvi/callofduty/cod-touchui/kronos/home/common/global-nav-bg-mobile.png');
+  background-size: 2px;
+  box-shadow: inset 0px 0px 5px #81898c;
+  border: 1px solid #81898c;
+  cursor: pointer;
+  text-decoration: none;
+  text-shadow: 0px 0px 0px #97cde1;
+  background-color: transparent;
+  background-image: url('../../../../../../content/dam/atvi/callofduty/cod-touchui/kronos/home/common/blue-tile.png');
+  background-color: #242424;
+  color: #94bbc2;
+  box-shadow: inset 0px 0px 5px #597985;
+  border: 1px solid #597985;
+  transition-property: text-shadow, background-color, border, color, opacity;
+  padding: 19px 40px;
+  font-size: 13px;
+}
+.cod-game-header-container .desktop-header .nav-right .purchase a:after,
+.cod-game-header-container .desktop-header .nav-right .purchase a:before {
+  width: 100%;
+  content: "";
+  height: 2px;
+  display: block;
+  position: absolute;
+  background-image: linear-gradient(to right, rgba(250, 250, 250, 0.5), #ffffff 20%, #ffffff 80%, rgba(250, 250, 250, 0.5));
+  transition: all ease .8s;
+  transform: scaleX(0);
+  top: -1px;
+  left: 0;
+}
+.cod-game-header-container .desktop-header .nav-right .purchase a:after {
+  bottom: -1px;
+  top: initial;
+}
+.cod-game-header-container .desktop-header .nav-right .purchase a:before {
+  color: #b6bec0;
+  text-shadow: 0px 0px 10px #ffffff;
+}
+.cod-game-header-container .desktop-header .nav-right .purchase a:hover {
+  background-color: #627f53;
+  color: #c7cac6;
+}
+.cod-game-header-container .desktop-header .nav-right .purchase a:hover:after,
+.cod-game-header-container .desktop-header .nav-right .purchase a:hover:before {
+  -webkit-transition: all ease 0.8s;
+  -moz-transition: all ease 0.8s;
+  -ms-transition: all ease 0.8s;
+  -o-transition: all ease 0.8s;
+  transition: all ease 0.8s;
+  transform: scaleX(1);
+  box-shadow: 0px 0px 10px;
+}
+.cod-game-header-container .desktop-header .nav-right .purchase a:before,
+.cod-game-header-container .desktop-header .nav-right .purchase a:after {
+  background-image: linear-gradient(to right, rgba(151, 205, 225, 0.5), #79d9ff 20%, #79d9ff 80%, rgba(151, 205, 225, 0.5));
+}
+.cod-game-header-container .desktop-header .nav-right .purchase a:hover {
+  background-color: #282828;
+  text-shadow: 0px 0px 10px #79d9ff;
+  color: #79d9ff;
+}
+.cod-game-header-container {
+  z-index: 9999;
+}
+.cod-game-header-container .desktop-header .nav-left .game-top-nav {
+  margin-left: 90px;
+}
+.cod-game-header-container .desktop-header .nav-left .game-top-nav > ul > li.dropdown > ul > li.dd-item-1 {
+  transition-delay: 0.25s, 0.25s;
+  transition-property: opacity, visibility;
+}
+.cod-game-header-container .desktop-header .nav-left .game-top-nav > ul > li.dropdown > ul > li.dd-item-2 {
+  transition-delay: 0.2s, 0.2s;
+  transition-property: opacity, visibility;
+}
+.cod-game-header-container .desktop-header .nav-left .game-top-nav > ul > li.dropdown > ul > li.dd-item-3 {
+  transition-delay: 0.15s, 0.15s;
+  transition-property: opacity, visibility;
+}
+.cod-game-header-container .desktop-header .nav-left .game-top-nav > ul > li.dropdown > ul > li.dd-item-4 {
+  transition-delay: 0.1s, 0.1s;
+  transition-property: opacity, visibility;
+}
+.cod-game-header-container .desktop-header .nav-left .game-top-nav > ul > li.dropdown > ul > li.dd-item-5 {
+  transition-delay: 0.05s, 0.05s;
+  transition-property: opacity, visibility;
+}
+.cod-game-header-container .desktop-header .nav-left .game-top-nav > ul > li.dropdown:hover > ul > li.dd-item {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity ease .25s, visibility ease .25s;
+}
+.cod-game-header-container .desktop-header .nav-left .game-top-nav > ul > li.dropdown:hover > ul > li.dd-item-1 {
+  transition-delay: 0.05s, 0.05s;
+  transition-property: opacity, visibility;
+}
+.cod-game-header-container .desktop-header .nav-left .game-top-nav > ul > li.dropdown:hover > ul > li.dd-item-2 {
+  transition-delay: 0.1s, 0.1s;
+  transition-property: opacity, visibility;
+}
+.cod-game-header-container .desktop-header .nav-left .game-top-nav > ul > li.dropdown:hover > ul > li.dd-item-3 {
+  transition-delay: 0.15s, 0.15s;
+  transition-property: opacity, visibility;
+}
+.cod-game-header-container .desktop-header .nav-left .game-top-nav > ul > li.dropdown:hover > ul > li.dd-item-4 {
+  transition-delay: 0.2s, 0.2s;
+  transition-property: opacity, visibility;
+}
+.cod-game-header-container .desktop-header .nav-left .game-top-nav > ul > li.dropdown:hover > ul > li.dd-item-5 {
+  transition-delay: 0.25s, 0.25s;
+  transition-property: opacity, visibility;
+}
+.cod-game-header-container .mobile-header .mobile-menu .mobile-menu-container li.features.active ul {
+  height: 305px;
+}
+.mobile-header .mobile-top-nav .mobile-purchase a {
+  transition-property: text-shadow, background-color, border, color, opacity;
+}
+.cod-game-header-container {
+  background-color: black;
+}
+.mobile-header .mobile-menu .mobile-menu-container li.logo-item .logo a {
+  text-indent: 1000%;
+}
+.mobile-header .mobile-top-nav .mobile-purchase {
+  display: none;
+}
+.mobile-header .mobile-top-nav .mobile-purchase a {
+  display: block;
+  margin-bottom: 0;
+}
+@media screen and (max-width: 1024px) {
+  .mobile-header .mobile-top-nav .mobile-purchase {
+    display: block ;
+  }
+}
+.atvi-locale-selector {
+  opacity: 0;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,700');
+.noise-gif {
+  content: "";
+  display: block;
+  width: 100vw;
+  height: 100vh;
+  opacity: .17;
+  background-image: url('../../../../../../content/dam/atvi/callofduty/cod-touchui/kronos/home/common/noise-gif-square-anim.gif');
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  z-index: 10;
+}
+@keyframes arrow {
+  0% {
+    -webkit-transform: translate(0, 0);
+    -moz-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    -o-transform: translate(0, 0);
+    transform: translate(0, 0);
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+    -webkit-transform: translate(0, 2px);
+    -moz-transform: translate(0, 2px);
+    -ms-transform: translate(0, 2px);
+    -o-transform: translate(0, 2px);
+    transform: translate(0, 2px);
+  }
+  50% {
+    opacity: 1;
+    -webkit-transform: translate(0, 8px);
+    -moz-transform: translate(0, 8px);
+    -ms-transform: translate(0, 8px);
+    -o-transform: translate(0, 8px);
+    transform: translate(0, 8px);
+  }
+  75%,
+  100% {
+    -webkit-transform: translate(0, 10px);
+    -moz-transform: translate(0, 10px);
+    -ms-transform: translate(0, 10px);
+    -o-transform: translate(0, 10px);
+    transform: translate(0, 10px);
+    opacity: 0;
+  }
+}
+.cod-game-header-container {
+  /*position: absolute;
+    top: 0;
+    width: 100%;
+    right: 0;*/
+}
+.cod-game-header-container .desktop-header .nav-right .purchase a {
+  margin-bottom: 0;
+}
+.kronos-hero {
+  -webkit-transition: 0.25s top ease;
+  -moz-transition: 0.25s top ease;
+  -ms-transition: 0.25s top ease;
+  -o-transition: 0.25s top ease;
+  transition: 0.25s top ease;
+}
+@media screen and (max-width: 1024px) {
+  body {
+    margin-top: 40px !important;
+  }
+}
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,700');
+.noise-gif {
+  content: "";
+  display: block;
+  width: 100vw;
+  height: 100vh;
+  opacity: .17;
+  background-image: url('../../../../../../content/dam/atvi/callofduty/cod-touchui/kronos/home/common/noise-gif-square-anim.gif');
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  z-index: 10;
+}
+@keyframes arrow {
+  0% {
+    -webkit-transform: translate(0, 0);
+    -moz-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    -o-transform: translate(0, 0);
+    transform: translate(0, 0);
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+    -webkit-transform: translate(0, 2px);
+    -moz-transform: translate(0, 2px);
+    -ms-transform: translate(0, 2px);
+    -o-transform: translate(0, 2px);
+    transform: translate(0, 2px);
+  }
+  50% {
+    opacity: 1;
+    -webkit-transform: translate(0, 8px);
+    -moz-transform: translate(0, 8px);
+    -ms-transform: translate(0, 8px);
+    -o-transform: translate(0, 8px);
+    transform: translate(0, 8px);
+  }
+  75%,
+  100% {
+    -webkit-transform: translate(0, 10px);
+    -moz-transform: translate(0, 10px);
+    -ms-transform: translate(0, 10px);
+    -o-transform: translate(0, 10px);
+    transform: translate(0, 10px);
+    opacity: 0;
+  }
+}
+.atvi-agegate {
+  background: black !important;
+  z-index: 999999;
+}
+.atvi-agegate .form h2 {
+  color: #00000;
+  text-transform: uppercase;
+  margin: 10px;
+  letter-spacing: 3px;
+}
+.atvi-agegate .form .fields input {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  width: 25%;
+  color: #878076;
+  line-height: 1.15;
+  min-height: 40px;
+  background-color: #111;
+  background-image: url('../../../../../../content/dam/atvi/callofduty/cod-touchui/kronos/home/common/input-bg.png');
+  background-size: 2px;
+  border: none;
+  border-bottom: 1px solid #2a2e31;
+  transition: all .8s;
+}
+.atvi-agegate .form .fields input:focus {
+  outline: 0;
+  border-bottom: 1px solid #79d9ff;
+  background-color: #282828;
+}
+.atvi-agegate .form .fields ::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: #878076;
+}
+.atvi-agegate .form .fields ::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #878076;
+}
+.atvi-agegate .form .fields :-ms-input-placeholder {
+  /* IE 10+ */
+  color: #878076;
+}
+.atvi-agegate .form .fields :-moz-placeholder {
+  /* Firefox 18- */
+  color: #878076;
+}
+@media screen and (max-width: 480px) {
+  .atvi-agegate .form .fields input {
+    padding: .3em;
+    margin-right: 0;
+  }
+}
+.atvi-agegate .form .submit-wrapper a {
+  min-height: 16px;
+  padding: 12px 20px;
+  transition-property: text-shadow, background-color, border, color;
+  transition-duration: 1s;
+  position: relative;
+  background-color: #282828;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: #81898c;
+  line-height: 1.15;
+  text-transform: uppercase;
+  margin: 0 0 40px 0;
+  width: fit-content;
+  background-image: url('../../../../../../content/dam/atvi/callofduty/cod-touchui/kronos/home/common/global-nav-bg-mobile.png');
+  background-size: 2px;
+  box-shadow: inset 0px 0px 5px #81898c;
+  border: 1px solid #81898c;
+  cursor: pointer;
+  text-decoration: none;
+  text-shadow: 0px 0px 0px #97cde1;
+  background-color: transparent;
+  background-image: url('../../../../../../content/dam/atvi/callofduty/cod-touchui/kronos/home/common/blue-tile.png');
+  background-color: #242424;
+  color: #94bbc2;
+  box-shadow: inset 0px 0px 5px #597985;
+  border: 1px solid #597985;
+  min-width: 300px;
+}
+.atvi-agegate .form .submit-wrapper a:after,
+.atvi-agegate .form .submit-wrapper a:before {
+  width: 100%;
+  content: "";
+  height: 2px;
+  display: block;
+  position: absolute;
+  background-image: linear-gradient(to right, rgba(250, 250, 250, 0.5), #ffffff 20%, #ffffff 80%, rgba(250, 250, 250, 0.5));
+  transition: all ease .8s;
+  transform: scaleX(0);
+  top: -1px;
+  left: 0;
+}
+.atvi-agegate .form .submit-wrapper a:after {
+  bottom: -1px;
+  top: initial;
+}
+.atvi-agegate .form .submit-wrapper a:before {
+  color: #b6bec0;
+  text-shadow: 0px 0px 10px #ffffff;
+}
+.atvi-agegate .form .submit-wrapper a:hover {
+  background-color: #627f53;
+  color: #c7cac6;
+}
+.atvi-agegate .form .submit-wrapper a:hover:after,
+.atvi-agegate .form .submit-wrapper a:hover:before {
+  -webkit-transition: all ease 0.8s;
+  -moz-transition: all ease 0.8s;
+  -ms-transition: all ease 0.8s;
+  -o-transition: all ease 0.8s;
+  transition: all ease 0.8s;
+  transform: scaleX(1);
+  box-shadow: 0px 0px 10px;
+}
+.atvi-agegate .form .submit-wrapper a:before,
+.atvi-agegate .form .submit-wrapper a:after {
+  background-image: linear-gradient(to right, rgba(151, 205, 225, 0.5), #79d9ff 20%, #79d9ff 80%, rgba(151, 205, 225, 0.5));
+}
+.atvi-agegate .form .submit-wrapper a:hover {
+  background-color: #282828;
+  text-shadow: 0px 0px 10px #79d9ff;
+  color: #79d9ff;
+}
+
+html[lang='zh-CN'] .footer-left .esrb {
+  display: none;
+}
+

@@ -1,0 +1,393 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Open+Sans|Open+Sans+Condensed:700');
+@import url('https://fonts.googleapis.com/css?family=Electrolize');
+.home-hero {
+  /*
+    * Width animation, move as a global class?
+    */
+  height: 100vh;
+  min-height: 900px;
+  background-color: black;
+  position: relative;
+  overflow: hidden;
+}
+@media screen and (max-width: 767px) {
+  .home-hero {
+    height: 175vw;
+  }
+}
+@media screen and (max-width: 545px) {
+  .home-hero {
+    height: 185vw;
+  }
+}
+@media screen and (max-width: 475px) {
+  .home-hero {
+    height: 205vw;
+  }
+}
+@media screen and (max-width: 375px) {
+  .home-hero {
+    height: 225vw;
+  }
+}
+.home-hero .video {
+  display: none;
+  background-color: black;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 10000;
+}
+.home-hero .video .cq-Editable-dom,
+.home-hero .video .atvi-component.atvi-video,
+.home-hero .video > div {
+  height: 100%;
+}
+.home-hero .video .close-btn {
+  position: absolute;
+  top: 0;
+  right: 5px;
+  font-size: 60px;
+  color: white;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+}
+.home-hero .video .atvi-video .controls {
+  position: relative;
+}
+.home-hero:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  height: 25em;
+  width: 100%;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), #000000 85%);
+  background-color: transparent;
+  background-image: -webkit-linear-gradient(to bottom, rgba(0, 0, 0, 0), #000000 85%);
+}
+@media screen and (max-width: 767px) {
+  .home-hero:after {
+    display: none;
+  }
+}
+.home-hero .hero-background {
+  height: 100%;
+}
+.home-hero .hero-background .bg {
+  height: 100%;
+  /*max-width: 1280px;*/
+  margin: auto;
+}
+.home-hero .hero-background .bg.mobile {
+  display: none;
+  background-size: contain !important;
+  background-position: top !important;
+}
+@media screen and (max-width: 767px) {
+  .home-hero .hero-background .bg.mobile {
+    display: block;
+  }
+}
+.home-hero .hero-background .bg.desktop:before,
+.home-hero .hero-background .bg.desktop:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  height: 57em;
+  width: 3%;
+}
+.home-hero .hero-background .bg.desktop:before {
+  left: 0;
+  /*background: linear-gradient(to left, rgba(255, 255, 255, 0), #000000 85%);*/
+}
+.home-hero .hero-background .bg.desktop:after {
+  right: 0;
+  /*background: linear-gradient(to right, rgba(255, 255, 255, 0), #000000 85%);*/
+}
+@media screen and (max-width: 767px) {
+  .home-hero .hero-background .bg.desktop {
+    display: none;
+  }
+}
+.home-hero .hero-background .soldier {
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+}
+@media screen and (max-width: 767px) {
+  .home-hero .hero-background .soldier {
+    top: -50%;
+  }
+}
+.home-hero .hero-background .soldier.middle {
+  transform: translate3d(-1%, -1%, 0px);
+  z-index: 100;
+  background-image: url("../../../../../../../../content/dam/atvi/callofduty/blackops4/home/center-soldier.png");
+}
+@media screen and (max-width: 767px) {
+  .home-hero .hero-background .soldier.middle {
+    top: 0px;
+    display: none;
+  }
+}
+@media screen and (max-width: 500px) {
+  .home-hero .hero-background .soldier.middle {
+    height: 50%;
+  }
+}
+.home-hero .content {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 960px;
+  width: 50%;
+  padding: 0;
+  text-align: center;
+  z-index: 1000;
+}
+@media screen and (max-width: 767px) {
+  .home-hero .content {
+    top: 122vw;
+    width: 80%;
+  }
+}
+.home-hero .content .logo {
+  margin: 0 auto 15px;
+  display: block;
+  width: 50%;
+  min-width: 250px;
+  max-width: 400px;
+}
+@media screen and (max-width: 767px) {
+  .home-hero .content .logo {
+    display: none;
+  }
+}
+.home-hero .content .cta-btn {
+  font-family: "Electrolize", Verdana, Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 11px;
+  color: #adabab;
+  letter-spacing: 2px;
+  text-shadow: 0px 0px 18px black;
+  line-height: 130%;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  background-color: rgba(0, 0, 0, 0.8);
+  border: 2px solid #adabab;
+  padding: 8px 15px;
+  cursor: pointer;
+  letter-spacing: 1px;
+  position: relative;
+  z-index: 1;
+  transition: all ease-in-out 0.8s;
+  text-shadow: 0px 0px 18px #ffffff;
+  background: url(../../../../../../../../content/dam/atvi/callofduty/blackops4/splash/button-tile.svg) center center repeat #191919;
+}
+.home-hero .content .cta-btn:before {
+  content: "";
+  width: 0px;
+  height: 0px;
+  border-top: 6px solid transparent;
+  border-bottom: 6px solid transparent;
+  border-left: 6px solid white;
+  display: inline-block;
+  margin-right: 10px;
+  position: relative;
+  top: 2px;
+}
+.home-hero .content .cta-btn:hover {
+  color: white;
+  border: 2px solid white;
+  background-color: #3c3c3c;
+}
+.home-hero .content .header {
+  font-family: "Electrolize", Verdana, Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 30px;
+  letter-spacing: 5px;
+  text-shadow: 0px 0px 10px #34322e, 0px 0px 10px #dbbd40;
+  text-transform: uppercase;
+  color: #dbbd40;
+  margin-bottom: 15px;
+  animation-delay: 1s;
+}
+.home-hero .content .description {
+  margin-bottom: 15px;
+  color: white;
+  font-family: "Electrolize", Verdana, Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 11px;
+  color: #adabab;
+  letter-spacing: 2px;
+  text-shadow: 0px 0px 18px black;
+  line-height: 130%;
+  animation-delay: 1.5s;
+}
+.home-hero .content .links {
+  margin-bottom: 15px;
+  display: flex;
+}
+@media screen and (max-width: 767px) {
+  .home-hero .content .links {
+    display: none;
+  }
+}
+.home-hero .content .links .link {
+  flex: 1;
+}
+.home-hero .content .links .link:first-of-type {
+  animation-delay: 2.5s;
+}
+.home-hero .content .links .link:first-of-type > span {
+  animation-delay: 2.7s;
+}
+.home-hero .content .links .link:first-of-type > span:before,
+.home-hero .content .links .link:first-of-type > span:after {
+  animation-delay: 3.2s;
+}
+.home-hero .content .links .link:nth-child(2) {
+  animation-delay: 3s;
+}
+.home-hero .content .links .link:nth-child(2) > span {
+  animation-delay: 3.2s;
+}
+.home-hero .content .links .link:nth-child(2) > span:before,
+.home-hero .content .links .link:nth-child(2) > span:after {
+  animation-delay: 3.7s;
+}
+.home-hero .content .links .link:nth-child(3) {
+  animation-delay: 3.5s;
+}
+.home-hero .content .links .link:nth-child(3) > span {
+  animation-delay: 3.7s;
+}
+.home-hero .content .links .link:nth-child(3) > span:before,
+.home-hero .content .links .link:nth-child(3) > span:after {
+  animation-delay: 4.2s;
+}
+.home-hero .content .links .link:last-of-type {
+  animation-delay: 4s;
+}
+.home-hero .content .links .link:last-of-type > span {
+  animation-delay: 4.2s;
+}
+.home-hero .content .links .link:last-of-type > span:before,
+.home-hero .content .links .link:last-of-type > span:after {
+  animation-delay: 4.7s;
+}
+.home-hero .content .links .link > a {
+  font-family: "Electrolize", Verdana, Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 11px;
+  color: #adabab;
+  letter-spacing: 2px;
+  text-shadow: 0px 0px 18px black;
+  line-height: 130%;
+  color: #dbbd40;
+  text-shadow: 0px 0px 10px #34322e, 0px 0px 10px #dbbd40;
+  text-transform: uppercase;
+  text-decoration: none;
+  position: relative;
+  left: 4px;
+}
+.home-hero .content .links .link > span {
+  width: 0;
+  animation-name: widen;
+  animation-duration: .5s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+  height: 3px;
+  background-color: #adabab;
+  display: block;
+  margin: 5px auto 0;
+  position: relative;
+}
+@keyframes widen {
+  from {
+    width: 0;
+  }
+  to {
+    width: 25px;
+  }
+}
+.home-hero .content .links .link > span:before,
+.home-hero .content .links .link > span:after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  animation-name: widen;
+  animation-duration: .5s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+  height: 1px;
+  /*background-color: @gray-light;*/
+  background-color: #adabab;
+  position: absolute;
+  bottom: 1px;
+}
+@keyframes widen {
+  from {
+    width: 0;
+  }
+  to {
+    width: 25px;
+  }
+}
+.home-hero .content .links .link > span:before {
+  left: 27px;
+}
+.home-hero .content .links .link > span:after {
+  right: 27px;
+}
+.home-hero .content .custom-banner {
+  text-align: center;
+  width: 200px;
+  margin: 15px auto;
+  -webkit-animation-delay: 5.6s;
+  animation-delay: 5.6s;
+}
+.home-hero .content .custom-banner img {
+  width: 100%;
+}
+@media screen and (max-width: 767px) {
+  .home-hero .content .arrow-container {
+    display: none;
+  }
+}
+.home-hero .content .arrow-container.fade-in-from-top {
+  animation-delay: 6s;
+}
+.home-hero .content .arrow-container > .bounce {
+  animation-delay: 7s;
+}
+.home-hero .content .arrow-container .arrow {
+  height: 10px;
+  width: 12px;
+  display: inline-block;
+  font-size: 32px;
+  background-image: url(../../../../../../../../content/dam/atvi/callofduty/blackops4/common/BlackOps4-dropdown-arrow.svg);
+}
+html:not([lang='en']) .home-hero .content .custom-banner {
+  width: 25%;
+  max-width: 80px;
+}
+html[lang='ar'] .home-hero .content .links .link > a {
+  letter-spacing: 0;
+}

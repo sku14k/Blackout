@@ -1,0 +1,2775 @@
+@import url('https://fonts.googleapis.com/css?family=Arvo|Electrolize|Montserrat|Open+Sans|Open+Sans+Condensed:300');
+@import url('https://fonts.googleapis.com/css?family=Oswald:300,400,600&amp;display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,700');
+.cod-global-header-container.no-data .desktop-header .nav-right .login .emblem-sm {
+  display: none;
+}
+.cod-global-header-container.no-data .player-profile-menu .pp-header .emblem,
+.cod-global-header-container.no-data .player-profile-menu .pp-header .platform-selection,
+.cod-global-header-container.no-data .player-profile-menu .pp-header .pp-rank,
+.cod-global-header-container.no-data .player-profile-menu .pp-header .link-account-btn {
+  display: none;
+}
+.player-profile-menu {
+  /*&.wwii, &.iw, &.bo3, &.bo4 {
+		.mycod-cta { display: block; }
+    	.link-account-btn { display: none; }
+    }*/
+  /*******************************
+    UNIQUE RANK STYLES FOR COD GAMES
+    *******************************/
+}
+.player-profile-menu .pp-rank {
+  font-family: "Montserrat", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+}
+.player-profile-menu .mycod-cta,
+.player-profile-menu .link-account-btn {
+  margin-top: 20px;
+}
+.player-profile-menu .mycod-cta p,
+.player-profile-menu .link-account-btn p {
+  line-height: 1;
+}
+.player-profile-menu .mycod-cta a,
+.player-profile-menu .link-account-btn a {
+  /*padding-left: 17px;
+        padding-right: 28px;*/
+  position: relative;
+  width: 210px;
+}
+.player-profile-menu.wwii .mycod-cta a {
+  font-family: "Open Sans Condensed", Verdana, Arial, Helvetica, sans-serif;
+  font-style: normal;
+  color: #ffffff;
+  background: #9f912a;
+  border: 1px solid transparent;
+  font-size: 14px;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: inline-block;
+  letter-spacing: 0.7px;
+  font-family: "Montserrat", Arial, sans-serif;
+  font-weight: bold;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.player-profile-menu.wwii .mycod-cta a:hover {
+  color: #000000;
+  background: #ffffff;
+  border: 1px solid transparent;
+}
+.player-profile-menu.wwii .mycod-cta a:hover {
+  color: #000000;
+  background: #ffffff;
+  border: 1px solid transparent;
+}
+.player-profile-menu.wwii .mycod-cta a:after {
+  content: "";
+  width: 7px;
+  height: 7px;
+  border-top: 1px solid #ffffff;
+  border-right: 1px solid #ffffff;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  position: absolute;
+  top: 50%;
+  right: 17px;
+  -webkit-transform: translate(0%, -50%) rotate(45deg);
+  -moz-transform: translate(0%, -50%) rotate(45deg);
+  -o-transform: translate(0%, -50%) rotate(45deg);
+  -ms-transform: translate(0%, -50%) rotate(45deg);
+  transform: translate(0%, -50%) rotate(45deg);
+}
+.player-profile-menu.wwii .mycod-cta a:hover:after {
+  border-top: 1px solid #000000;
+  border-right: 1px solid #000000;
+}
+.player-profile-menu.iw .mycod-cta a {
+  font-family: "Open Sans Condensed", Verdana, Arial, Helvetica, sans-serif;
+  font-style: normal;
+  color: #000000;
+  background: #ffff03;
+  border: 1px solid transparent;
+  font-size: 14px;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: inline-block;
+  letter-spacing: 0.7px;
+  font-family: "Montserrat", Arial, sans-serif;
+  font-weight: bold;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.player-profile-menu.iw .mycod-cta a:hover {
+  color: #000000;
+  background: #ffffff;
+  border: 1px solid transparent;
+}
+.player-profile-menu.iw .mycod-cta a:hover {
+  color: #000000;
+  background: #ffffff;
+  border: 1px solid transparent;
+}
+.player-profile-menu.iw .mycod-cta a:after {
+  content: "";
+  width: 7px;
+  height: 7px;
+  border-top: 1px solid #000000;
+  border-right: 1px solid #000000;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  position: absolute;
+  top: 50%;
+  right: 17px;
+  -webkit-transform: translate(0%, -50%) rotate(45deg);
+  -moz-transform: translate(0%, -50%) rotate(45deg);
+  -o-transform: translate(0%, -50%) rotate(45deg);
+  -ms-transform: translate(0%, -50%) rotate(45deg);
+  transform: translate(0%, -50%) rotate(45deg);
+}
+.player-profile-menu.iw .mycod-cta a:hover:after {
+  border-top: 1px solid #000000;
+  border-right: 1px solid #000000;
+}
+.player-profile-menu.bo3 .mycod-cta a,
+.player-profile-menu.bo4 .mycod-cta a {
+  font-family: "Open Sans Condensed", Verdana, Arial, Helvetica, sans-serif;
+  font-style: normal;
+  color: #000000;
+  background: #ff6600;
+  border: 1px solid transparent;
+  font-size: 14px;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: inline-block;
+  letter-spacing: 0.7px;
+  font-family: "Montserrat", Arial, sans-serif;
+  font-weight: bold;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.player-profile-menu.bo3 .mycod-cta a:hover,
+.player-profile-menu.bo4 .mycod-cta a:hover {
+  color: #000000;
+  background: #ff6600;
+  border: 1px solid transparent;
+}
+.player-profile-menu.bo3 .mycod-cta a:hover,
+.player-profile-menu.bo4 .mycod-cta a:hover {
+  color: #000000;
+  background: #ff6600;
+  border: 1px solid transparent;
+}
+.player-profile-menu.bo3 .mycod-cta a:after,
+.player-profile-menu.bo4 .mycod-cta a:after {
+  content: "";
+  width: 7px;
+  height: 7px;
+  border-top: 1px solid #000000;
+  border-right: 1px solid #000000;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  position: absolute;
+  top: 50%;
+  right: 17px;
+  -webkit-transform: translate(0%, -50%) rotate(45deg);
+  -moz-transform: translate(0%, -50%) rotate(45deg);
+  -o-transform: translate(0%, -50%) rotate(45deg);
+  -ms-transform: translate(0%, -50%) rotate(45deg);
+  transform: translate(0%, -50%) rotate(45deg);
+}
+.player-profile-menu.bo3 .mycod-cta a:hover:after,
+.player-profile-menu.bo4 .mycod-cta a:hover:after {
+  border-top: 1px solid #000000;
+  border-right: 1px solid #000000;
+}
+.player-profile-menu {
+  width: 300px;
+  background-color: #000000;
+  background-image: url(../../../../../content/dam/atvi/callofduty/global/global-nav/global-nav-bg.png);
+  background-size: 2px;
+  position: fixed;
+  height: 100vh;
+  margin-top: 50px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-shadow: 0px 0px 18px #646464;
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-weight: bold;
+  z-index: 9999;
+  top: 0;
+  left: 100%;
+  overflow: hidden;
+  -webkit-transform: translate(0%, 0);
+  -moz-transform: translate(0%, 0);
+  -ms-transform: translate(0%, 0);
+  -o-transform: translate(0%, 0);
+  transform: translate(0%, 0);
+  -webkit-transition: transform 0.5s;
+  -moz-transition: transform 0.5s;
+  -ms-transition: transform 0.5s;
+  -o-transition: transform 0.5s;
+  transition: transform 0.5s;
+}
+.player-profile-menu.active {
+  -webkit-transform: translate(-100%, 0);
+  -moz-transform: translate(-100%, 0);
+  -ms-transform: translate(-100%, 0);
+  -o-transform: translate(-100%, 0);
+  transform: translate(-100%, 0);
+}
+.player-profile-menu a {
+  color: #969696;
+  text-decoration: none;
+  font-size: 15px;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.player-profile-menu a:hover {
+  color: #FFF;
+}
+.player-profile-menu .pp-header {
+  padding: 70px 0 25px;
+  text-align: center;
+  border-bottom: 1px solid #2d2d2d;
+  position: relative;
+}
+.player-profile-menu .pp-close {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  cursor: pointer;
+}
+.player-profile-menu .pp-close:after {
+  content: "+";
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #FFF;
+  font-size: 40px;
+  font-family: sans-serif;
+}
+.player-profile-menu .emblem {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.player-profile-menu .pp-username {
+  color: #FFF;
+  font-size: 25px;
+  margin-bottom: 5px;
+}
+.player-profile-menu .pp-name {
+  color: #9b9b9b;
+  font-size: 15px;
+  margin-bottom: 15px;
+}
+.player-profile-menu .platform-selection {
+  margin-bottom: 15px;
+  position: relative;
+}
+.player-profile-menu .platform-selection.psn .platform-icon {
+  width: 24px;
+  height: 20px;
+  background: url(../../../../../content/dam/atvi/callofduty/mycod/common/platform-icons/psn.png) center center no-repeat;
+  background-size: contain;
+}
+.player-profile-menu .platform-selection.xbl .platform-icon {
+  width: 22px;
+  height: 22px;
+  background: url(../../../../../content/dam/atvi/callofduty/mycod/common/platform-icons/xbl.png) center center no-repeat;
+  background-size: contain;
+}
+.player-profile-menu .platform-selection.steam .platform-icon {
+  width: 24px;
+  height: 20px;
+  background: url(../../../../../content/dam/atvi/callofduty/mycod/common/platform-icons/steam.png) center center no-repeat;
+  background-size: contain;
+}
+.player-profile-menu .platform-selection .platform-icon,
+.player-profile-menu .platform-selection .platform-selector {
+  display: inline-block;
+  vertical-align: middle;
+}
+.player-profile-menu .platform-selection .platform-icon {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+  -moz-transform: translate(-50%, 0);
+  -ms-transform: translate(-50%, 0);
+  -o-transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
+}
+.player-profile-menu .platform-selection .platform-selector {
+  background: transparent;
+  width: 85px;
+  position: relative;
+}
+.player-profile-menu .platform-selection .platform-selector select {
+  opacity: 0;
+  cursor: pointer;
+  height: 25px;
+}
+.player-profile-menu .platform-selection .platform-selector:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 0.75em;
+  -webkit-transform: translate(0, -50%);
+  -moz-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  -o-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  width: 0px;
+  height: 0px;
+  border-left: 0.4em solid transparent;
+  border-right: 0.4em solid transparent;
+  border-top: 0.4em solid #fff;
+}
+.player-profile-menu .pp-rank {
+  color: #9b9b9b;
+  text-transform: uppercase;
+  font-size: 15px;
+  font-family: "Montserrat", Arial, sans-serif;
+  font-weight: bold;
+}
+.player-profile-menu .pp-rank span {
+  font-size: 17px;
+}
+.player-profile-menu .link-account-btn {
+  display: none;
+}
+.player-profile-menu .link-account-btn a {
+  font-family: "Open Sans Condensed", Verdana, Arial, Helvetica, sans-serif;
+  font-style: normal;
+  color: #ffffff;
+  background: #000000;
+  border: 1px solid transparent;
+  font-size: 14px;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: inline-block;
+  letter-spacing: 0.7px;
+  font-family: "Montserrat", Arial, sans-serif;
+  font-weight: bold;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  border: 1px solid #FFF;
+}
+.player-profile-menu .link-account-btn a:hover {
+  color: #000000;
+  background: #ffffff;
+  border: 1px solid transparent;
+}
+.player-profile-menu .link-account-btn a:hover {
+  color: #000000;
+  background: #ffffff;
+  border: 1px solid transparent;
+}
+.player-profile-menu .link-account-btn a:after {
+  content: "";
+  width: 7px;
+  height: 7px;
+  border-top: 1px solid #ffffff;
+  border-right: 1px solid #ffffff;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  position: absolute;
+  top: 50%;
+  right: 17px;
+  -webkit-transform: translate(0%, -50%) rotate(45deg);
+  -moz-transform: translate(0%, -50%) rotate(45deg);
+  -o-transform: translate(0%, -50%) rotate(45deg);
+  -ms-transform: translate(0%, -50%) rotate(45deg);
+  transform: translate(0%, -50%) rotate(45deg);
+}
+.player-profile-menu .link-account-btn a:hover:after {
+  border-top: 1px solid #000000;
+  border-right: 1px solid #000000;
+}
+.player-profile-menu .pp-links li {
+  border-bottom: 1px solid #2d2d2d;
+  color: #9b9b9b;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.player-profile-menu .pp-links li:not(:first-of-type) {
+  padding-left: 25px;
+}
+.player-profile-menu .pp-links li:first-of-type a {
+  padding-left: 25px;
+}
+.player-profile-menu .pp-links li:hover {
+  background-color: #ffffff10;
+}
+.player-profile-menu .pp-links li a {
+  display: block;
+  padding: 16px 0 16px 30px;
+  position: relative;
+}
+.player-profile-menu .pp-links li a:before {
+  content: "";
+  width: 19px;
+  height: 19px;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+  -moz-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  -o-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  background-size: contain;
+}
+.player-profile-menu .pp-links .ppl-linked-accounts a:before {
+  background: url(../../../../../content/dam/atvi/callofduty/global/Icon-01.png) center center no-repeat;
+  background-size: contain;
+}
+.player-profile-menu .pp-links .ppl-basic-info a:before {
+  background: url(../../../../../content/dam/atvi/callofduty/global/Icon-02.png) center center no-repeat;
+  background-size: contain;
+}
+.player-profile-menu .pp-links .ppl-preferences a:before {
+  background: url(../../../../../content/dam/atvi/callofduty/global/Icon-03.png) center center no-repeat;
+  background-size: contain;
+}
+.player-profile-menu .pp-links .ppl-rewards a:before {
+  background: url(../../../../../content/dam/atvi/callofduty/global/Icon-04.png) center center no-repeat;
+  background-size: contain;
+}
+.player-profile-menu .pp-links .ppl-signout a:before {
+  background: url(../../../../../content/dam/atvi/callofduty/global/Icon-05.png) center center no-repeat;
+  background-size: contain;
+}
+body.ar .player-profile-menu .pp-links ul {
+  text-align: left;
+}
+body.ar .player-profile-menu .pp-links li:not(first-of-type) {
+  padding-left: 0px;
+  padding-right: 25px;
+}
+body.ar .player-profile-menu .pp-links a:before {
+  left: unset;
+  right: 0;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Arvo|Electrolize|Montserrat|Open+Sans|Open+Sans+Condensed:300');
+@import url('https://fonts.googleapis.com/css?family=Oswald:300,400,600&amp;display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,700');
+body #cdo-bar.SSO-BAR,
+body .sso-bar-spacer {
+  display: none !important;
+}
+body.sso-logged-in .cod-global-header-container {
+  /****** START MYCOD BLUE ****/
+  /****** END MYCOD BLUE ****/
+}
+body.sso-logged-in .cod-global-header-container .logged-in {
+  display: block;
+}
+body.sso-logged-in .cod-global-header-container .logged-out {
+  display: none;
+}
+body.sso-logged-in .cod-global-header-container .desktop-header .nav-right .login {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+body.sso-logged-in .cod-global-header-container .desktop-header .nav-right .login-test {
+  display: none;
+}
+body.sso-logged-in .cod-global-header-container .desktop-header .nav-right .mycod-link > p {
+  padding-right: 0;
+}
+body.sso-logged-in .cod-global-header-container .desktop-header .nav-right .mycod-link > p img {
+  display: none;
+}
+body > .root > .aem-Grid .experiencefragment:first-of-type {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 9999;
+}
+body {
+  -webkit-transition: background-color 0.5s ease;
+  -moz-transition: background-color 0.5s ease;
+  -ms-transition: background-color 0.5s ease;
+  -o-transition: background-color 0.5s ease;
+  transition: background-color 0.5s ease;
+}
+body:before {
+  content: "";
+  -webkit-transition: all ease 1s;
+  -moz-transition: all ease 1s;
+  -ms-transition: all ease 1s;
+  -o-transition: all ease 1s;
+  transition: all ease 1s;
+}
+body .section-blur {
+  opacity: 1;
+  transition: all ease 1s !important;
+}
+body.menu-active {
+  position: fixed;
+  background-color: #000;
+}
+body.menu-active:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.5);
+}
+body.menu-active .section-blur {
+  filter: blur(20px);
+  transition: all ease 1s !important;
+  opacity: .5;
+}
+.cod-game-header {
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.cod-game-header.g-collapse {
+  -webkit-transform: translate(0, -53px);
+  -moz-transform: translate(0, -53px);
+  -ms-transform: translate(0, -53px);
+  -o-transform: translate(0, -53px);
+  transform: translate(0, -53px);
+}
+.cod-game-header.g-collapse .desktop-header .nav-right .purchase {
+  -webkit-transform: translate(0, 0);
+  -moz-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  -o-transform: translate(0, 0);
+  transform: translate(0, 0);
+}
+.cod-global-header-container {
+  background-color: #000000;
+  background-image: url("../../../../../content/dam/atvi/callofduty/global/global-nav/global-nav-bg.png");
+  background-size: 2px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-shadow: 0px 0px 18px #646464;
+  font-family: "Montserrat", Arial, sans-serif;
+  font-weight: bold;
+}
+.cod-global-header-container .logged-in {
+  display: none;
+}
+.cod-global-header-container .logged-out {
+  display: block;
+}
+.cod-global-header-container .inner-container {
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+.cod-global-header-container .desktop-header {
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  display: -webkit-box;
+  display: flex;
+  justify-content: space-between;
+}
+.cod-global-header-container .desktop-header .nav-left {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.cod-global-header-container .desktop-header .nav-left .global-logo {
+  padding-right: 15px;
+  position: relative;
+  height: 100%;
+  padding-left: 15px;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  /*.dd-item-1 {
+                    transition-delay: .5s, .5s;
+                    transition-property: opacity, visibility;
+                }
+                .dd-item-2 {
+                    transition-delay: .4s, .4s;
+                    transition-property: opacity, visibility;
+                }
+                .dd-item-3 {
+                    transition-delay: .3s, .3s;
+                    transition-property: opacity, visibility;
+                }
+                .dd-item-4 {
+                    transition-delay: .2s, .2s;
+                    transition-property: opacity, visibility;
+                }
+                .dd-item-5 {
+                    transition-delay: .1s, .1s;
+                    transition-property: opacity, visibility;
+                }*/
+}
+.cod-global-header-container .desktop-header .nav-left .global-logo .logo {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+  height: 100%;
+}
+.cod-global-header-container .desktop-header .nav-left .global-logo .logo a {
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  letter-spacing: 0;
+  background: url("../../../../../content/dam/atvi/callofduty/global/global-nav/cod-logo-white.svg") center left no-repeat;
+  background-size: contain;
+  width: 105px;
+  height: 30px;
+  display: block;
+  color: #FFF;
+}
+.cod-global-header-container .desktop-header .nav-left .global-logo .logo img {
+  width: 11px;
+  height: 9px;
+  margin-left: 10px;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  display: none;
+}
+.cod-global-header-container .desktop-header .nav-left .global-logo ul {
+  display: none;
+}
+.cod-global-header-container .desktop-header .nav-left .global-logo:hover {
+  background: #000;
+}
+.cod-global-header-container .desktop-header .nav-left .global-logo:hover ul {
+  visibility: visible;
+}
+.cod-global-header-container .desktop-header .nav-left .global-logo:hover .logo img {
+  -webkit-transform: rotate(-180deg);
+  -moz-transform: rotate(-180deg);
+  -ms-transform: rotate(-180deg);
+  -o-transform: rotate(-180deg);
+  transform: rotate(-180deg);
+}
+.cod-global-header-container .desktop-header .nav-left .global-logo:hover .dd-item {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity ease .25s, visibility ease .25s;
+}
+.cod-global-header-container .desktop-header .nav-left .global-logo:hover .dd-item-1 {
+  transition-delay: 0.05s, 0.05s;
+  transition-property: opacity, visibility;
+}
+.cod-global-header-container .desktop-header .nav-left .global-logo:hover .dd-item-2 {
+  transition-delay: 0.1s, 0.1s;
+  transition-property: opacity, visibility;
+}
+.cod-global-header-container .desktop-header .nav-left .global-logo:hover .dd-item-3 {
+  transition-delay: 0.15s, 0.15s;
+  transition-property: opacity, visibility;
+}
+.cod-global-header-container .desktop-header .nav-left .global-logo:hover .dd-item-4 {
+  transition-delay: 0.2s, 0.2s;
+  transition-property: opacity, visibility;
+}
+.cod-global-header-container .desktop-header .nav-left .global-logo:hover .dd-item-5 {
+  transition-delay: 0.25s, 0.25s;
+  transition-property: opacity, visibility;
+}
+.cod-global-header-container .desktop-header .nav-left .global-logo ul {
+  /*display: none;
+                    position: absolute;
+                    width: 190px;
+                    top: 99%;
+                    left: 0;
+                    z-index: 10;*/
+  visibility: hidden;
+  border: 0px;
+  position: absolute;
+  margin-left: -20px;
+  -webkit-transition: height ease 0.05s;
+  -moz-transition: height ease 0.05s;
+  -ms-transition: height ease 0.05s;
+  -o-transition: height ease 0.05s;
+  transition: height ease 0.05s;
+  min-width: 270px;
+  z-index: 9999;
+}
+.cod-global-header-container .desktop-header .nav-left .global-logo li {
+  opacity: 0;
+  background-color: rgba(20, 20, 20, 0);
+  -webkit-transition: opacity ease 0.1s;
+  -moz-transition: opacity ease 0.1s;
+  -ms-transition: opacity ease 0.1s;
+  -o-transition: opacity ease 0.1s;
+  transition: opacity ease 0.1s;
+  visibility: hidden;
+}
+.cod-global-header-container .desktop-header .nav-left .global-logo li:last-of-type {
+  border-bottom: none;
+}
+.cod-global-header-container .desktop-header .nav-left .global-logo li a {
+  position: relative;
+  color: #969696;
+  font-size: 12px;
+  text-decoration: none;
+  display: block;
+  padding: 19px 35px;
+  background: #111;
+  -webkit-transition: all 0.05s;
+  -moz-transition: all 0.05s;
+  -ms-transition: all 0.05s;
+  -o-transition: all 0.05s;
+  transition: all 0.05s;
+}
+.cod-global-header-container .desktop-header .nav-left .global-logo li a .border2 {
+  margin: -16px 0 0 -35px;
+  content: "";
+  height: 50px;
+  background-color: #fff0;
+  display: block;
+  -webkit-transition: all ease 0.15s;
+  -moz-transition: all ease 0.15s;
+  -ms-transition: all ease 0.15s;
+  -o-transition: all ease 0.15s;
+  transition: all ease 0.15s;
+  border: 0px solid #fff0;
+  position: absolute;
+}
+.cod-global-header-container .desktop-header .nav-left .global-logo li a p:before,
+.cod-global-header-container .desktop-header .nav-left .global-logo li a p:after {
+  margin-top: -1px;
+  -webkit-transform: translate(0px, 0px);
+  -moz-transform: translate(0px, 0px);
+  -ms-transform: translate(0px, 0px);
+  -o-transform: translate(0px, 0px);
+  transform: translate(0px, 0px);
+  opacity: 0;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  position: absolute;
+}
+.cod-global-header-container .desktop-header .nav-left .global-logo li a p:before {
+  content: "|";
+  margin-right: 10px;
+}
+.cod-global-header-container .desktop-header .nav-left .global-logo li a p:after {
+  content: "|";
+  margin-left: -8px;
+}
+.cod-global-header-container .desktop-header .nav-left .global-logo li a:hover {
+  background-color: #141414;
+  color: #FFF;
+  text-shadow: 0px 0px 18px #c8c8c8;
+}
+.cod-global-header-container .desktop-header .nav-left .global-logo li:hover p:before {
+  -webkit-transform: translate(-15px, 0);
+  -moz-transform: translate(-15px, 0);
+  -ms-transform: translate(-15px, 0);
+  -o-transform: translate(-15px, 0);
+  transform: translate(-15px, 0);
+  opacity: .5;
+}
+.cod-global-header-container .desktop-header .nav-left .global-logo li:hover p:after {
+  -webkit-transform: translate(15px, 0);
+  -moz-transform: translate(15px, 0);
+  -ms-transform: translate(15px, 0);
+  -o-transform: translate(15px, 0);
+  transform: translate(15px, 0);
+  opacity: .5;
+}
+.cod-global-header-container .desktop-header .nav-left .global-logo li:hover a {
+  background: #222;
+  color: #FFF;
+  text-shadow: 0px 0px 18px #c8c8c8;
+}
+.cod-global-header-container .desktop-header .nav-left .global-logo li:hover a .border2 {
+  background-color: #ffffff10;
+  border: 0px solid #ffffff10;
+}
+.cod-global-header-container .desktop-header .nav-left .global-logo .dd-item-1 {
+  transition-delay: 0.2s, 0.2s;
+  transition-property: opacity, visibility;
+}
+.cod-global-header-container .desktop-header .nav-left .global-logo .dd-item-2 {
+  transition-delay: 0.15s, 0.15s;
+  transition-property: opacity, visibility;
+}
+.cod-global-header-container .desktop-header .nav-left .global-logo .dd-item-3 {
+  transition-delay: 0.1s, 0.1s;
+  transition-property: opacity, visibility;
+}
+.cod-global-header-container .desktop-header .nav-left .global-logo .dd-item-4 {
+  transition-delay: 0.05s, 0.05s;
+  transition-property: opacity, visibility;
+}
+.cod-global-header-container .desktop-header .nav-left .global-top-nav ul {
+  display: -webkit-inline-box;
+  display: -moz-inline-box;
+  display: -ms-inline-flexbox;
+  display: -webkit-inline-flex;
+  display: inline-flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  /*** GAMES TAB ***/
+  /*** END GAMES TAB ***/
+}
+.cod-global-header-container .desktop-header .nav-left .global-top-nav ul.games-list {
+  display: -webkit-inline-box;
+  display: -moz-inline-box;
+  display: -ms-inline-flexbox;
+  display: -webkit-inline-flex;
+  display: inline-flex;
+}
+.cod-global-header-container .desktop-header .nav-left .global-top-nav ul.dd-sublist {
+  visibility: hidden;
+  border: 0px;
+  position: absolute;
+  margin-left: 0;
+  -webkit-transition: height ease 0.05s;
+  -moz-transition: height ease 0.05s;
+  -ms-transition: height ease 0.05s;
+  -o-transition: height ease 0.05s;
+  transition: height ease 0.05s;
+  min-width: 270px;
+  z-index: 9999;
+  display: block;
+}
+.cod-global-header-container .desktop-header .nav-left .global-top-nav ul.dd-sublist li {
+  opacity: 0;
+  background-color: rgba(20, 20, 20, 0);
+  -webkit-transition: opacity ease 0.1s;
+  -moz-transition: opacity ease 0.1s;
+  -ms-transition: opacity ease 0.1s;
+  -o-transition: opacity ease 0.1s;
+  transition: opacity ease 0.1s;
+  visibility: hidden;
+}
+.cod-global-header-container .desktop-header .nav-left .global-top-nav ul.dd-sublist li:last-of-type {
+  border-bottom: none;
+  display: block;
+}
+.cod-global-header-container .desktop-header .nav-left .global-top-nav ul.dd-sublist li a {
+  position: relative;
+  color: #969696;
+  font-size: 12px;
+  text-decoration: none;
+  display: block;
+  padding: 19px 35px;
+  background: #111;
+  -webkit-transition: all 0.05s;
+  -moz-transition: all 0.05s;
+  -ms-transition: all 0.05s;
+  -o-transition: all 0.05s;
+  transition: all 0.05s;
+}
+.cod-global-header-container .desktop-header .nav-left .global-top-nav ul.dd-sublist li a .border2 {
+  margin: -16px 0 0 -35px;
+  content: "";
+  height: 50px;
+  background-color: #fff0;
+  display: block;
+  -webkit-transition: all ease 0.15s;
+  -moz-transition: all ease 0.15s;
+  -ms-transition: all ease 0.15s;
+  -o-transition: all ease 0.15s;
+  transition: all ease 0.15s;
+  border: 0px solid #fff0;
+  position: absolute;
+}
+.cod-global-header-container .desktop-header .nav-left .global-top-nav ul.dd-sublist li a p:before,
+.cod-global-header-container .desktop-header .nav-left .global-top-nav ul.dd-sublist li a p:after {
+  margin-top: -1px;
+  -webkit-transform: translate(0px, 0px);
+  -moz-transform: translate(0px, 0px);
+  -ms-transform: translate(0px, 0px);
+  -o-transform: translate(0px, 0px);
+  transform: translate(0px, 0px);
+  opacity: 0;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  position: absolute;
+}
+.cod-global-header-container .desktop-header .nav-left .global-top-nav ul.dd-sublist li a p:before {
+  content: "|";
+  margin-right: 10px;
+}
+.cod-global-header-container .desktop-header .nav-left .global-top-nav ul.dd-sublist li a p:after {
+  content: "|";
+  margin-left: -8px;
+}
+.cod-global-header-container .desktop-header .nav-left .global-top-nav ul.dd-sublist li a:hover {
+  background-color: #141414;
+  color: #FFF;
+  text-shadow: 0px 0px 18px #c8c8c8;
+}
+.cod-global-header-container .desktop-header .nav-left .global-top-nav ul.dd-sublist li:hover p:before {
+  -webkit-transform: translate(-15px, 0);
+  -moz-transform: translate(-15px, 0);
+  -ms-transform: translate(-15px, 0);
+  -o-transform: translate(-15px, 0);
+  transform: translate(-15px, 0);
+  opacity: .5;
+}
+.cod-global-header-container .desktop-header .nav-left .global-top-nav ul.dd-sublist li:hover p:after {
+  -webkit-transform: translate(15px, 0);
+  -moz-transform: translate(15px, 0);
+  -ms-transform: translate(15px, 0);
+  -o-transform: translate(15px, 0);
+  transform: translate(15px, 0);
+  opacity: .5;
+}
+.cod-global-header-container .desktop-header .nav-left .global-top-nav ul.dd-sublist li:hover a {
+  background: #222;
+  color: #FFF;
+  text-shadow: 0px 0px 18px #c8c8c8;
+}
+.cod-global-header-container .desktop-header .nav-left .global-top-nav ul.dd-sublist li:hover a .border2 {
+  background-color: #ffffff10;
+  border: 0px solid #ffffff10;
+}
+.cod-global-header-container .desktop-header .nav-left .global-top-nav ul.dd-sublist .dd-item-1 {
+  transition-delay: 0.05s, 0.05s;
+  transition-property: opacity, visibility;
+}
+.cod-global-header-container .desktop-header .nav-left .global-top-nav ul.dd-sublist .dd-item-2 {
+  transition-delay: 0.1s, 0.1s;
+  transition-property: opacity, visibility;
+}
+.cod-global-header-container .desktop-header .nav-left .global-top-nav ul.dd-sublist .dd-item-3 {
+  transition-delay: 0.15s, 0.15s;
+  transition-property: opacity, visibility;
+}
+.cod-global-header-container .desktop-header .nav-left .global-top-nav ul.dd-sublist .dd-item-4 {
+  transition-delay: 0.2s, 0.2s;
+  transition-property: opacity, visibility;
+}
+.cod-global-header-container .desktop-header .nav-left .global-top-nav li:last-of-type {
+  display: none;
+}
+.cod-global-header-container .desktop-header .nav-left .global-top-nav li.has-dd {
+  display: block;
+}
+.cod-global-header-container .desktop-header .nav-left .global-top-nav li.has-dd img {
+  width: 11px;
+  height: 9px;
+  margin-left: 10px;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.cod-global-header-container .desktop-header .nav-left .global-top-nav li.has-dd:hover {
+  background: #141414;
+}
+.cod-global-header-container .desktop-header .nav-left .global-top-nav li.has-dd:hover ul {
+  visibility: visible;
+}
+.cod-global-header-container .desktop-header .nav-left .global-top-nav li.has-dd:hover img {
+  -webkit-transform: rotate(-180deg);
+  -moz-transform: rotate(-180deg);
+  -ms-transform: rotate(-180deg);
+  -o-transform: rotate(-180deg);
+  transform: rotate(-180deg);
+}
+.cod-global-header-container .desktop-header .nav-left .global-top-nav li.has-dd:hover .dd-item {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity ease .25s, visibility ease .25s;
+}
+.cod-global-header-container .desktop-header .nav-left .global-top-nav li.has-dd:hover .dd-item-1 {
+  transition-delay: 0.05s, 0.05s;
+  transition-property: opacity, visibility;
+}
+.cod-global-header-container .desktop-header .nav-left .global-top-nav li.has-dd:hover .dd-item-2 {
+  transition-delay: 0.1s, 0.1s;
+  transition-property: opacity, visibility;
+}
+.cod-global-header-container .desktop-header .nav-left .global-top-nav li.has-dd:hover .dd-item-3 {
+  transition-delay: 0.15s, 0.15s;
+  transition-property: opacity, visibility;
+}
+.cod-global-header-container .desktop-header .nav-left .global-top-nav li.has-dd:hover .dd-item-4 {
+  transition-delay: 0.2s, 0.2s;
+  transition-property: opacity, visibility;
+}
+.cod-global-header-container .desktop-header .nav-left .global-top-nav li.has-dd:hover .dd-item-5 {
+  transition-delay: 0.25s, 0.25s;
+  transition-property: opacity, visibility;
+}
+.cod-global-header-container .desktop-header .nav-left .global-top-nav li a {
+  color: #969696;
+  font-size: 12px;
+  text-decoration: none;
+  display: block;
+  padding: 19px 20px;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.cod-global-header-container .desktop-header .nav-left .global-top-nav li a:hover {
+  color: #FFF;
+  background-color: #ffffff10;
+  border: 0px solid #ffffff30;
+}
+.cod-global-header-container .desktop-header .nav-right {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.cod-global-header-container .desktop-header .nav-right .login-test {
+  color: #969696;
+  padding-right: 13px;
+  /*.test-b {
+					display: none;
+                }
+
+                .test-c {
+					display: none;
+                }
+
+                .test-d {
+					display: none;
+                }
+
+                .test-e {
+					display: none;
+                }
+
+                .test-f {
+					display: none;
+                    position: relative;
+                    padding-left: 45px;
+
+                    a {
+						position: relative;
+                        padding: 19px 15px 19px 40px;
+                        .transition(all .5s);
+
+                        &:before {
+                            content: "";
+                            position: absolute;
+                            .size(46px,50px);
+                            background: url(../../../../../content/dam/atvi/callofduty/global/global-nav/profile_icon.png) center center no-repeat;
+                            background-size: 20px;
+                            left: -3px;
+                            top: 50%;
+                            opacity: 0.5;
+                            .translate(0,-50%);
+                        }
+
+                        &:hover {
+							background: #000;
+                        }
+                    }
+                }
+
+                &.testb { .test-b { display: block; } }
+                &.testc { .test-c { display: block; } }
+                &.testd { .test-d { display: block; } }
+                &.teste { .test-e { display: block; } }
+                &.testf { 
+                    padding-right: 0;
+                    .test-f { display: block; } 
+                }*/
+}
+.cod-global-header-container .desktop-header .nav-right .login-test a {
+  color: #969696;
+  font-size: 12px;
+  text-decoration: none;
+}
+.cod-global-header-container .desktop-header .nav-right .login-test a:hover {
+  color: #FFF;
+}
+.cod-global-header-container .desktop-header .nav-right .mycod-link {
+  position: relative;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  /*a {
+					.nav-links-styles();
+                    padding: 19px 20px;
+                    .transition(all .5s);
+
+                    &:hover {
+                        color: #FFF;
+                        background-color: #ffffff10;
+                        border: 0px solid #ffffff30; 
+                    }
+                }*/
+}
+.cod-global-header-container .desktop-header .nav-right .mycod-link > p {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+  margin-right: 23px;
+}
+.cod-global-header-container .desktop-header .nav-right .mycod-link > p > img {
+  width: 11px;
+  height: 9px;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.cod-global-header-container .desktop-header .nav-right .mycod-link > p > a {
+  position: relative;
+  color: #969696;
+  font-size: 12px;
+  text-decoration: none;
+  display: block;
+  padding: 19px 15px 19px 45px;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.cod-global-header-container .desktop-header .nav-right .mycod-link > p > a:before {
+  content: "";
+  width: 20px;
+  height: 18px;
+  position: absolute;
+  top: 50%;
+  left: 14px;
+  -webkit-transform: translate(0, -50%);
+  -moz-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  -o-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  background: url(../../../../../content/dam/atvi/callofduty/global/global-nav/shield_icon_no_drop.png) center center no-repeat;
+  background-size: contain;
+  opacity: .5;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.cod-global-header-container .desktop-header .nav-right .mycod-link:hover ul {
+  visibility: visible;
+}
+.cod-global-header-container .desktop-header .nav-right .mycod-link:hover > p {
+  background-color: #000;
+}
+.cod-global-header-container .desktop-header .nav-right .mycod-link:hover > p > img {
+  -webkit-transform: rotate(-180deg);
+  -moz-transform: rotate(-180deg);
+  -ms-transform: rotate(-180deg);
+  -o-transform: rotate(-180deg);
+  transform: rotate(-180deg);
+}
+.cod-global-header-container .desktop-header .nav-right .mycod-link:hover > p > a {
+  color: #FFF;
+}
+.cod-global-header-container .desktop-header .nav-right .mycod-link:hover > p > a:before {
+  opacity: 1;
+}
+.cod-global-header-container .desktop-header .nav-right .mycod-link:hover .dd-item {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity ease 1s, visibility ease 1s;
+}
+.cod-global-header-container .desktop-header .nav-right .mycod-link:hover ul.logged-in .dd-item-1 {
+  transition-delay: .1s, .1s;
+  transition-property: opacity, visibility;
+}
+.cod-global-header-container .desktop-header .nav-right .mycod-link:hover ul.logged-in .dd-item-2 {
+  transition-delay: .2s, .2s;
+  transition-property: opacity, visibility;
+}
+.cod-global-header-container .desktop-header .nav-right .mycod-link:hover ul.logged-in .dd-item-3 {
+  transition-delay: .3s, .3s;
+  transition-property: opacity, visibility;
+}
+.cod-global-header-container .desktop-header .nav-right .mycod-link:hover ul.logged-in .dd-item-4 {
+  transition-delay: .4s, .4s;
+  transition-property: opacity, visibility;
+}
+.cod-global-header-container .desktop-header .nav-right .mycod-link:hover ul.logged-in .dd-item-5 {
+  transition-delay: .5s, .5s;
+  transition-property: opacity, visibility;
+}
+.cod-global-header-container .desktop-header .nav-right .mycod-link:hover ul.logged-out .dd-item-1 {
+  transition-delay: .1s, .1s;
+  transition-property: opacity, visibility;
+}
+.cod-global-header-container .desktop-header .nav-right .mycod-link:hover ul.logged-out .dd-item-2 {
+  transition-delay: .2s, .2s;
+  transition-property: opacity, visibility;
+}
+.cod-global-header-container .desktop-header .nav-right .mycod-link ul {
+  visibility: hidden;
+  border: 0px;
+  position: absolute;
+  left: 0;
+  -webkit-transition: height ease 3s;
+  -moz-transition: height ease 3s;
+  -ms-transition: height ease 3s;
+  -o-transition: height ease 3s;
+  transition: height ease 3s;
+  width: 100%;
+  z-index: 3000;
+}
+.cod-global-header-container .desktop-header .nav-right .mycod-link li {
+  opacity: 0;
+  background-color: rgba(20, 20, 20, 0);
+  -webkit-transition: opacity ease 0.5s;
+  -moz-transition: opacity ease 0.5s;
+  -ms-transition: opacity ease 0.5s;
+  -o-transition: opacity ease 0.5s;
+  transition: opacity ease 0.5s;
+  visibility: hidden;
+}
+.cod-global-header-container .desktop-header .nav-right .mycod-link li a {
+  position: relative;
+  color: #969696;
+  font-size: 12px;
+  text-decoration: none;
+  display: block;
+  padding: 19px 35px;
+  background: #111;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.cod-global-header-container .desktop-header .nav-right .mycod-link li a .border2 {
+  margin: -16px 0 0 -35px;
+  content: "";
+  height: 50px;
+  background-color: #fff0;
+  display: block;
+  -webkit-transition: all ease 1s;
+  -moz-transition: all ease 1s;
+  -ms-transition: all ease 1s;
+  -o-transition: all ease 1s;
+  transition: all ease 1s;
+  border: 0px solid #fff0;
+  position: absolute;
+}
+.cod-global-header-container .desktop-header .nav-right .mycod-link li a p:before,
+.cod-global-header-container .desktop-header .nav-right .mycod-link li a p:after {
+  margin-top: -1px;
+  -webkit-transform: translate(0px, 0px);
+  -moz-transform: translate(0px, 0px);
+  -ms-transform: translate(0px, 0px);
+  -o-transform: translate(0px, 0px);
+  transform: translate(0px, 0px);
+  opacity: 0;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  position: absolute;
+}
+.cod-global-header-container .desktop-header .nav-right .mycod-link li a p:before {
+  content: "|";
+  margin-right: 10px;
+}
+.cod-global-header-container .desktop-header .nav-right .mycod-link li a p:after {
+  content: "|";
+  margin-left: -8px;
+}
+.cod-global-header-container .desktop-header .nav-right .mycod-link li a:hover {
+  background: #222;
+  color: #FFF;
+  text-shadow: 0px 0px 18px #c8c8c8;
+}
+.cod-global-header-container .desktop-header .nav-right .mycod-link li a:hover p:before {
+  -webkit-transform: translate(-15px, 0);
+  -moz-transform: translate(-15px, 0);
+  -ms-transform: translate(-15px, 0);
+  -o-transform: translate(-15px, 0);
+  transform: translate(-15px, 0);
+  opacity: .5;
+}
+.cod-global-header-container .desktop-header .nav-right .mycod-link li a:hover p:after {
+  -webkit-transform: translate(15px, 0);
+  -moz-transform: translate(15px, 0);
+  -ms-transform: translate(15px, 0);
+  -o-transform: translate(15px, 0);
+  transform: translate(15px, 0);
+  opacity: .5;
+}
+.cod-global-header-container .desktop-header .nav-right .mycod-link li a:hover .border2 {
+  background-color: #ffffff10;
+  border: 0px solid #ffffff10;
+}
+.cod-global-header-container .desktop-header .nav-right .mycod-link ul.logged-out .dd-item-1 {
+  transition-delay: .2s, .2s;
+  transition-property: opacity, visibility;
+}
+.cod-global-header-container .desktop-header .nav-right .mycod-link ul.logged-out .dd-item-2 {
+  transition-delay: .1s, .1s;
+  transition-property: opacity, visibility;
+}
+.cod-global-header-container .desktop-header .nav-right .mycod-link ul.logged-in .dd-item-1 {
+  transition-delay: .5s, .5s;
+  transition-property: opacity, visibility;
+}
+.cod-global-header-container .desktop-header .nav-right .mycod-link ul.logged-in .dd-item-2 {
+  transition-delay: .4s, .4s;
+  transition-property: opacity, visibility;
+}
+.cod-global-header-container .desktop-header .nav-right .mycod-link ul.logged-in .dd-item-3 {
+  transition-delay: .3s, .3s;
+  transition-property: opacity, visibility;
+}
+.cod-global-header-container .desktop-header .nav-right .mycod-link ul.logged-in .dd-item-4 {
+  transition-delay: .2s, .2s;
+  transition-property: opacity, visibility;
+}
+.cod-global-header-container .desktop-header .nav-right .mycod-link ul.logged-in .dd-item-5 {
+  transition-delay: .1s, .1s;
+  transition-property: opacity, visibility;
+}
+.cod-global-header-container .desktop-header .nav-right .login {
+  position: relative;
+  padding-right: 15px;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  /*&:hover {
+
+                    //background-color: rgba(30,159,253, .4);
+                    background-color: #ffffff10;
+    			    border: 0px solid #ffffff30;
+
+					.account-icon {
+
+						opacity: 1;
+
+                    }
+
+                    .username {
+						color: #FFF;
+                    }
+
+                }*/
+  /*
+                li {
+
+					a {
+    					.nav-links-styles();
+                        padding: 19px 20px;
+                        .transition(all .5s);
+
+                        &:hover {
+							color: #FFF;
+                            background-color: #ffffff10;
+    						border: 0px solid #ffffff30; 
+                        }
+                    }
+
+                }*/
+}
+.cod-global-header-container .desktop-header .nav-right .login > img {
+  width: 11px;
+  height: 9px;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.cod-global-header-container .desktop-header .nav-right .login.active ul {
+  display: block;
+}
+.cod-global-header-container .desktop-header .nav-right .login:hover {
+  background: #000;
+}
+.cod-global-header-container .desktop-header .nav-right .login:hover ul {
+  visibility: visible;
+}
+.cod-global-header-container .desktop-header .nav-right .login:hover > p {
+  background-color: #000;
+}
+.cod-global-header-container .desktop-header .nav-right .login:hover > img {
+  -webkit-transform: rotate(-180deg);
+  -moz-transform: rotate(-180deg);
+  -ms-transform: rotate(-180deg);
+  -o-transform: rotate(-180deg);
+  transform: rotate(-180deg);
+}
+.cod-global-header-container .desktop-header .nav-right .login:hover > p > a {
+  color: #FFF;
+}
+.cod-global-header-container .desktop-header .nav-right .login:hover > p > a:before {
+  opacity: 1;
+}
+.cod-global-header-container .desktop-header .nav-right .login:hover .dd-item {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity ease 1s, visibility ease 1s;
+}
+.cod-global-header-container .desktop-header .nav-right .login:hover ul.logged-in .dd-item-1 {
+  transition-delay: .1s, .1s;
+  transition-property: opacity, visibility;
+}
+.cod-global-header-container .desktop-header .nav-right .login:hover ul.logged-in .dd-item-2 {
+  transition-delay: .2s, .2s;
+  transition-property: opacity, visibility;
+}
+.cod-global-header-container .desktop-header .nav-right .login:hover ul.logged-in .dd-item-3 {
+  transition-delay: .3s, .3s;
+  transition-property: opacity, visibility;
+}
+.cod-global-header-container .desktop-header .nav-right .login:hover ul.logged-in .dd-item-4 {
+  transition-delay: .4s, .4s;
+  transition-property: opacity, visibility;
+}
+.cod-global-header-container .desktop-header .nav-right .login:hover ul.logged-in .dd-item-5 {
+  transition-delay: .5s, .5s;
+  transition-property: opacity, visibility;
+}
+.cod-global-header-container .desktop-header .nav-right .login ul {
+  visibility: hidden;
+  border: 0px;
+  position: absolute;
+  left: 0;
+  -webkit-transition: height ease 3s;
+  -moz-transition: height ease 3s;
+  -ms-transition: height ease 3s;
+  -o-transition: height ease 3s;
+  transition: height ease 3s;
+  width: 220px;
+  z-index: 3000;
+  top: 50px;
+}
+.cod-global-header-container .desktop-header .nav-right .login ul.logged-in .dd-item-1 {
+  transition-delay: .5s, .5s;
+  transition-property: opacity, visibility;
+}
+.cod-global-header-container .desktop-header .nav-right .login ul.logged-in .dd-item-2 {
+  transition-delay: .4s, .4s;
+  transition-property: opacity, visibility;
+}
+.cod-global-header-container .desktop-header .nav-right .login ul.logged-in .dd-item-3 {
+  transition-delay: .3s, .3s;
+  transition-property: opacity, visibility;
+}
+.cod-global-header-container .desktop-header .nav-right .login ul.logged-in .dd-item-4 {
+  transition-delay: .2s, .2s;
+  transition-property: opacity, visibility;
+}
+.cod-global-header-container .desktop-header .nav-right .login ul.logged-in .dd-item-5 {
+  transition-delay: .1s, .1s;
+  transition-property: opacity, visibility;
+}
+.cod-global-header-container .desktop-header .nav-right .login li {
+  opacity: 0;
+  background-color: rgba(20, 20, 20, 0);
+  -webkit-transition: opacity ease 0.5s;
+  -moz-transition: opacity ease 0.5s;
+  -ms-transition: opacity ease 0.5s;
+  -o-transition: opacity ease 0.5s;
+  transition: opacity ease 0.5s;
+  visibility: hidden;
+}
+.cod-global-header-container .desktop-header .nav-right .login li a {
+  position: relative;
+  color: #969696;
+  font-size: 12px;
+  text-decoration: none;
+  display: block;
+  padding: 19px 35px;
+  background: #111;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.cod-global-header-container .desktop-header .nav-right .login li a .border2 {
+  margin: -16px 0 0 -35px;
+  content: "";
+  height: 50px;
+  background-color: #fff0;
+  display: block;
+  -webkit-transition: all ease 1s;
+  -moz-transition: all ease 1s;
+  -ms-transition: all ease 1s;
+  -o-transition: all ease 1s;
+  transition: all ease 1s;
+  border: 0px solid #fff0;
+  position: absolute;
+}
+.cod-global-header-container .desktop-header .nav-right .login li a p:before,
+.cod-global-header-container .desktop-header .nav-right .login li a p:after {
+  margin-top: -1px;
+  -webkit-transform: translate(0px, 0px);
+  -moz-transform: translate(0px, 0px);
+  -ms-transform: translate(0px, 0px);
+  -o-transform: translate(0px, 0px);
+  transform: translate(0px, 0px);
+  opacity: 0;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  position: absolute;
+}
+.cod-global-header-container .desktop-header .nav-right .login li a p:before {
+  content: "|";
+  margin-right: 10px;
+}
+.cod-global-header-container .desktop-header .nav-right .login li a p:after {
+  content: "|";
+  margin-left: -8px;
+}
+.cod-global-header-container .desktop-header .nav-right .login li a:hover {
+  background: #222;
+  color: #FFF;
+  text-shadow: 0px 0px 18px #c8c8c8;
+}
+.cod-global-header-container .desktop-header .nav-right .login li a:hover p:before {
+  -webkit-transform: translate(-15px, 0);
+  -moz-transform: translate(-15px, 0);
+  -ms-transform: translate(-15px, 0);
+  -o-transform: translate(-15px, 0);
+  transform: translate(-15px, 0);
+  opacity: .5;
+}
+.cod-global-header-container .desktop-header .nav-right .login li a:hover p:after {
+  -webkit-transform: translate(15px, 0);
+  -moz-transform: translate(15px, 0);
+  -ms-transform: translate(15px, 0);
+  -o-transform: translate(15px, 0);
+  transform: translate(15px, 0);
+  opacity: .5;
+}
+.cod-global-header-container .desktop-header .nav-right .login li a:hover .border2 {
+  background-color: #ffffff10;
+  border: 0px solid #ffffff10;
+}
+.cod-global-header-container .desktop-header .nav-right .login.pp-ready .username {
+  display: block;
+}
+.cod-global-header-container .desktop-header .nav-right .login .emblem-sm {
+  width: 20px;
+  height: 20px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-right: 7px;
+  display: none;
+}
+.cod-global-header-container .desktop-header .nav-right .login .account-icon {
+  position: relative;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  display: block;
+  letter-spacing: 0;
+  background: url("../../../../../content/dam/atvi/callofduty/global/global-nav/profile_icon.png") center center no-repeat;
+  background-size: 20px;
+  opacity: .5;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  width: 46px;
+  height: 50px;
+}
+.cod-global-header-container .desktop-header .nav-right .login .username {
+  color: #969696;
+  font-size: 12px;
+  text-decoration: none;
+  display: block;
+  padding-right: 15px;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.cod-global-header-container .desktop-header .nav-right .purchase {
+  border: 0;
+  background: none;
+}
+.cod-global-header-container .desktop-header .nav-right .purchase a {
+  min-height: 16px;
+  text-decoration: none;
+  padding: 12px 20px;
+  transition-property: text-shadow, background-color, border, color;
+  transition-duration: 1s;
+  position: relative;
+  background-color: #282828;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: #81898c;
+  line-height: 1.15;
+  text-transform: uppercase;
+  margin: 0 0 40px 0;
+  width: fit-content;
+  background-image: url('../../../../../content/dam/atvi/callofduty/cod-touchui/kronos/home/common/global-nav-bg-mobile.png');
+  background-size: 2px;
+  box-shadow: inset 0px 0px 5px #81898c;
+  border: 1px solid #81898c;
+  cursor: pointer;
+  text-shadow: 0px 0px 0px #97cde1;
+  background-color: transparent;
+  background-image: url('../../../../../content/dam/atvi/callofduty/cod-touchui/kronos/home/common/blue-tile.png');
+  background-color: #242424;
+  color: #94bbc2;
+  box-shadow: inset 0px 0px 5px #597985;
+  border: 1px solid #597985;
+}
+.cod-global-header-container .desktop-header .nav-right .purchase a:before,
+.cod-global-header-container .desktop-header .nav-right .purchase a:after {
+  width: 100%;
+  content: "";
+  height: 2px;
+  display: block;
+  position: absolute;
+  background-image: linear-gradient(to right, rgba(250, 250, 250, 0.5), #ffffff 20%, #ffffff 80%, rgba(250, 250, 250, 0.5));
+  transition: all ease .8s;
+  transform: scaleX(0);
+  top: -1px;
+  left: 0;
+}
+.cod-global-header-container .desktop-header .nav-right .purchase a:before {
+  color: #b6bec0;
+  text-shadow: 0px 0px 10px #ffffff;
+}
+.cod-global-header-container .desktop-header .nav-right .purchase a:after {
+  bottom: -1px;
+  top: initial;
+}
+.cod-global-header-container .desktop-header .nav-right .purchase a:hover {
+  background-color: #627f53;
+  color: #c7cac6;
+}
+.cod-global-header-container .desktop-header .nav-right .purchase a:hover:after,
+.cod-global-header-container .desktop-header .nav-right .purchase a:hover:before {
+  -webkit-transition: all ease 0.8s;
+  -moz-transition: all ease 0.8s;
+  -ms-transition: all ease 0.8s;
+  -o-transition: all ease 0.8s;
+  transition: all ease 0.8s;
+  transform: scaleX(1);
+  box-shadow: 0px 0px 10px;
+}
+.cod-global-header-container .desktop-header .nav-right .purchase a:before,
+.cod-global-header-container .desktop-header .nav-right .purchase a:after {
+  background-image: linear-gradient(to right, rgba(151, 205, 225, 0.5), #79d9ff 20%, #79d9ff 80%, rgba(151, 205, 225, 0.5));
+}
+.cod-global-header-container .desktop-header .nav-right .purchase a:hover {
+  background-color: #282828;
+  text-shadow: 0px 0px 10px #79d9ff;
+  color: #79d9ff;
+}
+.mobile-header {
+  display: none;
+}
+.mobile-header .mobile-top-nav {
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  display: -webkit-box;
+  display: flex;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.mobile-header .mobile-top-nav .mobile-global-logo {
+  padding-left: 15px;
+}
+.mobile-header .mobile-top-nav .mobile-global-logo a {
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  letter-spacing: 0;
+  background: url("../../../../../content/dam/atvi/callofduty/global/global-nav/cod-logo-white.svg") center left no-repeat;
+  background-size: contain;
+  width: 105px;
+  height: 30px;
+  display: block;
+}
+.mobile-header .mobile-top-nav .mobile-purchase a {
+  min-height: 16px;
+  text-decoration: none;
+  padding: 12px 20px;
+  transition-property: text-shadow, background-color, border, color;
+  transition-duration: 1s;
+  position: relative;
+  background-color: #282828;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: #81898c;
+  line-height: 1.15;
+  text-transform: uppercase;
+  margin: 0 0 40px 0;
+  width: fit-content;
+  background-image: url('../../../../../content/dam/atvi/callofduty/cod-touchui/kronos/home/common/global-nav-bg-mobile.png');
+  background-size: 2px;
+  box-shadow: inset 0px 0px 5px #81898c;
+  border: 1px solid #81898c;
+  cursor: pointer;
+  text-shadow: 0px 0px 0px #97cde1;
+  background-color: transparent;
+  background-image: url('../../../../../content/dam/atvi/callofduty/cod-touchui/kronos/home/common/blue-tile.png');
+  background-color: #242424;
+  color: #94bbc2;
+  box-shadow: inset 0px 0px 5px #597985;
+  border: 1px solid #597985;
+}
+.mobile-header .mobile-top-nav .mobile-purchase a:before,
+.mobile-header .mobile-top-nav .mobile-purchase a:after {
+  width: 100%;
+  content: "";
+  height: 2px;
+  display: block;
+  position: absolute;
+  background-image: linear-gradient(to right, rgba(250, 250, 250, 0.5), #ffffff 20%, #ffffff 80%, rgba(250, 250, 250, 0.5));
+  transition: all ease .8s;
+  transform: scaleX(0);
+  top: -1px;
+  left: 0;
+}
+.mobile-header .mobile-top-nav .mobile-purchase a:before {
+  color: #b6bec0;
+  text-shadow: 0px 0px 10px #ffffff;
+}
+.mobile-header .mobile-top-nav .mobile-purchase a:after {
+  bottom: -1px;
+  top: initial;
+}
+.mobile-header .mobile-top-nav .mobile-purchase a:hover {
+  background-color: #627f53;
+  color: #c7cac6;
+}
+.mobile-header .mobile-top-nav .mobile-purchase a:hover:after,
+.mobile-header .mobile-top-nav .mobile-purchase a:hover:before {
+  -webkit-transition: all ease 0.8s;
+  -moz-transition: all ease 0.8s;
+  -ms-transition: all ease 0.8s;
+  -o-transition: all ease 0.8s;
+  transition: all ease 0.8s;
+  transform: scaleX(1);
+  box-shadow: 0px 0px 10px;
+}
+.mobile-header .mobile-top-nav .mobile-purchase a:before,
+.mobile-header .mobile-top-nav .mobile-purchase a:after {
+  background-image: linear-gradient(to right, rgba(151, 205, 225, 0.5), #79d9ff 20%, #79d9ff 80%, rgba(151, 205, 225, 0.5));
+}
+.mobile-header .mobile-top-nav .mobile-purchase a:hover {
+  background-color: #282828;
+  text-shadow: 0px 0px 10px #79d9ff;
+  color: #79d9ff;
+}
+.mobile-header .mobile-top-nav .mobile-burger {
+  width: 40px;
+  height: 40px;
+  position: relative;
+  cursor: pointer;
+}
+.mobile-header .mobile-top-nav .mobile-burger .bar {
+  width: 30px;
+  height: 1px;
+  display: block;
+  position: relative;
+  background-color: #FFF;
+}
+.mobile-header .mobile-top-nav .mobile-burger .bar.one {
+  position: absolute;
+  top: 10px;
+}
+.mobile-header .mobile-top-nav .mobile-burger .bar.two {
+  position: absolute;
+  top: 20px;
+  transition: 0.3s ease .6s;
+  animation: fade 2s;
+}
+.mobile-header .mobile-top-nav .mobile-burger .bar.three {
+  position: absolute;
+  top: 30px;
+}
+.mobile-header .mobile-top-nav .mobile-burger.active .bar.two {
+  opacity: 0;
+  transition: .3s ease;
+}
+.mobile-header .mobile-top-nav .mobile-burger.anim .bar.one {
+  top: 10px;
+  position: absolute;
+  transition: top .3s ease .6s;
+  animation: turnthree 1s 0s;
+  animation-fill-mode: forwards;
+}
+.mobile-header .mobile-top-nav .mobile-burger.anim .bar.three {
+  top: 30px;
+  position: absolute;
+  transition: top .3s ease .6s;
+  animation: turnfour 1s 0s;
+  animation-fill-mode: forwards;
+}
+.mobile-header .mobile-top-nav .mobile-burger.anim.active .bar.one {
+  top: 20px;
+  transition: top 0.3s ease .1s;
+  animation: turn 1s .3s;
+  animation-fill-mode: forwards;
+}
+.mobile-header .mobile-top-nav .mobile-burger.anim.active .bar.three {
+  top: 20px;
+  transition: top 0.3s ease .1s;
+  animation: turntwo 1s .3s;
+  animation-fill-mode: forwards;
+}
+.mobile-header .mobile-menu {
+  position: fixed;
+  top: 50px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 0px;
+  overflow: hidden;
+  transition: height 1s ease 0s !important;
+}
+.mobile-header .mobile-menu.active {
+  height: calc(100% - 50px);
+}
+.mobile-header .mobile-menu.active .mobile-menu-container li.nav-item {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 1s ease 0.3s, visibility 1s ease .3s;
+}
+.mobile-header .mobile-menu .mobile-menu-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow-y: auto;
+  padding-top: 50px;
+}
+.mobile-header .mobile-menu .mobile-menu-container.cod-logo-switch li.logo-item .logo a {
+  background: none;
+  text-indent: 0;
+  overflow: unset;
+  width: auto;
+  height: auto;
+  padding: 25px 0;
+  cursor: default;
+}
+.mobile-header .mobile-menu .mobile-menu-container.cod-logo-switch li.cod-logo-item .logo {
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  display: -webkit-box;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 25px;
+}
+.mobile-header .mobile-menu .mobile-menu-container.cod-logo-switch li.cod-logo-item a {
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  letter-spacing: 0;
+  text-indent: 1000%;
+  background: url("../../../../../content/dam/atvi/callofduty/global/global-nav/cod-logo-white.svg") center left no-repeat;
+  background-size: contain;
+  width: 105px;
+  height: 30px;
+  display: block;
+}
+.mobile-header .mobile-menu .mobile-menu-container a {
+  font-size: 12px;
+  text-decoration: none;
+  display: block;
+  color: #969696;
+  padding: 25px;
+  font-size: 15px;
+}
+.mobile-header .mobile-menu .mobile-menu-container li {
+  /*&:nth-child(5) {
+					display: none;
+                }*/
+}
+.mobile-header .mobile-menu .mobile-menu-container li.nav-item {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 1s ease 0s, visibility 1s ease 0s;
+}
+.mobile-header .mobile-menu .mobile-menu-container li.drop .drop-label {
+  position: relative;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  display: -webkit-box;
+  display: flex;
+  justify-content: space-between;
+  padding-right: 25px;
+}
+.mobile-header .mobile-menu .mobile-menu-container li.drop .drop-label img {
+  width: 11px;
+  height: 9px;
+  margin-left: 10px;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+.mobile-header .mobile-menu .mobile-menu-container li.logo-item {
+  border-top: 0px solid rgba(40, 40, 40, 0);
+  border-bottom: 0px solid rgba(40, 40, 40, 0);
+  transition: border 1s ease 0s;
+  /*.dd-item-5 {
+                    	transition-delay: .1s, .1s, .1s;
+                    	transition-property: opacity, visibility, height;
+                	}*/
+}
+.mobile-header .mobile-menu .mobile-menu-container li.logo-item .logo {
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  display: -webkit-box;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 25px;
+}
+.mobile-header .mobile-menu .mobile-menu-container li.logo-item .logo a {
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  letter-spacing: 0;
+  background: url("../../../../../content/dam/atvi/callofduty/global/global-nav/cod-logo-white.svg") center left no-repeat;
+  background-size: contain;
+  width: 105px;
+  height: 30px;
+  display: block;
+}
+.mobile-header .mobile-menu .mobile-menu-container li.logo-item .logo img {
+  width: 11px;
+  height: 9px;
+  margin-left: 10px;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+.mobile-header .mobile-menu .mobile-menu-container li.logo-item .dd-item {
+  height: 0px;
+  visibility: hidden;
+  opacity: 0;
+  background-color: rgba(20, 20, 20, 0);
+  transition: opacity ease .5s, visibility ease .5s, height ease .5s;
+}
+.mobile-header .mobile-menu .mobile-menu-container li.logo-item .dd-item-1 {
+  transition-delay: .05s;
+  transition-property: opacity, visibility, height;
+}
+.mobile-header .mobile-menu .mobile-menu-container li.logo-item .dd-item-2 {
+  transition-delay: .15s;
+  transition-property: opacity, visibility, height;
+}
+.mobile-header .mobile-menu .mobile-menu-container li.logo-item .dd-item-3 {
+  transition-delay: .1s;
+  transition-property: opacity, visibility, height;
+}
+.mobile-header .mobile-menu .mobile-menu-container li.logo-item .dd-item-4 {
+  transition-delay: .05s;
+  transition-property: opacity, visibility, height;
+}
+.mobile-header .mobile-menu .mobile-menu-container li.logo-item.active {
+  border-top: 1px solid #282828;
+  border-bottom: 1px solid #282828;
+  /*.dd-item-5 {
+                            transition-delay: .5s, .5s;
+                            transition-property: opacity, visibility;
+                        }*/
+}
+.mobile-header .mobile-menu .mobile-menu-container li.logo-item.active ul {
+  height: 250px;
+  position: relative;
+  opacity: 1;
+  transition: opacity ease 1s, visibility ease 1s, height ease 1s;
+}
+.mobile-header .mobile-menu .mobile-menu-container li.logo-item.active .logo img {
+  -webkit-transform: rotate(-180deg);
+  -moz-transform: rotate(-180deg);
+  -ms-transform: rotate(-180deg);
+  -o-transform: rotate(-180deg);
+  transform: rotate(-180deg);
+}
+.mobile-header .mobile-menu .mobile-menu-container li.logo-item.active .dd-item {
+  opacity: 1;
+  visibility: visible;
+  height: 60px;
+  transition: opacity ease .5s, visibility ease .5s, height ease .5s;
+}
+.mobile-header .mobile-menu .mobile-menu-container li.logo-item.active .dd-item-1 {
+  transition-delay: .05s;
+  transition-property: opacity, visibility, height;
+}
+.mobile-header .mobile-menu .mobile-menu-container li.logo-item.active .dd-item-2 {
+  transition-delay: .1s;
+  transition-property: opacity, visibility, height;
+}
+.mobile-header .mobile-menu .mobile-menu-container li.logo-item.active .dd-item-3 {
+  transition-delay: .15s;
+  transition-property: opacity, visibility, height;
+}
+.mobile-header .mobile-menu .mobile-menu-container li.logo-item.active .dd-item-4 {
+  transition-delay: .2s;
+  transition-property: opacity, visibility;
+}
+.mobile-header .mobile-menu .mobile-menu-container li ul {
+  height: 0;
+  transition: opacity ease 1s, visibility ease 1s, height ease 2s;
+}
+.mobile-header .mobile-menu .mobile-menu-container li ul li a {
+  color: #FFF;
+}
+@media screen and (max-width: 380px) {
+  .mobile-header .mobile-top-nav .mobile-purchase a {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 1150px) {
+  .cod-global-header-container .desktop-header {
+    display: none;
+  }
+  .cod-global-header-container .mobile-header {
+    display: block;
+  }
+}
+@keyframes turn {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(45deg);
+  }
+}
+@keyframes turnthree {
+  0% {
+    transform: rotate(45deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+@keyframes turntwo {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-45deg);
+  }
+}
+@keyframes turnfour {
+  0% {
+    transform: rotate(-45deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.cod-global-header-container .desktop-header .nav-left .global-top-nav ul.games-list.ab-test {
+  display: none;
+}
+.cod-global-header-container .desktop-header .nav-left .global-top-nav ul.global-general-nav.ab-test .nav-link-ab-test {
+  overflow: hidden;
+  white-space: nowrap;
+  text-indent: -9999px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  display: block;
+  max-height: 51px;
+}
+.cod-global-header-container .desktop-header .nav-left .global-top-nav ul.global-general-nav.ab-test .nav-link-ab-test.modernwarfare {
+  background-image: url(../../../../../content/dam/atvi/callofduty/cod-touchui/kronos/common/kronos-icon.png);
+  background-size: 40px;
+  width: 66px;
+}
+.cod-global-header-container .desktop-header .nav-left .global-top-nav ul.global-general-nav.ab-test .nav-link-ab-test.blackops4 {
+  background-image: url(../../../../../content/dam/atvi/callofduty/blackops4/common/shield.png);
+  background-size: 20px;
+  width: 50px;
+}
+.cod-global-header-container .desktop-header .nav-left .global-top-nav ul.global-general-nav.ab-test .nav-link-ab-test.callofdutymobile {
+  background-image: url(../../../../../content/dam/atvi/callofduty/mobile/common/Mobile_Logo_ICON_64x64.png);
+  background-size: 30px;
+  width: 50px;
+}
+.cod-global-header-container .desktop-header .nav-left .global-top-nav ul.global-general-nav.ab-test .nav-link-ab-test.wwii {
+  background-image: url(../../../../../content/dam/atvi/callofduty/mycod/common/title-icons/ww2Logo.png);
+  background-size: 40px;
+  width: 66px;
+}
+
+body.sso-logged-in .cod-game-header-container .logged-in {
+  display: block;
+}
+body.sso-logged-in .cod-game-header-container .logged-out {
+  display: none;
+}
+body.mobile-menu-active {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: fixed;
+}
+.global-small-header .cod-global-header-container .desktop-header .nav-right .purchase {
+  visibility: hidden;
+}
+.global-small-header.no-pb .cod-global-header-container .desktop-header .nav-right .purchase {
+  display: none;
+}
+.cod-game-header-container {
+  background-color: rgba(0, 0, 0, 0.9);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-shadow: 0px 0px 18px #646464;
+  font-family: "Montserrat", Arial, sans-serif;
+}
+.cod-game-header-container .logged-in {
+  display: none;
+}
+.cod-game-header-container .logged-out {
+  display: block;
+}
+.cod-game-header-container .desktop-header {
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  display: -webkit-box;
+  display: flex;
+  justify-content: space-between;
+}
+.cod-game-header-container .desktop-header .nav-left {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.cod-game-header-container .desktop-header .nav-left .game-logo {
+  width: 30px;
+  margin-left: 15px;
+}
+.cod-game-header-container .desktop-header .nav-left .game-logo a {
+  display: block;
+}
+.cod-game-header-container .desktop-header .nav-left .game-logo img {
+  height: 20px;
+}
+.cod-game-header-container .desktop-header .nav-left .game-top-nav {
+  margin-left: 111px;
+}
+.cod-game-header-container .desktop-header .nav-left .game-top-nav > ul {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.cod-game-header-container .desktop-header .nav-left .game-top-nav > ul > li {
+  position: relative;
+  /*ul {
+
+                        li {
+
+                            a {
+                                .nav-links-styles();
+                                padding: 15px;
+                            }
+
+
+                        }
+
+                    }*/
+}
+.cod-game-header-container .desktop-header .nav-left .game-top-nav > ul > li.active > a {
+  color: #FFF;
+}
+.cod-game-header-container .desktop-header .nav-left .game-top-nav > ul > li a {
+  color: #969696;
+  font-size: 12px;
+  text-decoration: none;
+  display: block;
+  padding: 19px 20px;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.cod-game-header-container .desktop-header .nav-left .game-top-nav > ul > li a:hover {
+  color: #FFF;
+}
+.cod-game-header-container .desktop-header .nav-left .game-top-nav > ul > li.dropdown > a {
+  padding: 19px 35px 19px 20px;
+  position: relative;
+  -webkit-transition: all 0.05s;
+  -moz-transition: all 0.05s;
+  -ms-transition: all 0.05s;
+  -o-transition: all 0.05s;
+  transition: all 0.05s;
+}
+.cod-game-header-container .desktop-header .nav-left .game-top-nav > ul > li.dropdown > ul {
+  left: 0;
+  width: 200px;
+  visibility: hidden;
+  position: absolute;
+  top: 99%;
+  z-index: 10;
+  -webkit-transition: height ease 0.05s;
+  -moz-transition: height ease 0.05s;
+  -ms-transition: height ease 0.05s;
+  -o-transition: height ease 0.05s;
+  transition: height ease 0.05s;
+}
+.cod-game-header-container .desktop-header .nav-left .game-top-nav > ul > li.dropdown > ul > li {
+  opacity: 0;
+  background-color: rgba(20, 20, 20, 0);
+  -webkit-transition: opacity ease 0.1s;
+  -moz-transition: opacity ease 0.1s;
+  -ms-transition: opacity ease 0.1s;
+  -o-transition: opacity ease 0.1s;
+  transition: opacity ease 0.1s;
+  visibility: hidden;
+  /* Put this in custom game header css based on number of drop down items*/
+  /*&.dd-item-1 {
+                                    transition-delay: @base-time*5, @base-time*5;
+                                    transition-property: opacity, visibility;
+                                }
+                                &.dd-item-2 {
+                                    transition-delay: @base-time*4, @base-time*4;
+                                    transition-property: opacity, visibility;
+                                }
+                                &.dd-item-3 {
+                                    transition-delay: @base-time*3, @base-time*3;
+                                    transition-property: opacity, visibility;
+                                }
+                                &.dd-item-4 {
+                                    transition-delay: @base-time*2, @base-time*2;
+                                    transition-property: opacity, visibility;
+                                }
+                                &.dd-item-5 {
+                                    transition-delay: @base-time, @base-time;
+                                    transition-property: opacity, visibility;
+                                }
+                                */
+}
+.cod-game-header-container .desktop-header .nav-left .game-top-nav > ul > li.dropdown > ul > li > a {
+  padding: 19px 35px;
+}
+.cod-game-header-container .desktop-header .nav-left .game-top-nav > ul > li.dropdown > ul > li > a .border2 {
+  margin: -16px 0 0 -35px;
+  content: "";
+  height: 50px;
+  background-color: #fff0;
+  display: block;
+  -webkit-transition: all ease 0.15s;
+  -moz-transition: all ease 0.15s;
+  -ms-transition: all ease 0.15s;
+  -o-transition: all ease 0.15s;
+  transition: all ease 0.15s;
+  border: 0px solid #fff0;
+  position: absolute;
+}
+.cod-game-header-container .desktop-header .nav-left .game-top-nav > ul > li.dropdown > ul > li > a p:before,
+.cod-game-header-container .desktop-header .nav-left .game-top-nav > ul > li.dropdown > ul > li > a p:after {
+  margin-top: -1px;
+  -webkit-transform: translate(0px, 0px);
+  -moz-transform: translate(0px, 0px);
+  -ms-transform: translate(0px, 0px);
+  -o-transform: translate(0px, 0px);
+  transform: translate(0px, 0px);
+  opacity: 0;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  position: absolute;
+}
+.cod-game-header-container .desktop-header .nav-left .game-top-nav > ul > li.dropdown > ul > li > a p:before {
+  content: "|";
+  margin-right: 10px;
+}
+.cod-game-header-container .desktop-header .nav-left .game-top-nav > ul > li.dropdown > ul > li > a p:after {
+  content: "|";
+  margin-left: -8px;
+}
+.cod-game-header-container .desktop-header .nav-left .game-top-nav > ul > li.dropdown > ul > li > a:hover {
+  background-color: #141414;
+  color: #FFF;
+  text-shadow: 0px 0px 18px #c8c8c8;
+}
+.cod-game-header-container .desktop-header .nav-left .game-top-nav > ul > li.dropdown > ul > li:hover p:before {
+  -webkit-transform: translate(-15px, 0);
+  -moz-transform: translate(-15px, 0);
+  -ms-transform: translate(-15px, 0);
+  -o-transform: translate(-15px, 0);
+  transform: translate(-15px, 0);
+  opacity: .5;
+}
+.cod-game-header-container .desktop-header .nav-left .game-top-nav > ul > li.dropdown > ul > li:hover p:after {
+  -webkit-transform: translate(15px, 0);
+  -moz-transform: translate(15px, 0);
+  -ms-transform: translate(15px, 0);
+  -o-transform: translate(15px, 0);
+  transform: translate(15px, 0);
+  opacity: .5;
+}
+.cod-game-header-container .desktop-header .nav-left .game-top-nav > ul > li.dropdown > ul > li:hover a {
+  background: #222;
+  color: #FFF;
+  text-shadow: 0px 0px 18px #c8c8c8;
+}
+.cod-game-header-container .desktop-header .nav-left .game-top-nav > ul > li.dropdown > ul > li:hover a .border2 {
+  background-color: #ffffff10;
+  border: 0px solid #ffffff10;
+}
+.cod-game-header-container .desktop-header .nav-left .game-top-nav > ul > li.dropdown:after {
+  content: "";
+  width: 11px;
+  height: 9px;
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  -webkit-transform: translate(0, -50%);
+  -moz-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  -o-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  background: url(../../../../../content/dam/atvi/callofduty/global/global-nav/arrow.svg) center center no-repeat;
+  background-size: contain;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.cod-game-header-container .desktop-header .nav-left .game-top-nav > ul > li.dropdown:hover a {
+  background: #111;
+}
+.cod-game-header-container .desktop-header .nav-left .game-top-nav > ul > li.dropdown:hover:after {
+  -webkit-transform: rotate(-180deg) translate(0, 50%);
+  -moz-transform: rotate(-180deg) translate(0, 50%);
+  -ms-transform: rotate(-180deg) translate(0, 50%);
+  -o-transform: rotate(-180deg) translate(0, 50%);
+  transform: rotate(-180deg) translate(0, 50%);
+}
+.cod-game-header-container .desktop-header .nav-left .game-top-nav > ul > li:hover > ul {
+  visibility: visible;
+}
+.cod-game-header-container .desktop-header .nav-left .game-top-nav > ul > li:hover > ul > li {
+  /* Put this in custom game header css based on number of drop down items*/
+  /*
+                                &.dd-item {
+                                    opacity: 1;
+                                    visibility: visible;
+                                    transition: opacity ease .25s, visibility ease .25s;
+                                }
+        
+                                &.dd-item-1{
+                                    transition-delay: @base-speed, @base-speed;
+                                    transition-property: opacity, visibility;
+                                }
+                                &.dd-item-2 {
+                                    transition-delay: @base-speed*2, @base-speed*2;
+                                    transition-property: opacity, visibility;
+                                }
+                                &.dd-item-3 {
+                                    transition-delay: @base-speed*3, @base-speed*3;
+                                    transition-property: opacity, visibility;
+                                }
+                                &.dd-item-4 {
+                                    transition-delay: @base-speed*4, @base-speed*4;
+                                    transition-property: opacity, visibility;
+                                }
+                                &.dd-item-5 {
+                                    transition-delay: @base-speed*5, @base-speed*5;
+                                    transition-property: opacity, visibility;
+                                }*/
+}
+.cod-game-header-container .desktop-header .nav-right .purchase {
+  position: relative;
+  -webkit-transform: translate(0, -53px);
+  -moz-transform: translate(0, -53px);
+  -ms-transform: translate(0, -53px);
+  -o-transform: translate(0, -53px);
+  transform: translate(0, -53px);
+  z-index: 10;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.cod-game-header-container .desktop-header .nav-right .purchase a {
+  color: #FFF;
+  padding: 19px 40px;
+  font-size: 13px;
+  border: 1px solid #f07113;
+  background: url("../../../../../content/dam/atvi/callofduty/global/global-nav/break-tile-orange.svg") #713000 center center repeat;
+  background-size: 2px;
+  text-decoration: none;
+  display: block;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.cod-game-header-container .desktop-header .nav-right .purchase a:hover {
+  background: #aa4800;
+}
+.cod-game-header-container .mobile-header {
+  display: none;
+}
+.cod-game-header-container .mobile-header .mobile-top-nav {
+  /*.flexbox();
+            .flex-justify(space-between);
+            .flex-align(center);*/
+  /*.mobile-purchase { 
+                
+                a {
+                    color: #FFF;
+                    padding: 17px 40px;
+                    font-size: 13px;
+                    border: 1px solid #f07113;
+                    background: url("../../../../../content/dam/atvi/callofduty/global/global-nav/break-tile-orange.svg") #713000 center center repeat;
+                    background-size: 2px;
+                    text-decoration: none;
+                    display: block;
+                    .transition(all .5s);
+                    
+                    &:hover {
+                        background: #aa4800;
+                    }
+                }
+            }
+            
+            .mobile-burger {
+
+                .square(40px);
+                position: relative;
+                cursor: pointer;
+
+                .bar {
+					.size(30px, 1px);
+                    display: block;
+                    position: relative;
+                    background-color: #FFF;
+                }
+
+                .bar.one {
+					position: absolute;
+                    top: 10px;
+                }
+
+                .bar.two {
+					position: absolute;
+                    top: 20px;
+                    transition: 0.3s ease .6s;
+                    animation: fade 2s;
+
+                }
+
+                .bar.three {
+					position: absolute;
+     				top: 30px;
+                }
+
+                &.active {
+
+					.bar.two {
+						opacity: 0;
+                        transition: .3s ease;
+                    }
+
+                }
+
+                &.anim {
+
+					.bar.one {
+						top: 10px;
+                        position: absolute;
+                        transition: top .3s ease .6s;
+                        animation: turnthree 1s 0s;
+                        animation-fill-mode : forwards;
+                    }
+
+                    .bar.three {
+						top: 30px;
+                        position: absolute;
+                        transition: top .3s ease .6s;
+                        animation: turnfour 1s 0s;
+                        animation-fill-mode : forwards;
+                    }
+
+                    &.active {
+
+                        .bar.one {
+							top: 20px;
+                            transition: top 0.3s ease .1s;
+                            animation: turn 1s .3s;
+                            animation-fill-mode : forwards;
+                        }
+
+                        .bar.three {
+							top: 20px;
+                            transition: top 0.3s ease .1s;
+                            animation: turntwo 1s .3s;
+                            animation-fill-mode : forwards;
+                        }
+
+                    }
+
+                }
+                
+            }*/
+}
+.cod-game-header-container .mobile-header .mobile-top-nav .mobile-game-logo {
+  margin-left: 15px;
+  width: 30px;
+}
+.cod-game-header-container .mobile-header .mobile-top-nav .mobile-game-logo a {
+  display: block;
+}
+.cod-game-header-container .mobile-header .mobile-top-nav .mobile-game-logo img {
+  width: 100%;
+}
+.cod-game-header-container .mobile-header .mobile-menu-container li.dropdown .drop-label {
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  display: -webkit-box;
+  display: flex;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-right: 25px;
+}
+.cod-game-header-container .mobile-header .mobile-menu-container li.dropdown img {
+  width: 11px;
+  height: 9px;
+  margin-left: 10px;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+.cod-game-header-container .mobile-header .mobile-menu-container li.dropdown .dd-item {
+  height: 0px;
+  visibility: hidden;
+  opacity: 0;
+  background-color: rgba(20, 20, 20, 0);
+  transition: opacity ease 1s, visibility ease 1s, height ease 1s;
+}
+.cod-game-header-container .mobile-header .mobile-menu-container li.dropdown.active {
+  border-top: 1px solid #282828;
+  border-bottom: 1px solid #282828;
+}
+.cod-game-header-container .mobile-header .mobile-menu-container li.dropdown.active img {
+  -webkit-transform: rotate(-180deg);
+  -moz-transform: rotate(-180deg);
+  -ms-transform: rotate(-180deg);
+  -o-transform: rotate(-180deg);
+  transform: rotate(-180deg);
+}
+.cod-game-header-container .mobile-header .mobile-menu-container li.dropdown.active ul {
+  position: relative;
+  opacity: 1;
+  transition: opacity ease 1s, visibility ease 1s, height ease 1s;
+}
+.cod-game-header-container .mobile-header .mobile-menu-container li.dropdown.active .dd-item {
+  opacity: 1;
+  visibility: visible;
+  height: 60px;
+  transition: opacity ease 1s, visibility ease 1s, height ease 1s;
+}
+.cod-game-header-container .mobile-header .mobile-menu-container li.dropdown.active .drop-label img {
+  -webkit-transform: rotate(-180deg);
+  -moz-transform: rotate(-180deg);
+  -ms-transform: rotate(-180deg);
+  -o-transform: rotate(-180deg);
+  transform: rotate(-180deg);
+}
+.cod-game-header-container .mobile-header .global-mobile-menu {
+  background-image: url(../../../../../content/dam/atvi/callofduty/global/global-nav/global-nav-bg-mobile.png);
+  background-size: 2px;
+}
+@media screen and (max-width: 1024px) {
+  .global-small-header {
+    display: none;
+  }
+  .cod-game-header-container {
+    background-color: #000;
+  }
+  .cod-game-header-container .desktop-header {
+    display: none;
+  }
+  .cod-game-header-container .mobile-header {
+    display: block;
+  }
+}
+@media screen and (max-width: 380px) {
+  /*.cod-game-header-container .mobile-header .mobile-top-nav .mobile-purchase a {
+        padding: 17px 10px;
+    }*/
+}
+

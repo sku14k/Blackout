@@ -1,0 +1,2021 @@
+@import url('https://fonts.googleapis.com/css?family=Arvo|Electrolize|Montserrat|Open+Sans|Open+Sans+Condensed:300');
+@import url('https://fonts.googleapis.com/css?family=Oswald:300,400,600&amp;display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,700');
+body.sso-auth-known .global-nav-right .global-sso-menu .logged-in {
+  display: none;
+}
+body.sso-auth-known .global-nav-right .global-sso-menu .logged-out {
+  display: block;
+}
+body.sso-auth-known .global-mobile-nav-container.logged-in {
+  display: none;
+}
+body.sso-auth-known .global-mobile-nav-container.logged-out {
+  display: block;
+}
+body.sso-logged-in.sso-auth-known .global-nav-right .global-sso-menu .logged-in {
+  display: inline-block;
+}
+body.sso-logged-in.sso-auth-known .global-nav-right .global-sso-menu .logged-out {
+  display: none;
+}
+body.sso-logged-in.sso-auth-known .global-nav-right .global-sso-menu .sso-menu-login {
+  display: none;
+}
+body.sso-logged-in.sso-auth-known .global-nav-right .global-sso-menu .menu-profile-name-container {
+  dislay: inline-block;
+  position: relative;
+  cursor: pointer;
+}
+body.sso-logged-in.sso-auth-known .global-nav-right .global-sso-menu .menu-profile-name-container .emblem-sm {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: relative;
+  top: 2px;
+}
+body.sso-logged-in.sso-auth-known .global-nav-right .global-sso-menu .menu-profile-name-container .profile-username {
+  font-family: "Open Sans Condensed", Arial, sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #9b9b9b;
+  font-size: 15px;
+  line-height: 1.2;
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+  padding-right: 30px;
+}
+body.sso-logged-in.sso-auth-known .global-nav-right .global-sso-menu .menu-profile-name-container .profile-username:hover {
+  color: #FFF;
+}
+body.sso-logged-in.sso-auth-known .global-nav-right .global-sso-menu .menu-profile-name-container .profile-username:after {
+  content: "";
+  width: 20px;
+  height: 20px;
+  background: url(../../../../../../../content/dam/atvi/callofduty/hub/main-hub/signin-icon.png) center center no-repeat;
+  background-size: contain;
+  position: absolute;
+  right: 3px;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+  -moz-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  -o-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+}
+body.sso-logged-in.sso-auth-known .global-mobile-nav-contianer .logged-in {
+  display: block;
+}
+body.sso-logged-in.sso-auth-known .global-mobile-nav-contianer .logged-out {
+  display: none;
+}
+body.logged-in,
+body.logged-out {
+  display: none;
+}
+body.menu-open .global-nav .global-nav-right .global-nav-right-mobile .mobile-menu-icon {
+  display: none;
+}
+body.menu-open .global-nav .global-nav-right .global-nav-right-mobile .mobile-nav-close {
+  display: inline-block;
+}
+body.menu-open .global-mobile-nav {
+  -webkit-transform: translate(0, 0);
+  -moz-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  -o-transform: translate(0, 0);
+  transform: translate(0, 0);
+}
+@media screen and (max-width: 1140px) {
+  body.sso-logged-in.sso-auth-known .global-nav-right .global-sso-menu .menu-profile-name-container {
+    display: none;
+  }
+}
+#cdo-bar,
+.sso-bar-spacer,
+.SSO-BAR.cf {
+  display: none !important;
+}
+/*.global-header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 9000;
+}*/
+.global-small-header .global-nav-container .global-nav {
+  height: 50px;
+  background: #2d2d2d;
+}
+.global-small-header .global-nav-container .global-nav .global-nav-inner {
+  height: 50px;
+}
+.global-small-header .global-nav-container .global-nav .global-nav-left {
+  margin-top: 0;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.global-small-header .global-nav-container .global-nav .global-nav-left .hub-link {
+  margin-right: 20px;
+}
+.global-small-header .global-nav-container .global-nav .global-nav-left .hub-link a {
+  width: 16px;
+  height: 17px;
+  background: url(../../../../../../../content/dam/atvi/callofduty/global/home-a.png) center center no-repeat;
+  background-size: contain;
+}
+.global-small-header .global-nav-container .global-nav .global-nav-left .hub-link a:hover {
+  background: url(../../../../../../../content/dam/atvi/callofduty/global/home-b.png) center center no-repeat;
+}
+.global-small-header .global-nav-container .global-nav .global-nav-left .global-main-menu {
+  top: 5px;
+}
+.global-small-header .global-nav-container .global-nav .global-nav-left .global-main-menu a {
+  padding: 7px 25px 15px 15px;
+}
+.global-small-header .global-nav-container .global-nav .global-nav-left .global-main-menu li.submenu-parent.active {
+  border-left: 1px solid #4a4a4a;
+  border-top: 1px solid #4a4a4a;
+  border-right: 1px solid #4a4a4a;
+}
+.global-small-header .global-nav-container .global-nav .global-nav-left .global-main-menu li.submenu-parent {
+  border-left: 1px solid transparent;
+  border-top: 1px solid transparent;
+  border-right: 1px solid transparent;
+}
+.global-small-header .global-nav-container .global-nav .global-nav-right .global-purchase-btn {
+  display: none;
+}
+@media screen and (max-width: 1140px) {
+  .global-small-header .global-nav-container {
+    display: none;
+  }
+}
+.global-nav-container {
+  position: relative;
+}
+.global-nav-container .global-nav {
+  background: #000;
+  height: 75px;
+  position: relative;
+  z-index: 10;
+}
+.global-nav-container .global-nav .global-nav-inner {
+  width: 100%;
+  max-width: 1280px;
+  height: 75px;
+  padding: 0 15px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 10;
+  -webkit-box-flex: 0 1 auto;
+  -moz-box-flex: 0 1 auto;
+  -webkit-flex: 0 1 auto;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  display: -webkit-box;
+  display: flex;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.global-nav-container .global-nav .global-nav-left {
+  /*> div {
+                display: inline-block;
+            }*/
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.global-nav-container .global-nav .global-nav-left .hub-link {
+  position: relative;
+  margin-right: 25px;
+}
+.global-nav-container .global-nav .global-nav-left .hub-link a {
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  background-image: url(../../../../../../../content/dam/atvi/callofduty/hub/main-hub/cod-logo.png);
+  background-position: center left;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 150px;
+  height: 28px;
+  display: block;
+}
+.global-nav-container .global-nav .global-nav-left .global-main-menu {
+  position: relative;
+  top: 12px;
+  text-transform: uppercase;
+}
+.global-nav-container .global-nav .global-nav-left .global-main-menu li {
+  display: inline-block;
+  margin-left: -4px;
+  position: relative;
+}
+.global-nav-container .global-nav .global-nav-left .global-main-menu li.submenu-parent a:before {
+  content: "+";
+  font-family: sans-serif;
+  color: #9b9b9b;
+  font-size: 14px;
+  position: absolute;
+  right: 13px;
+  top: 8px;
+}
+.global-nav-container .global-nav .global-nav-left .global-main-menu li.submenu-parent.active {
+  background: #2d2d2d;
+}
+.global-nav-container .global-nav .global-nav-left .global-main-menu li.submenu-parent.active a:before {
+  content: "-";
+}
+.global-nav-container .global-nav .global-nav-right {
+  margin-right: 25px;
+}
+.global-nav-container .global-nav .global-nav-right .global-sso-menu {
+  position: relative;
+  text-transform: uppercase;
+}
+.global-nav-container .global-nav .global-nav-right .global-purchase-btn {
+  display: inline-block;
+  position: relative;
+  margin-right: 20px;
+}
+.global-nav-container .global-nav .global-nav-right .global-purchase-btn > p a {
+  color: #000000;
+  background: #ffffff;
+  border: 1px solid transparent;
+  font-size: 14px;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: inline-block;
+  letter-spacing: 0.7px;
+  font-family: "Open Sans Condensed", Verdana, Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-style: normal;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  padding-left: 20px;
+  padding-right: 30px;
+  position: relative;
+}
+.global-nav-container .global-nav .global-nav-right .global-purchase-btn > p a:hover {
+  color: #ffffff;
+  background: #2d2d2d;
+  border: 1px solid transparent;
+}
+.global-nav-container .global-nav .global-nav-right .global-purchase-btn > p a:after {
+  content: "+";
+  font-family: sans-serif;
+  color: #9b9b9b;
+  font-size: 14px;
+  position: absolute;
+  right: 13px;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+  -moz-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  -o-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+}
+.global-nav-container .global-nav .global-nav-right .global-purchase-btn ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #2d2d2d;
+  width: 160px;
+}
+.global-nav-container .global-nav .global-nav-right .global-purchase-btn ul li {
+  border-bottom: 1px solid #9b9b9b;
+}
+.global-nav-container .global-nav .global-nav-right .global-purchase-btn ul a {
+  font-family: "Open Sans Condensed", Verdana, Arial, Helvetica, sans-serif;
+  font-style: normal;
+  text-transform: uppercase;
+  color: #9b9b9b;
+  font-size: 14px;
+  font-weight: bold;
+  display: block;
+  line-height: 1.2;
+  text-decoration: none;
+  padding: 15px;
+}
+.global-nav-container .global-nav .global-nav-right .global-purchase-btn ul a:hover {
+  color: #ffffff;
+}
+.global-nav-container .global-nav .global-nav-right .global-purchase-btn:hover > p a:after {
+  content: "-";
+}
+.global-nav-container .global-nav .global-nav-right .global-purchase-btn:hover ul {
+  display: block;
+}
+.global-nav-container .global-nav .global-nav-right .sso-menu-login {
+  display: inline-block;
+}
+.global-nav-container .global-nav .global-nav-right .global-nav-right-mobile {
+  display: none;
+  position: relative;
+}
+.global-nav-container .global-nav .global-nav-right .global-nav-right-mobile > div {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 16px;
+}
+.global-nav-container .global-nav .global-nav-right .global-nav-right-mobile .mobile-nav-close {
+  display: none;
+  position: relative;
+  top: auto;
+}
+.global-nav-container .global-nav .mobile-menu-icon a {
+  width: 35px;
+  height: 6px;
+  text-indent: -9999px;
+  display: block;
+  background: #9b9b9b;
+  position: relative;
+}
+.global-nav-container .global-nav .mobile-menu-icon a:before {
+  content: "";
+  position: absolute;
+  background: transparent;
+  width: 100%;
+  height: 20px;
+  top: -13px;
+  left: 0;
+  border-top: 6px solid #9b9b9b;
+  border-bottom: 6px solid #9b9b9b;
+}
+.global-nav-container .global-nav .mobile-nav-close .close-icon {
+  width: 32px;
+  height: 32px;
+  position: relative;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  cursor: pointer;
+  top: 50%;
+  left: 0px;
+  z-index: 10;
+}
+.global-nav-container .global-nav .mobile-nav-close .close-icon:before {
+  content: "+";
+  font-size: 75px;
+  color: #9b9b9b;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.global-nav-container .global-nav .global-main-menu,
+.global-nav-container .global-nav .global-sso-menu {
+  text-transform: uppercase;
+}
+.global-nav-container .global-nav .global-main-menu a,
+.global-nav-container .global-nav .global-sso-menu a {
+  font-family: "Open Sans Condensed", Verdana, Arial, Helvetica, sans-serif;
+  font-style: normal;
+  text-transform: uppercase;
+  color: #9b9b9b;
+  font-size: 14px;
+  font-weight: bold;
+  display: block;
+  line-height: 1.2;
+  text-decoration: none;
+}
+.global-nav-container .global-nav .global-main-menu a:hover,
+.global-nav-container .global-nav .global-sso-menu a:hover {
+  color: #ffffff;
+}
+.global-nav-container .global-nav .global-main-menu .drop-down,
+.global-nav-container .global-nav .global-sso-menu .drop-down {
+  display: none;
+}
+.global-nav-container .global-nav .global-main-menu > ul li.sso-link,
+.global-nav-container .global-nav .global-sso-menu > ul li.sso-link {
+  display: inline-block;
+  color: #9b9b9b;
+  padding: 0 30px 0 15px;
+  position: relative;
+  opacity: 0;
+  -webkit-transition: opacity 0.5s;
+  -moz-transition: opacity 0.5s;
+  -ms-transition: opacity 0.5s;
+  -o-transition: opacity 0.5s;
+  transition: opacity 0.5s;
+}
+.global-nav-container .global-nav .global-main-menu > ul li.sso-link.ready,
+.global-nav-container .global-nav .global-sso-menu > ul li.sso-link.ready {
+  opacity: 1;
+}
+.global-nav-container .global-nav .global-main-menu > ul li.sso-link a,
+.global-nav-container .global-nav .global-sso-menu > ul li.sso-link a {
+  display: inline-block;
+}
+.global-nav-container .global-nav .global-main-menu > ul li.sso-link a:hover,
+.global-nav-container .global-nav .global-sso-menu > ul li.sso-link a:hover {
+  color: #FFF;
+}
+.global-nav-container .global-nav .global-main-menu > ul li.sso-link:after,
+.global-nav-container .global-nav .global-sso-menu > ul li.sso-link:after {
+  content: "";
+  width: 20px;
+  height: 20px;
+  background: url(../../../../../../../content/dam/atvi/callofduty/hub/main-hub/signin-icon.png) center center no-repeat;
+  background-size: contain;
+  position: absolute;
+  right: 3px;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+  -moz-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  -o-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+}
+.global-nav-container .global-nav .global-main-menu > ul li.logged-in,
+.global-nav-container .global-nav .global-sso-menu > ul li.logged-in {
+  display: none;
+}
+.global-nav-container .global-nav .global-sso-menu .mobile-menu-icon a {
+  padding: 0;
+}
+@media screen and (max-width: 1280px) {
+  .global-nav-container .global-nav .top-main-menu > ul li.store {
+    display: none;
+  }
+}
+@media screen and (max-width: 1140px) {
+  .global-nav-container .global-nav {
+    height: 56px;
+  }
+  .global-nav-container .global-nav .global-nav-inner {
+    height: 100%;
+  }
+  .global-nav-container .global-nav .global-nav-left {
+    float: none;
+    position: absolute;
+    margin-top: 0;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    text-align: left;
+  }
+  .global-nav-container .global-nav .global-nav-left .hub-link {
+    padding-left: 15px;
+  }
+  .global-nav-container .global-nav .global-nav-left .global-main-menu {
+    display: none;
+  }
+  .global-nav-container .global-nav .global-nav-right {
+    margin-top: 19px;
+    margin-right: 0;
+  }
+  .global-nav-container .global-nav .global-nav-right .global-sso-menu {
+    top: 50%;
+    position: absolute;
+    transform: translate(0, -50%);
+    right: 15px;
+  }
+  .global-nav-container .global-nav .global-nav-right .global-nav-right-mobile {
+    display: block;
+    top: -3px;
+  }
+  .global-nav-container .global-nav .global-nav-right .global-sso-menu > ul,
+  .global-nav-container .global-nav .global-nav-right .menu-profile-name-container,
+  .global-nav-container .global-nav .global-nav-right .support-icon,
+  .global-nav-container .global-nav .global-nav-right .global-purchase-btn {
+    display: none;
+  }
+}
+.main-mega-menu {
+  position: absolute;
+  top: -210px;
+  width: 100%;
+  height: auto;
+  color: #FFF;
+  border-top: 1px solid #4a4a4a;
+  background: #2d2d2d;
+  padding: 25px 20px;
+  opacity: 0;
+  z-index: 5;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.main-mega-menu.active {
+  top: 100%;
+  opacity: 1;
+}
+.main-mega-menu .main-mega-menu-inner {
+  width: 100%;
+  max-width: 1350px;
+  padding: 0 30px;
+  margin: 0 auto;
+}
+@media screen and (max-width: 640px) {
+  .main-mega-menu .main-mega-menu-inner {
+    padding: 0 15px;
+  }
+}
+.main-mega-menu a {
+  color: #9b9b9b;
+  letter-spacing: 1.2px;
+  font-size: 14px;
+  text-decoration: none;
+}
+.main-mega-menu a:hover {
+  color: #FFF;
+}
+.main-mega-menu .menu-section {
+  display: none;
+}
+.main-mega-menu .menu-section:after {
+  content: "";
+  clear: both;
+  height: 0;
+  visibility: hidden;
+  display: block;
+}
+.main-mega-menu .menu-section.active {
+  display: block;
+}
+.main-mega-menu .menu-section .menu-section-inner {
+  opacity: 0;
+  position: relative;
+  left: 10%;
+  -webkit-transition: all 0.1s;
+  -moz-transition: all 0.1s;
+  -ms-transition: all 0.1s;
+  -o-transition: all 0.1s;
+  transition: all 0.1s;
+}
+.main-mega-menu .menu-section .menu-section-inner.active {
+  opacity: 1;
+  left: 0;
+}
+.main-mega-menu .menu-section .sub-links-list {
+  float: left;
+  width: 15%;
+  padding-right: 3%;
+}
+.main-mega-menu .menu-section .sub-links-list li {
+  margin-bottom: 25px;
+}
+.main-mega-menu .menu-section .sub-links-list li.active a {
+  color: #FFF;
+}
+.main-mega-menu .menu-section .sub-links-list li a {
+  text-transform: uppercase;
+  font-family: "Open Sans Condensed", Verdana, Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-style: normal;
+}
+.main-mega-menu .menu-section .sub-links-content-viewer {
+  float: right;
+  width: 85%;
+  padding-left: 3%;
+  border-left: 1px solid #4a4a4a;
+}
+.main-mega-menu .menu-section .sub-links-content-viewer > div {
+  display: none;
+}
+.main-mega-menu .menu-section .sub-links-content-viewer > div:first-of-type {
+  display: block;
+}
+.main-mega-menu .menu-section .sub-links-content-viewer a {
+  text-transform: capitalize;
+  letter-spacing: .7px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-weight: bold;
+}
+.main-mega-menu .community-menu-section {
+  color: #e3e3e3;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+.main-mega-menu .community-menu-section .social-channels-content {
+  position: relative;
+}
+.main-mega-menu .community-menu-section .social-channels-content:after {
+  content: "";
+  clear: both;
+  height: 0;
+  visibility: hidden;
+  display: block;
+}
+.main-mega-menu .community-menu-section .social-entry {
+  float: left;
+  width: 85px;
+  margin-right: 20px;
+  position: relative;
+}
+.main-mega-menu .community-menu-section .social-entry p {
+  margin-bottom: 5px;
+}
+.main-mega-menu .community-menu-section .social-entry a {
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  letter-spacing: 0;
+  height: 0;
+  padding-bottom: 100%;
+  display: block;
+}
+.main-mega-menu .community-menu-section .social-entry .social-overlay {
+  position: fixed;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: none;
+}
+.main-mega-menu .community-menu-section .social-entry .social-overlay .social-overlay-inner {
+  width: 300px;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.main-mega-menu .community-menu-section .social-entry .social-overlay .close {
+  width: 45px;
+  height: 40px;
+  cursor: pointer;
+  top: -42px;
+  right: -10px;
+  position: absolute;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.main-mega-menu .community-menu-section .social-entry .social-overlay .close:before {
+  content: "+";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  font-size: 60px;
+  color: #FFF;
+}
+.main-mega-menu .community-menu-section .forums-content {
+  position: relative;
+}
+.main-mega-menu .community-menu-section .forums-content:after {
+  content: "";
+  clear: both;
+  height: 0;
+  visibility: hidden;
+  display: block;
+}
+.main-mega-menu .community-menu-section .forum-entry {
+  float: left;
+  width: 20%;
+  padding-left: 5%;
+}
+.main-mega-menu .community-menu-section .forum-entry .column-header {
+  text-decoration: underline;
+}
+.main-mega-menu .community-menu-section .forum-entry ul {
+  border-right: #9b9b9b 1px solid;
+}
+.main-mega-menu .community-menu-section .forum-entry ul li {
+  margin-top: 15px;
+}
+.main-mega-menu .community-menu-section .forum-entry:first-of-type {
+  padding-left: 0;
+}
+.main-mega-menu .community-menu-section .forum-entry:last-of-type {
+  padding-right: 0;
+}
+.main-mega-menu .community-menu-section .forum-entry:last-of-type ul {
+  border-right: none;
+}
+.main-mega-menu .games-menu-section .game-content,
+.main-mega-menu .mycod-menu-section .game-content {
+  position: relative;
+}
+.main-mega-menu .games-menu-section .game-content:after,
+.main-mega-menu .mycod-menu-section .game-content:after {
+  content: "";
+  clear: both;
+  height: 0;
+  visibility: hidden;
+  display: block;
+}
+.main-mega-menu .games-menu-section .game-entry,
+.main-mega-menu .mycod-menu-section .game-entry {
+  float: left;
+  width: 175px;
+  margin-right: 20px;
+  position: relative;
+}
+.main-mega-menu .games-menu-section .game-entry .game-art,
+.main-mega-menu .mycod-menu-section .game-entry .game-art {
+  width: 100%;
+  margin-bottom: 5px;
+}
+.main-mega-menu .games-menu-section .game-entry .game-art img,
+.main-mega-menu .mycod-menu-section .game-entry .game-art img {
+  width: 100%;
+}
+.main-mega-menu .games-menu-section .game-entry .game-title p,
+.main-mega-menu .mycod-menu-section .game-entry .game-title p {
+  text-transform: uppercase;
+}
+.main-mega-menu .news-menu-section .news-content {
+  position: relative;
+}
+.main-mega-menu .news-menu-section .news-content:after {
+  content: "";
+  clear: both;
+  height: 0;
+  visibility: hidden;
+  display: block;
+}
+.main-mega-menu .news-menu-section .news-entry {
+  float: left;
+  width: 175px;
+  margin-right: 20px;
+  position: relative;
+}
+.main-mega-menu .news-menu-section .news-entry .news-art {
+  width: 100%;
+  margin-bottom: 5px;
+  height: 70px;
+  overflow: hidden;
+}
+.main-mega-menu .news-menu-section .news-entry .news-art img {
+  width: 100%;
+}
+.main-mega-menu .news-menu-section .news-entry .news-title p {
+  text-transform: uppercase;
+}
+.main-mega-menu .news-menu-section .cod-blog-menu-content .view-all,
+.main-mega-menu .news-menu-section .cwl-news-menu-content .view-all,
+.main-mega-menu .news-menu-section .atvi-blog-menu-content .view-all {
+  position: absolute;
+  top: 73px;
+  right: 0;
+}
+.main-mega-menu .news-menu-section .cod-blog-menu-content .view-all p,
+.main-mega-menu .news-menu-section .cwl-news-menu-content .view-all p,
+.main-mega-menu .news-menu-section .atvi-blog-menu-content .view-all p {
+  text-transform: uppercase;
+}
+.main-mega-menu .news-menu-section .cod-blog-menu-content .view-all a,
+.main-mega-menu .news-menu-section .cwl-news-menu-content .view-all a,
+.main-mega-menu .news-menu-section .atvi-blog-menu-content .view-all a {
+  position: relative;
+  padding-top: 65px;
+}
+.main-mega-menu .news-menu-section .cod-blog-menu-content .view-all a:before,
+.main-mega-menu .news-menu-section .cwl-news-menu-content .view-all a:before,
+.main-mega-menu .news-menu-section .atvi-blog-menu-content .view-all a:before {
+  content: "";
+  width: 30px;
+  height: 30px;
+  border-top: 1px solid #9b9b9b;
+  border-right: 1px solid #9b9b9b;
+  position: absolute;
+  top: 0;
+  left: -13px;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.main-mega-menu .esports-menu-section .esports-schedule-feed-container:after,
+.main-mega-menu .news-menu-section .esports-schedule-feed-container:after {
+  content: "";
+  clear: both;
+  height: 0;
+  visibility: hidden;
+  display: block;
+}
+.main-mega-menu .esports-menu-section .esports-schedule-feed-container .esports-entry,
+.main-mega-menu .news-menu-section .esports-schedule-feed-container .esports-entry {
+  border-left: 1px solid #9b9b9b;
+  margin-right: 10px;
+}
+.main-mega-menu .esports-menu-section .esports-schedule-feed-container .esports-entry:last-of-type,
+.main-mega-menu .news-menu-section .esports-schedule-feed-container .esports-entry:last-of-type {
+  border-right: 1px solid #9b9b9b;
+}
+.main-mega-menu .esports-menu-section .esports-content,
+.main-mega-menu .news-menu-section .esports-content {
+  position: relative;
+}
+.main-mega-menu .esports-menu-section .esports-content:after,
+.main-mega-menu .news-menu-section .esports-content:after {
+  content: "";
+  clear: both;
+  height: 0;
+  visibility: hidden;
+  display: block;
+}
+.main-mega-menu .esports-menu-section .esports-entry,
+.main-mega-menu .news-menu-section .esports-entry {
+  float: left;
+  width: 175px;
+  margin-right: 0px;
+  position: relative;
+  padding: 0 10px;
+}
+.main-mega-menu .esports-menu-section .esports-entry .esports-art,
+.main-mega-menu .news-menu-section .esports-entry .esports-art {
+  width: 100%;
+  margin-bottom: 5px;
+  height: 0;
+  padding-bottom: 45%;
+  max-height: 70px;
+}
+.main-mega-menu .esports-menu-section .esports-entry .esports-art img,
+.main-mega-menu .news-menu-section .esports-entry .esports-art img {
+  width: 100%;
+  height: 70px;
+}
+.main-mega-menu .esports-menu-section .esports-entry .esports-art-logo,
+.main-mega-menu .news-menu-section .esports-entry .esports-art-logo {
+  width: 100%;
+  margin-bottom: 5px;
+}
+.main-mega-menu .esports-menu-section .esports-entry .esports-art-logo img,
+.main-mega-menu .news-menu-section .esports-entry .esports-art-logo img {
+  height: 140px;
+}
+.main-mega-menu .esports-menu-section .esports-entry .esports-video-img,
+.main-mega-menu .news-menu-section .esports-entry .esports-video-img {
+  max-height: 98px;
+}
+.main-mega-menu .esports-menu-section .esports-entry .esports-title p,
+.main-mega-menu .news-menu-section .esports-entry .esports-title p {
+  text-transform: uppercase;
+}
+.main-mega-menu .esports-menu-section .esports-entry .esports-team p,
+.main-mega-menu .news-menu-section .esports-entry .esports-team p {
+  text-align: left;
+  margin-left: 20px;
+}
+.main-mega-menu .esports-menu-section .date,
+.main-mega-menu .news-menu-section .date {
+  float: left;
+  margin-top: 11px;
+  padding: 10px 60px 10px 0;
+  min-width: 5px;
+  text-transform: uppercase;
+  text-align: center;
+}
+.main-mega-menu .esports-menu-section .date span,
+.main-mega-menu .news-menu-section .date span {
+  display: block;
+}
+.main-mega-menu .esports-menu-section .date .month,
+.main-mega-menu .news-menu-section .date .month,
+.main-mega-menu .esports-menu-section .date .date-number,
+.main-mega-menu .news-menu-section .date .date-number {
+  font-size: 3rem;
+}
+.main-mega-menu .esports-menu-section .date .Day,
+.main-mega-menu .news-menu-section .date .Day {
+  font-size: 1.5rem;
+}
+.main-mega-menu .esports-menu-section .match,
+.main-mega-menu .news-menu-section .match {
+  min-width: 80px;
+  height: 200px;
+  padding: 9px;
+  position: relative;
+}
+.main-mega-menu .esports-menu-section .match > *,
+.main-mega-menu .news-menu-section .match > * {
+  z-index: 1;
+}
+.main-mega-menu .esports-menu-section .match .match-link,
+.main-mega-menu .news-menu-section .match .match-link {
+  display: block;
+  padding: 5px;
+  width: 100%;
+  color: #ffffff;
+  background: #9b9b9b;
+  border: 1px solid transparent;
+  font-size: 14px;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: inline-block;
+  letter-spacing: 0.7px;
+  font-family: "Open Sans Condensed", Verdana, Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-style: normal;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  margin-top: 10px;
+}
+.main-mega-menu .esports-menu-section .match .match-link:hover,
+.main-mega-menu .news-menu-section .match .match-link:hover {
+  color: #ffffff;
+  background: #000000;
+  border: 1px solid transparent;
+}
+.main-mega-menu .esports-menu-section .scheduled .team .score,
+.main-mega-menu .news-menu-section .scheduled .team .score {
+  display: none;
+}
+.main-mega-menu .esports-menu-section .time.time-final,
+.main-mega-menu .news-menu-section .time.time-final {
+  display: none;
+}
+.main-mega-menu .esports-menu-section .completed .time,
+.main-mega-menu .news-menu-section .completed .time,
+.main-mega-menu .esports-menu-section .forfeited .time,
+.main-mega-menu .news-menu-section .forfeited .time {
+  display: none;
+}
+.main-mega-menu .esports-menu-section .completed .time.time-final,
+.main-mega-menu .news-menu-section .completed .time.time-final,
+.main-mega-menu .esports-menu-section .forfeited .time.time-final,
+.main-mega-menu .news-menu-section .forfeited .time.time-final {
+  display: block;
+}
+.main-mega-menu .esports-menu-section .team,
+.main-mega-menu .news-menu-section .team {
+  font-size: .75rem;
+}
+.main-mega-menu .esports-menu-section .team > *,
+.main-mega-menu .news-menu-section .team > * {
+  display: inline-block;
+  vertical-align: top;
+}
+.main-mega-menu .esports-menu-section .team.team-number-1,
+.main-mega-menu .news-menu-section .team.team-number-1 {
+  margin-top: 1px;
+  width: 100%;
+  position: relative;
+}
+.main-mega-menu .esports-menu-section .team.team-number-2,
+.main-mega-menu .news-menu-section .team.team-number-2 {
+  margin-top: 5px;
+  width: 100%;
+  position: relative;
+}
+.main-mega-menu .esports-menu-section .team .score,
+.main-mega-menu .news-menu-section .team .score {
+  margin-left: 3px;
+  position: absolute;
+  bottom: 15px;
+  right: 0;
+}
+.main-mega-menu .esports-menu-section .time,
+.main-mega-menu .news-menu-section .time {
+  font-size: 0.625rem;
+  color: #FFF;
+  padding: 5px;
+}
+.main-mega-menu .esports-menu-section .team-logo,
+.main-mega-menu .news-menu-section .team-logo {
+  width: 80px;
+  height: 50px;
+  border: 3px solid #dadada;
+  background-color: #e6e6e6;
+  display: inline-block;
+}
+.main-mega-menu .esports-menu-section .team-name,
+.main-mega-menu .news-menu-section .team-name {
+  overflow: hidden;
+  text-transform: uppercase;
+  float: right;
+}
+.main-mega-menu .esports-menu-section a.match-link,
+.main-mega-menu .news-menu-section a.match-link {
+  text-transform: uppercase;
+}
+@media screen and (max-width: 1140px) {
+  .main-mega-menu {
+    display: none;
+  }
+}
+.global-mobile-nav {
+  width: 100%;
+  background: #000;
+  position: fixed;
+  height: 100%;
+  margin-top: 56px;
+  z-index: 11;
+  top: 0;
+  overflow: hidden;
+  -webkit-transform: translate(110%, 0);
+  -moz-transform: translate(110%, 0);
+  -ms-transform: translate(110%, 0);
+  -o-transform: translate(110%, 0);
+  transform: translate(110%, 0);
+  -webkit-transition: transform 0.5s;
+  -moz-transition: transform 0.5s;
+  -ms-transition: transform 0.5s;
+  -o-transition: transform 0.5s;
+  transition: transform 0.5s;
+  /*@import "global-mobile-nav.less";
+
+    p, a {
+        font-size: @nav-size;
+        text-transform: uppercase;
+    }
+    
+    p {
+        color: @white;
+        .opensans-bold();
+        letter-spacing: 1.7px;
+    }
+    
+    a {
+        text-decoration: none;
+        padding: 20px 15px;
+        display: block; 
+    }*/
+}
+.global-mobile-nav .jspTrack {
+  background: #9b9b9b;
+}
+.global-mobile-nav .jspTrack .jspDrag {
+  background: #FFF;
+}
+.global-mobile-nav .global-mobile-nav-inner-container {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  background: #2d2d2d;
+}
+.global-mobile-nav .global-mobile-nav-inner-container .portrait {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: #000;
+}
+.global-mobile-nav .primary-nav {
+  overflow: auto;
+  position: absolute;
+  top: 0;
+  bottom: 65px;
+  width: 100%;
+}
+.global-mobile-nav .mobile-hub-link {
+  display: none;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Arvo|Electrolize|Montserrat|Open+Sans|Open+Sans+Condensed:300');
+@import url('https://fonts.googleapis.com/css?family=Oswald:300,400,600&amp;display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,700');
+.global-mobile-nav .primary-nav .nav-item,
+.game-mobile-nav .primary-nav .nav-item {
+  border-top: 1px solid #4a4a4a;
+}
+.global-mobile-nav .primary-nav .nav-item a,
+.game-mobile-nav .primary-nav .nav-item a {
+  color: #9b9b9b;
+}
+.global-mobile-nav .primary-nav li.preorder-cta,
+.game-mobile-nav .primary-nav li.preorder-cta {
+  display: none;
+}
+.global-mobile-nav .primary-nav li.home-link,
+.game-mobile-nav .primary-nav li.home-link {
+  margin-top: 50px;
+}
+.global-mobile-nav .primary-nav li.landscape,
+.game-mobile-nav .primary-nav li.landscape {
+  display: none;
+}
+.global-mobile-nav .primary-nav li.support-link .submenu,
+.game-mobile-nav .primary-nav li.support-link .submenu {
+  margin-left: 0;
+}
+.global-mobile-nav .primary-nav li.support-link .support-menu,
+.game-mobile-nav .primary-nav li.support-link .support-menu {
+  position: relative;
+  left: 0;
+  margin-top: 0;
+  width: 100%;
+}
+.global-mobile-nav .primary-nav li.support-link .support-menu .s-premium .s-tabs.text .texting-content .text-form-content textarea,
+.game-mobile-nav .primary-nav li.support-link .support-menu .s-premium .s-tabs.text .texting-content .text-form-content textarea {
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+.global-mobile-nav .primary-nav .submenu-parent.active .submenu,
+.game-mobile-nav .primary-nav .submenu-parent.active .submenu {
+  display: block;
+}
+.global-mobile-nav .primary-nav .submenu-parent.active > p > a,
+.game-mobile-nav .primary-nav .submenu-parent.active > p > a {
+  color: #FFF;
+}
+.global-mobile-nav .primary-nav .submenu-parent.active > p > a:after,
+.game-mobile-nav .primary-nav .submenu-parent.active > p > a:after {
+  content: "—";
+  color: #FFF;
+  right: 22px;
+  font-size: 15px;
+}
+.global-mobile-nav .primary-nav .submenu-parent > p > a,
+.game-mobile-nav .primary-nav .submenu-parent > p > a {
+  position: relative;
+}
+.global-mobile-nav .primary-nav .submenu-parent > p > a:after,
+.game-mobile-nav .primary-nav .submenu-parent > p > a:after {
+  content: "+";
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+  -moz-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  -o-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  font-size: 35px;
+  -webkit-transition: color 0.5s;
+  -moz-transition: color 0.5s;
+  -ms-transition: color 0.5s;
+  -o-transition: color 0.5s;
+  transition: color 0.5s;
+  font-family: sans-serif;
+}
+.global-mobile-nav .primary-nav .submenu-parent .submenu,
+.game-mobile-nav .primary-nav .submenu-parent .submenu {
+  display: none;
+}
+.global-mobile-nav .primary-nav .submenu-parent .submenu > .nav-item.fan-content > p > a,
+.game-mobile-nav .primary-nav .submenu-parent .submenu > .nav-item.fan-content > p > a {
+  padding-left: 25px;
+}
+.global-mobile-nav .primary-nav .submenu-parent .submenu > .nav-item.buy-game1 > p > a:after,
+.game-mobile-nav .primary-nav .submenu-parent .submenu > .nav-item.buy-game1 > p > a:after,
+.global-mobile-nav .primary-nav .submenu-parent .submenu > .nav-item.buy-game2 > p > a:after,
+.game-mobile-nav .primary-nav .submenu-parent .submenu > .nav-item.buy-game2 > p > a:after,
+.global-mobile-nav .primary-nav .submenu-parent .submenu > .nav-item.buy-game3 > p > a:after,
+.game-mobile-nav .primary-nav .submenu-parent .submenu > .nav-item.buy-game3 > p > a:after {
+  display: none;
+}
+.global-mobile-nav .primary-nav .submenu-parent .submenu > .nav-item:not(.fan-content).active .subsubmenu,
+.game-mobile-nav .primary-nav .submenu-parent .submenu > .nav-item:not(.fan-content).active .subsubmenu {
+  display: block;
+}
+.global-mobile-nav .primary-nav .submenu-parent .submenu > .nav-item:not(.fan-content).active > p a,
+.game-mobile-nav .primary-nav .submenu-parent .submenu > .nav-item:not(.fan-content).active > p a {
+  color: #ffffff;
+}
+.global-mobile-nav .primary-nav .submenu-parent .submenu > .nav-item:not(.fan-content).active > p a:before,
+.game-mobile-nav .primary-nav .submenu-parent .submenu > .nav-item:not(.fan-content).active > p a:before {
+  content: "";
+  position: absolute;
+  left: 15px;
+  bottom: 0;
+  right: 15px;
+  height: 1px;
+  background: #e3e3e3;
+}
+.global-mobile-nav .primary-nav .submenu-parent .submenu > .nav-item:not(.fan-content).active > p a:after,
+.game-mobile-nav .primary-nav .submenu-parent .submenu > .nav-item:not(.fan-content).active > p a:after {
+  content: "—";
+  color: #FFF;
+  right: 22px;
+  font-size: 15px;
+}
+.global-mobile-nav .primary-nav .submenu-parent .submenu > .nav-item:not(.fan-content) > p > a,
+.game-mobile-nav .primary-nav .submenu-parent .submenu > .nav-item:not(.fan-content) > p > a {
+  position: relative;
+  padding-left: 25px;
+}
+.global-mobile-nav .primary-nav .submenu-parent .submenu > .nav-item:not(.fan-content) > p > a:after,
+.game-mobile-nav .primary-nav .submenu-parent .submenu > .nav-item:not(.fan-content) > p > a:after {
+  content: "+";
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+  -moz-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  -o-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  font-size: 35px;
+  -webkit-transition: color 0.5s;
+  -moz-transition: color 0.5s;
+  -ms-transition: color 0.5s;
+  -o-transition: color 0.5s;
+  transition: color 0.5s;
+  font-family: sans-serif;
+}
+.global-mobile-nav .primary-nav .submenu-parent .submenu > .nav-item.community-link > p > a:after,
+.game-mobile-nav .primary-nav .submenu-parent .submenu > .nav-item.community-link > p > a:after {
+  display: none;
+}
+.global-mobile-nav .primary-nav .submenu-parent .submenu .subsubmenu,
+.game-mobile-nav .primary-nav .submenu-parent .submenu .subsubmenu {
+  display: none;
+  padding: 10px 0;
+}
+.global-mobile-nav .primary-nav .submenu-parent .submenu .subsubmenu a,
+.game-mobile-nav .primary-nav .submenu-parent .submenu .subsubmenu a {
+  padding-left: 35px;
+}
+.global-mobile-nav .primary-nav .submenu-parent .submenu .subsubmenu img,
+.game-mobile-nav .primary-nav .submenu-parent .submenu .subsubmenu img {
+  width: 100%;
+}
+.global-mobile-nav .primary-nav li.nav-item.no-sub .submenu a:before,
+.game-mobile-nav .primary-nav li.nav-item.no-sub .submenu a:before,
+.global-mobile-nav .primary-nav li.nav-item.no-sub .submenu a:after,
+.game-mobile-nav .primary-nav li.nav-item.no-sub .submenu a:after {
+  display: none;
+}
+.global-mobile-nav p,
+.game-mobile-nav p,
+.global-mobile-nav a,
+.game-mobile-nav a {
+  font-size: 14px;
+  text-transform: uppercase;
+}
+.global-mobile-nav p,
+.game-mobile-nav p {
+  color: #ffffff;
+  font-family: "Open Sans Condensed", Verdana, Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-style: normal;
+  letter-spacing: 1.7px;
+}
+.global-mobile-nav a,
+.game-mobile-nav a {
+  text-decoration: none;
+  padding: 20px 15px;
+  display: block;
+}
+.global-mobile-nav .forums-content .forum-entry:last-of-type,
+.game-mobile-nav .forums-content .forum-entry:last-of-type {
+  display: none;
+}
+.global-mobile-nav .forums-content .forum-entry > p,
+.game-mobile-nav .forums-content .forum-entry > p {
+  padding: 20px 15px;
+  color: #FFF;
+}
+.global-mobile-nav .social-channels-content,
+.game-mobile-nav .social-channels-content {
+  padding: 15px;
+}
+.global-mobile-nav .social-channels-content .social-entry,
+.game-mobile-nav .social-channels-content .social-entry {
+  width: 18%;
+  max-width: 100px;
+  margin-right: 2%;
+  margin-bottom: 2%;
+  display: inline-block;
+}
+.global-mobile-nav .social-channels-content .social-entry > p:first-of-type,
+.game-mobile-nav .social-channels-content .social-entry > p:first-of-type {
+  display: none;
+}
+.global-mobile-nav .social-channels-content a,
+.game-mobile-nav .social-channels-content a {
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  letter-spacing: 0;
+  display: block;
+  padding: 0 0 100% 0;
+  height: 0;
+}
+.global-mobile-nav .social-overlay,
+.game-mobile-nav .social-overlay {
+  position: fixed;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  display: none;
+}
+.global-mobile-nav .social-overlay .social-overlay-inner,
+.game-mobile-nav .social-overlay .social-overlay-inner {
+  width: 300px;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.global-mobile-nav .social-overlay .close,
+.game-mobile-nav .social-overlay .close {
+  width: 45px;
+  height: 40px;
+  cursor: pointer;
+  top: -42px;
+  right: -10px;
+  position: absolute;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.global-mobile-nav .social-overlay .close:before,
+.game-mobile-nav .social-overlay .close:before {
+  content: "+";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  font-size: 60px;
+  color: #ffffff;
+}
+.global-mobile-nav .game-content .game-art,
+.game-mobile-nav .game-content .game-art {
+  display: none;
+}
+@media screen and (max-height: 360px) {
+  .global-mobile-nav .mobile-nav-inner-container .portrait,
+  .game-mobile-nav .mobile-nav-inner-container .portrait {
+    display: none;
+  }
+  .global-mobile-nav .primary-nav,
+  .game-mobile-nav .primary-nav {
+    bottom: 0;
+  }
+  .global-mobile-nav .primary-nav .nav-item.landscape,
+  .game-mobile-nav .primary-nav .nav-item.landscape {
+    display: block;
+  }
+}
+.global-mobile-nav .esports-entry,
+.game-mobile-nav .esports-entry {
+  width: 100%;
+  padding: 0 15px;
+}
+.global-mobile-nav .esports-entry .esports-art,
+.game-mobile-nav .esports-entry .esports-art {
+  height: 0;
+  padding-bottom: 45%;
+  max-height: 70px;
+}
+.global-mobile-nav .esports-entry .match,
+.game-mobile-nav .esports-entry .match {
+  /*clear: both;
+            height: 0;
+            display: block;*/
+}
+.global-mobile-nav .esports-entry .match:after,
+.game-mobile-nav .esports-entry .match:after {
+  content: "";
+  clear: both;
+  height: 0;
+  visibility: hidden;
+  display: block;
+}
+.global-mobile-nav .esports-entry .match .team,
+.game-mobile-nav .esports-entry .match .team {
+  width: 50%;
+  max-width: 180px;
+  float: left;
+  position: relative;
+}
+.global-mobile-nav .esports-entry .match .team .team-logo,
+.game-mobile-nav .esports-entry .match .team .team-logo {
+  display: block;
+  width: 100%;
+  height: 50px;
+  border: 3px solid #dadada;
+  background-color: #e6e6e6;
+}
+@media screen and (max-width: 480px) {
+  .global-mobile-nav .esports-entry .match .team,
+  .game-mobile-nav .esports-entry .match .team {
+    width: 100%;
+    max-width: 100%;
+    float: none;
+  }
+  .global-mobile-nav .esports-entry .match .team a,
+  .game-mobile-nav .esports-entry .match .team a {
+    float: left;
+    width: 180px;
+  }
+}
+.global-mobile-nav .time,
+.game-mobile-nav .time {
+  font-family: "Open Sans Condensed", Verdana, Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-size: 0.625rem;
+  color: #ffffff;
+  padding: 5px 15px;
+}
+.global-mobile-nav .time.time-final,
+.game-mobile-nav .time.time-final {
+  display: none;
+}
+.global-mobile-nav .date span,
+.game-mobile-nav .date span {
+  display: none;
+}
+.global-mobile-nav a.match-link,
+.game-mobile-nav a.match-link {
+  margin-top: 100px;
+  color: #000000;
+  background: #ffffff;
+  border: 1px solid transparent;
+  font-size: 14px;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: inline-block;
+  letter-spacing: 0.7px;
+  font-family: "Open Sans Condensed", Verdana, Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-style: normal;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  padding: 10px;
+  margin: 140px 15px 20px;
+}
+.global-mobile-nav a.match-link:hover,
+.game-mobile-nav a.match-link:hover {
+  color: #ffffff;
+  background: #000000;
+  border: 1px solid transparent;
+}
+@media screen and (max-width: 480px) {
+  .global-mobile-nav a.match-link,
+  .game-mobile-nav a.match-link {
+    margin-top: 10px;
+  }
+}
+.global-mobile-nav .team-name,
+.game-mobile-nav .team-name {
+  font-family: "Open Sans Condensed", Verdana, Arial, Helvetica, sans-serif;
+  font-style: normal;
+  margin-left: 15px;
+  margin-bottom: 5px;
+}
+@media screen and (max-width: 480px) {
+  .global-mobile-nav .team-name,
+  .game-mobile-nav .team-name {
+    top: 15px;
+    position: relative;
+    float: left;
+  }
+}
+.global-mobile-nav .score,
+.game-mobile-nav .score {
+  position: absolute;
+  right: 15px;
+  bottom: 10px;
+}
+@media screen and (max-width: 480px) {
+  .global-mobile-nav .score,
+  .game-mobile-nav .score {
+    top: 15px;
+    position: relative;
+    float: left;
+    right: 10px;
+    top: 57px;
+    bottom: auto;
+  }
+}
+.global-mobile-nav .team,
+.game-mobile-nav .team {
+  font-size: .75rem;
+  color: #ffffff;
+}
+.global-mobile-nav .team:after,
+.game-mobile-nav .team:after {
+  content: "";
+  clear: both;
+  height: 0;
+  visibility: hidden;
+  display: block;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Arvo|Electrolize|Montserrat|Open+Sans|Open+Sans+Condensed:300');
+@import url('https://fonts.googleapis.com/css?family=Oswald:300,400,600&amp;display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,700');
+.player-profile-menu {
+  /*******************************
+    UNIQUE RANK STYLES FOR COD GAMES
+    *******************************/
+}
+.player-profile-menu .pp-rank {
+  font-family: "Open Sans", Verdana, Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+}
+.player-profile-menu .mycod-cta,
+.player-profile-menu .link-account-btn {
+  margin-top: 20px;
+}
+.player-profile-menu .mycod-cta p,
+.player-profile-menu .link-account-btn p {
+  line-height: 1;
+}
+.player-profile-menu .mycod-cta a,
+.player-profile-menu .link-account-btn a {
+  padding-left: 17px;
+  padding-right: 28px;
+  position: relative;
+}
+.player-profile-menu .mycod-cta {
+  display: none;
+}
+.player-profile-menu .link-account-btn {
+  display: block;
+}
+.player-profile-menu.wwii .mycod-cta,
+.player-profile-menu.iw .mycod-cta,
+.player-profile-menu.bo3 .mycod-cta {
+  display: block;
+}
+.player-profile-menu.wwii .link-account-btn,
+.player-profile-menu.iw .link-account-btn,
+.player-profile-menu.bo3 .link-account-btn {
+  display: none;
+}
+.player-profile-menu .link-account-btn a {
+  color: #ffffff;
+  background: #000000;
+  border: 1px solid transparent;
+  font-size: 14px;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: inline-block;
+  letter-spacing: 0.7px;
+  font-family: "Open Sans Condensed", Verdana, Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-style: normal;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  border: 1px solid #FFF;
+}
+.player-profile-menu .link-account-btn a:hover {
+  color: #000000;
+  background: #ffffff;
+  border: 1px solid transparent;
+}
+.player-profile-menu .link-account-btn a:after {
+  content: "";
+  width: 7px;
+  height: 7px;
+  border-top: 1px solid #ffffff;
+  border-right: 1px solid #ffffff;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  position: absolute;
+  top: 50%;
+  right: 17px;
+  -webkit-transform: translate(0%, -50%) rotate(45deg);
+  -moz-transform: translate(0%, -50%) rotate(45deg);
+  -o-transform: translate(0%, -50%) rotate(45deg);
+  -ms-transform: translate(0%, -50%) rotate(45deg);
+  transform: translate(0%, -50%) rotate(45deg);
+}
+.player-profile-menu .link-account-btn a:hover:after {
+  border-top: 1px solid #000000;
+  border-right: 1px solid #000000;
+}
+.player-profile-menu.wwii .mycod-cta a {
+  color: #ffffff;
+  background: #9f912a;
+  border: 1px solid transparent;
+  font-size: 14px;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: inline-block;
+  letter-spacing: 0.7px;
+  font-family: "Open Sans Condensed", Verdana, Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-style: normal;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.player-profile-menu.wwii .mycod-cta a:hover {
+  color: #000000;
+  background: #ffffff;
+  border: 1px solid transparent;
+}
+.player-profile-menu.wwii .mycod-cta a:after {
+  content: "";
+  width: 7px;
+  height: 7px;
+  border-top: 1px solid #ffffff;
+  border-right: 1px solid #ffffff;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  position: absolute;
+  top: 50%;
+  right: 17px;
+  -webkit-transform: translate(0%, -50%) rotate(45deg);
+  -moz-transform: translate(0%, -50%) rotate(45deg);
+  -o-transform: translate(0%, -50%) rotate(45deg);
+  -ms-transform: translate(0%, -50%) rotate(45deg);
+  transform: translate(0%, -50%) rotate(45deg);
+}
+.player-profile-menu.wwii .mycod-cta a:hover:after {
+  border-top: 1px solid #000000;
+  border-right: 1px solid #000000;
+}
+.player-profile-menu.iw .mycod-cta a {
+  color: #000000;
+  background: #ffff03;
+  border: 1px solid transparent;
+  font-size: 14px;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: inline-block;
+  letter-spacing: 0.7px;
+  font-family: "Open Sans Condensed", Verdana, Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-style: normal;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.player-profile-menu.iw .mycod-cta a:hover {
+  color: #000000;
+  background: #ffffff;
+  border: 1px solid transparent;
+}
+.player-profile-menu.iw .mycod-cta a:after {
+  content: "";
+  width: 7px;
+  height: 7px;
+  border-top: 1px solid #000000;
+  border-right: 1px solid #000000;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  position: absolute;
+  top: 50%;
+  right: 17px;
+  -webkit-transform: translate(0%, -50%) rotate(45deg);
+  -moz-transform: translate(0%, -50%) rotate(45deg);
+  -o-transform: translate(0%, -50%) rotate(45deg);
+  -ms-transform: translate(0%, -50%) rotate(45deg);
+  transform: translate(0%, -50%) rotate(45deg);
+}
+.player-profile-menu.iw .mycod-cta a:hover:after {
+  border-top: 1px solid #000000;
+  border-right: 1px solid #000000;
+}
+.player-profile-menu.bo3 .mycod-cta a {
+  color: #000000;
+  background: #ff6600;
+  border: 1px solid transparent;
+  font-size: 14px;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: inline-block;
+  letter-spacing: 0.7px;
+  font-family: "Open Sans Condensed", Verdana, Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-style: normal;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.player-profile-menu.bo3 .mycod-cta a:hover {
+  color: #000000;
+  background: #ff6600;
+  border: 1px solid transparent;
+}
+.player-profile-menu.bo3 .mycod-cta a:after {
+  content: "";
+  width: 7px;
+  height: 7px;
+  border-top: 1px solid #000000;
+  border-right: 1px solid #000000;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  position: absolute;
+  top: 50%;
+  right: 17px;
+  -webkit-transform: translate(0%, -50%) rotate(45deg);
+  -moz-transform: translate(0%, -50%) rotate(45deg);
+  -o-transform: translate(0%, -50%) rotate(45deg);
+  -ms-transform: translate(0%, -50%) rotate(45deg);
+  transform: translate(0%, -50%) rotate(45deg);
+}
+.player-profile-menu.bo3 .mycod-cta a:hover:after {
+  border-top: 1px solid #000000;
+  border-right: 1px solid #000000;
+}
+.player-profile-menu {
+  width: 300px;
+  background: #000;
+  position: fixed;
+  height: 100%;
+  margin-top: 56px;
+  z-index: 11;
+  top: 0;
+  left: 100%;
+  overflow: hidden;
+  -webkit-transform: translate(0%, 0);
+  -moz-transform: translate(0%, 0);
+  -ms-transform: translate(0%, 0);
+  -o-transform: translate(0%, 0);
+  transform: translate(0%, 0);
+  -webkit-transition: transform 0.5s;
+  -moz-transition: transform 0.5s;
+  -ms-transition: transform 0.5s;
+  -o-transition: transform 0.5s;
+  transition: transform 0.5s;
+}
+.player-profile-menu.active {
+  -webkit-transform: translate(-100%, 0);
+  -moz-transform: translate(-100%, 0);
+  -ms-transform: translate(-100%, 0);
+  -o-transform: translate(-100%, 0);
+  transform: translate(-100%, 0);
+}
+.player-profile-menu .pp-header {
+  padding: 70px 0 25px;
+  text-align: center;
+  border-bottom: 1px solid #2d2d2d;
+  position: relative;
+}
+.player-profile-menu .pp-close {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  cursor: pointer;
+}
+.player-profile-menu .pp-close:after {
+  content: "+";
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #FFF;
+  font-size: 40px;
+  font-family: sans-serif;
+}
+.player-profile-menu .emblem {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.player-profile-menu .pp-username {
+  color: #FFF;
+  font-size: 25px;
+  font-family: "Open Sans", Verdana, Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  margin-bottom: 5px;
+}
+.player-profile-menu .pp-name {
+  color: #9b9b9b;
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  margin-bottom: 15px;
+}
+.player-profile-menu .platform-selection {
+  margin-bottom: 15px;
+  position: relative;
+}
+.player-profile-menu .platform-selection.psn .platform-icon {
+  width: 24px;
+  height: 20px;
+  background: url(../../../../../../../content/dam/atvi/callofduty/mycod/common/platform-icons/psn.png) center center no-repeat;
+  background-size: contain;
+}
+.player-profile-menu .platform-selection.xbl .platform-icon {
+  width: 22px;
+  height: 22px;
+  background: url(../../../../../../../content/dam/atvi/callofduty/mycod/common/platform-icons/xbl.png) center center no-repeat;
+  background-size: contain;
+}
+.player-profile-menu .platform-selection.steam .platform-icon {
+  width: 24px;
+  height: 20px;
+  background: url(../../../../../../../content/dam/atvi/callofduty/mycod/common/platform-icons/steam.png) center center no-repeat;
+  background-size: contain;
+}
+.player-profile-menu .platform-selection .platform-icon,
+.player-profile-menu .platform-selection .platform-selector {
+  display: inline-block;
+  vertical-align: middle;
+}
+.player-profile-menu .platform-selection .platform-icon {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+  -moz-transform: translate(-50%, 0);
+  -ms-transform: translate(-50%, 0);
+  -o-transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
+}
+.player-profile-menu .platform-selection .platform-selector {
+  background: transparent;
+  width: 85px;
+  position: relative;
+}
+.player-profile-menu .platform-selection .platform-selector select {
+  opacity: 0;
+  cursor: pointer;
+  height: 25px;
+}
+.player-profile-menu .platform-selection .platform-selector:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 0.75em;
+  -webkit-transform: translate(0, -50%);
+  -moz-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  -o-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  width: 0px;
+  height: 0px;
+  border-left: 0.4em solid transparent;
+  border-right: 0.4em solid transparent;
+  border-top: 0.4em solid #fff;
+}
+.player-profile-menu .pp-rank {
+  color: #9b9b9b;
+  text-transform: uppercase;
+  font-size: 15px;
+  font-family: "Open Sans Condensed", Verdana, Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-style: normal;
+}
+.player-profile-menu .pp-rank span {
+  font-size: 17px;
+}
+.player-profile-menu .pp-links li {
+  border-bottom: 1px solid #2d2d2d;
+  color: #9b9b9b;
+}
+.player-profile-menu .pp-links li:not(:first-of-type) {
+  padding-left: 25px;
+}
+.player-profile-menu .pp-links li:first-of-type a {
+  padding-left: 25px;
+}
+.player-profile-menu .pp-links li:hover {
+  background: #2d2d2d;
+}
+.player-profile-menu .pp-links li a {
+  font-family: "Open Sans Condensed", Verdana, Arial, Helvetica, sans-serif;
+  font-style: normal;
+  color: #9b9b9b;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 1.2;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: block;
+  padding: 16px 0 16px 30px;
+  position: relative;
+}
+.player-profile-menu .pp-links li a:hover {
+  color: #ffffff;
+}
+.player-profile-menu .pp-links li a:before {
+  content: "";
+  width: 19px;
+  height: 19px;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+  -moz-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  -o-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  background-size: contain;
+}
+.player-profile-menu .pp-links .ppl-linked-accounts a:before {
+  background: url(../../../../../../../content/dam/atvi/callofduty/global/Icon-01.png) center center no-repeat;
+  background-size: contain;
+}
+.player-profile-menu .pp-links .ppl-basic-info a:before {
+  background: url(../../../../../../../content/dam/atvi/callofduty/global/Icon-02.png) center center no-repeat;
+  background-size: contain;
+}
+.player-profile-menu .pp-links .ppl-preferences a:before {
+  background: url(../../../../../../../content/dam/atvi/callofduty/global/Icon-03.png) center center no-repeat;
+  background-size: contain;
+}
+.player-profile-menu .pp-links .ppl-rewards a:before {
+  background: url(../../../../../../../content/dam/atvi/callofduty/global/Icon-04.png) center center no-repeat;
+  background-size: contain;
+}
+.player-profile-menu .pp-links .ppl-signout a:before {
+  background: url(../../../../../../../content/dam/atvi/callofduty/global/Icon-05.png) center center no-repeat;
+  background-size: contain;
+}
+body.ar .player-profile-menu .pp-links ul {
+  text-align: left;
+}
+body.ar .player-profile-menu .pp-links li:not(first-of-type) {
+  padding-left: 0px;
+  padding-right: 25px;
+}
+body.ar .player-profile-menu .pp-links a:before {
+  left: unset;
+  right: 0;
+}
+

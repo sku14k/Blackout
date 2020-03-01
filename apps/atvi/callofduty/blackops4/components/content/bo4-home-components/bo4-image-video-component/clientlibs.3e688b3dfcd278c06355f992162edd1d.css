@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Open+Sans|Open+Sans+Condensed:700');
+@import url('https://fonts.googleapis.com/css?family=Electrolize');
+.image-video-container {
+  position: relative;
+  background: url(../../../../../../../../content/dam/atvi/callofduty/blackops4/common/bg-tile-text-v2.png) #000000 top center repeat;
+}
+.image-video-container .main-container {
+  padding-bottom: 30%;
+  position: relative;
+  -webkit-transition: all 0.8s;
+  -moz-transition: all 0.8s;
+  -ms-transition: all 0.8s;
+  -o-transition: all 0.8s;
+  transition: all 0.8s;
+}
+.image-video-container .main-container .bg-container {
+  opacity: 1;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  -moz-transition: opacity 0.3s ease-in-out;
+  -ms-transition: opacity 0.3s ease-in-out;
+  -o-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
+}
+.image-video-container .main-container .bg-desktop {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.image-video-container .main-container .bg-mobile {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.image-video-container .main-container .play-button-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.image-video-container .main-container .play-button-overlay .play-button {
+  content: "";
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  cursor: pointer;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  margin: 0 auto;
+  background: #191919 url(../../../../../../../../content/dam/atvi/callofduty/blackops4/splash/button-tile.svg) center center repeat;
+  border: 2px solid #565656;
+  -webkit-transition: all ease 0.3s;
+  -moz-transition: all ease 0.3s;
+  -ms-transition: all ease 0.3s;
+  -o-transition: all ease 0.3s;
+  transition: all ease 0.3s;
+}
+.image-video-container .main-container .play-button-overlay .play-button:after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid #fff;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.image-video-container .main-container .play-button-overlay .play-button:hover {
+  width: 66px;
+  height: 66px;
+  background-color: #3c3c3c;
+  border: 2px solid #fff;
+}
+.image-video-container .main-container .inline-play {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.image-video-container .main-container .video-container .video-close {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  cursor: pointer;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  z-index: 100;
+}
+.image-video-container .main-container .video-container .video-close:after {
+  content: "+";
+  color: #FFF;
+  font-size: 50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.image-video-container .main-container .video-container .controls {
+  position: relative;
+}
+.image-video-container .main-container.video-mode {
+  padding-bottom: 57%;
+}
+.image-video-container .main-container.video-mode .bg-container {
+  opacity: 0;
+}
+@media screen and (max-width: 1400px) {
+  .image-video-container .main-container {
+    padding-bottom: 45%;
+  }
+}
+@media screen and (max-width: 1280px) {
+  .image-video-container .main-container {
+    padding-bottom: 55%;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .image-video-container .main-container {
+    padding-bottom: 35%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .image-video-container .main-container {
+    padding-bottom: 100%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .image-video-container .main-container {
+    padding-bottom: 50%;
+  }
+  .image-video-container .main-container .bg-container .bg-desktop {
+    display: none;
+  }
+  .image-video-container .main-container .bg-container .bg-mobile {
+    display: block;
+  }
+}

@@ -1,0 +1,1603 @@
+.loader-component {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  position: relative;
+}
+.loader-component .loader__circle {
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  border: 2px solid #777;
+  border-bottom-color: transparent;
+  border-radius: 100%;
+  -webkit-animation: loader-circle-rotate 0.75s linear infinite;
+  -moz-animation: loader-circle-rotate 0.75s linear infinite;
+  -o-animation: loader-circle-rotate 0.75s linear infinite;
+  animation: loader-circle-rotate 0.75s linear infinite;
+}
+@keyframes loader-circle-rotate {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  50% {
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+body.modal--show {
+  overflow-y: hidden;
+  overflow-x: hidden;
+  padding-right: 15px;
+}
+body.modal--show.is-mobile {
+  padding-right: 0;
+}
+body.modal--show .modal__bg {
+  overflow-y: auto;
+}
+.modal-component-enter-active,
+.modal-component-leave-active {
+  transition: opacity .25s ease;
+}
+.modal-component-enter,
+.modal-component-leave-to {
+  opacity: 0;
+}
+.modal__bg {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.95);
+  z-index: 9999;
+  outline: 0;
+  display: block;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+.modal__container {
+  position: relative;
+  width: 100%;
+  max-width: 550px;
+  margin: 100px auto;
+  background-color: #111;
+}
+@media (max-width: 767px) {
+  .modal__container {
+    max-width: 90%;
+  }
+}
+.modal__close {
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  display: -webkit-box;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  text-align: center;
+  margin-top: -50px;
+  margin-right: -50px;
+  width: 50px;
+  height: 50px;
+  background-color: transparent;
+  color: #fff;
+  font-size: 30px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+@media (max-width: 767px) {
+  .modal__close {
+    margin-right: 0px;
+  }
+}
+.modal__header {
+  position: relative;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  -webkit-box-orient: horizontal;
+  -moz-box-orient: horizontal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  display: -webkit-box;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  display: flex;
+  align-items: center;
+  font-family: "Open Sans Condensed", Verdana, Arial, Helvetica, sans-serif;
+  font-size-adjust: 0.42;
+  font-weight: bold;
+  font-style: normal;
+  padding: 30px;
+  text-transform: uppercase;
+  font-size: 18px;
+  background-color: #111;
+  color: #fff;
+  background-image: url('../../../../../../../content/dam/atvi/callofduty/mycod/friends/friends-feed-bg-texture-2x2.png');
+}
+.modal__content {
+  color: #fff;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  padding: 30px;
+}
+.modal__content p {
+  margin-bottom: 20px;
+}
+
+.blackmarket-page .page-header {
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  -webkit-box-orient: horizontal;
+  -moz-box-orient: horizontal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  display: -webkit-box;
+  display: flex;
+  justify-content: flex-start;
+  background-color: #000;
+  padding: 25px 0;
+}
+@media only screen and (max-width: 767px) {
+  .blackmarket-page .page-header {
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    display: flex;
+    align-items: flex-start;
+    padding: 10px 0;
+  }
+}
+.blackmarket-page .heading {
+  position: relative;
+  color: #ffffff;
+  display: block;
+  padding-left: 15px;
+  font-family: "Open Sans Condensed", Verdana, Arial, Helvetica, sans-serif;
+  font-size-adjust: 0.42;
+  font-style: normal;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-right: 50px;
+}
+.blackmarket-page .heading:before {
+  content: "";
+  display: block;
+  border-left: 3px solid #1e9ffd;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+  -moz-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  -o-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+}
+@media only screen and (max-width: 767px) {
+  .blackmarket-page .heading {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+}
+.blackmarket-page .blackmarket-filter {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  -webkit-box-orient: horizontal;
+  -moz-box-orient: horizontal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  display: flex;
+  align-items: center;
+}
+@media only screen and (max-width: 767px) {
+  .blackmarket-page .blackmarket-filter {
+    -webkit-box-lines: multiple;
+    display: -webkit-flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    display: -webkit-box;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+}
+.blackmarket-page .blackmarket-filter__item {
+  margin-right: 20px;
+  width: 100%;
+}
+@media only screen and (max-width: 767px) {
+  .blackmarket-page .blackmarket-filter__item {
+    margin-bottom: 20px;
+    margin-right: 0px;
+  }
+  .blackmarket-page .blackmarket-filter__item:last-child {
+    margin-bottom: 20px;
+  }
+}
+.blackmarket-page .blackmarket-tier {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  -webkit-box-lines: multiple;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding: 15px;
+  background-color: #111;
+  margin-bottom: 8px;
+}
+.blackmarket-page .blackmarket-tier__item {
+  width: 100%;
+  max-width: 100%;
+}
+.blackmarket-page .blackmarket-tier__item:nth-child(1) {
+  max-width: 25%;
+}
+.blackmarket-page .blackmarket-tier__item:nth-child(2) {
+  max-width: 75%;
+}
+@media only screen and (max-width: 767px) {
+  .blackmarket-page .blackmarket-tier__item:nth-child(1) {
+    max-width: 35%;
+  }
+  .blackmarket-page .blackmarket-tier__item:nth-child(2) {
+    max-width: 65%;
+  }
+}
+.blackmarket-page .blackmarket-tier__icon {
+  width: 40px;
+  height: 8px;
+  margin-bottom: 15px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAICAYAAACLUr1bAAAAAXNSR0IArs4c6QAAAKBJREFUOBHNlCEOAkEMRX8n6wkOQWY3XALLBTgADm6AQxE0gjPMIrgDjnAXEiwhQU4/UzHJ3mD7RdvvXvLzCzhTl7gaIoWhGfuOV54U+uh6bipLiCmzGttjexFclDwX2IPxNDY8SYAfGlki8972ee4qYin5guCE+JJ4g7JwBciAoMDso3yK8LXbytpTurCSWAfaxKMrsAoTb5yWN7Ov3vYfjzhLkVDqLT4AAAAASUVORK5CYII=');
+}
+@media only screen and (max-width: 767px) {
+  .blackmarket-page .blackmarket-tier__icon {
+    margin-bottom: 10px;
+  }
+}
+.blackmarket-page .blackmarket-tier__heading,
+.blackmarket-page .blackmarket-tier__stat,
+.blackmarket-page .blackmarket-tier__expiration {
+  font-family: "Electrolize", Verdana, Arial, Helvetica, sans-serif;
+  font-size-adjust: 0.42;
+  font-style: normal;
+  text-transform: uppercase;
+  font-size: 34px;
+  color: #fff;
+  font-weight: 400;
+}
+@media only screen and (max-width: 767px) {
+  .blackmarket-page .blackmarket-tier__heading,
+  .blackmarket-page .blackmarket-tier__stat,
+  .blackmarket-page .blackmarket-tier__expiration {
+    font-size: 24px;
+  }
+}
+.blackmarket-page .blackmarket-tier__stat {
+  color: #1e9ffd;
+}
+.blackmarket-page .blackmarket-tier__label {
+  font-family: "Montserrat", Verdana, Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  color: #fff;
+  font-size: 13px;
+  text-transform: uppercase;
+  margin-bottom: 13px;
+  font-weight: 400;
+}
+@media only screen and (max-width: 767px) {
+  .blackmarket-page .blackmarket-tier__label {
+    font-size: 10px;
+    margin-bottom: 8px;
+  }
+}
+.blackmarket-page .blackmarket-tier__expiration {
+  text-transform: lowercase;
+}
+.blackmarket-page .blackmarket-tier__progress {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 5px;
+}
+.blackmarket-page .blackmarket-tier__progress .blackmarket-tier__stat {
+  margin-left: 20px;
+}
+.blackmarket-page .blackmarket-category {
+  font-family: "Montserrat", Verdana, Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  display: -webkit-box;
+  display: flex;
+  justify-content: flex-end;
+  color: #fff;
+  min-height: 450px;
+  background-color: #222;
+  padding: 15px;
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+  position: relative;
+}
+@media only screen and (max-width: 767px) {
+  .blackmarket-page .blackmarket-category {
+    min-height: 350px;
+  }
+}
+.blackmarket-page .blackmarket-category__icon {
+  background-image: url('../../../../../../../content/dam/atvi/callofduty/cod-touchui/kronos/seasons/season-2/hero/s2-hero-logo-en.png');
+  height: 200px;
+  width: 450px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+@media only screen and (max-width: 1024px) {
+  .blackmarket-page .blackmarket-category__icon {
+    top: 42%;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .blackmarket-page .blackmarket-category__icon {
+    height: 125px;
+  }
+}
+.blackmarket-page .blackmarket-category__upgrade {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  max-width: 300px;
+  width: 25%;
+  padding-top: 30px;
+}
+.blackmarket-page .blackmarket-category__upgrade-icon {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  top: 0px;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+  -moz-transform: translate(-50%, 0);
+  -ms-transform: translate(-50%, 0);
+  -o-transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
+  background-image: url(../../../../../../../content/dam/atvi/callofduty/mycod/lootstream/battlepass-icon.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: 10;
+  cursor: pointer;
+}
+.blackmarket-page .blackmarket-category__upgrade-button {
+  position: relative;
+  z-index: 9;
+  padding: 11px 0;
+  text-align: center;
+  background-image: linear-gradient(to bottom, #ae8625, #f7ef8a 74%, #d2ac47 109%, #edc967 147%);
+  color: #000;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-size: 10px;
+  white-space: nowrap;
+  float: left;
+  width: 48%;
+  margin: 10px 0;
+}
+.blackmarket-page .blackmarket-category__upgrade-info {
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 30%, rgba(0, 0, 0, 0.5) 100%);
+  padding: 10px 10px 25px;
+  font-family: "Open Sans", Verdana, Arial, Helvetica, sans-serif;
+  font-size-adjust: 0.42;
+  font-style: normal;
+  font-weight: 400;
+  position: relative;
+}
+.blackmarket-page .blackmarket-category__upgrade-info h3 {
+  margin-bottom: 15px;
+}
+.blackmarket-page .blackmarket-category__upgrade-info p {
+  font-size: 12px;
+}
+.blackmarket-page .blackmarket-category__upgrade-learnmore {
+  display: block;
+  position: relative;
+  padding: 10px 25px;
+  background-color: rgba(0, 0, 0, 0.8);
+  border: 1px solid #edc967;
+  text-align: center;
+  font-size: 10px;
+  color: #edc967;
+  text-transform: uppercase;
+  width: 48%;
+  margin: 10px 4% 10px 0;
+  float: left;
+}
+.blackmarket-page .blackmarket-category__upgrade-learnmore.purchased {
+  margin-right: 50%;
+}
+.blackmarket-page .blackmarket-category__upgrade-currency {
+  color: #777;
+  font-size: 14px;
+}
+.blackmarket-page .blackmarket-category__upgrade-currency span {
+  display: inline-block;
+  color: #f5a623;
+  font-family: "Electrolize", Verdana, Arial, Helvetica, sans-serif;
+  font-size-adjust: 0.42;
+  font-style: normal;
+  font-size: 18px;
+  position: relative;
+  top: 1px;
+  padding-left: 20px;
+}
+.blackmarket-page .blackmarket-category__upgrade-currency span:after {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  left: 0;
+  top: 0;
+  background-image: url('../../../../../../../content/dam/atvi/callofduty/mycod/lootstream/currency-icon.html');
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+@media only screen and (max-width: 1024px) {
+  .blackmarket-page .blackmarket-category__upgrade {
+    width: 100%;
+    max-width: 100%;
+    height: 30%;
+    top: 70%;
+    padding: 0 0 10px 10px;
+  }
+  .blackmarket-page .blackmarket-category__upgrade-icon {
+    left: 0;
+    transform: none;
+    height: 100%;
+    float: left;
+    padding-left: 18%;
+    width: auto;
+  }
+  .blackmarket-page .blackmarket-category__upgrade-info {
+    padding: 25px 10px 10px;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 30%, rgba(0, 0, 0, 0.5) 100%);
+  }
+  .blackmarket-page .blackmarket-category__upgrade-learnmore {
+    width: 27%;
+    margin-right: 2%;
+  }
+  .blackmarket-page .blackmarket-category__upgrade-learnmore.purchased {
+    margin-right: 2%;
+  }
+  .blackmarket-page .blackmarket-category__upgrade-button {
+    width: 27%;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .blackmarket-page .blackmarket-category__upgrade-icon {
+    padding-left: 25%;
+  }
+  .blackmarket-page .blackmarket-category__upgrade-info {
+    padding: 10px;
+  }
+  .blackmarket-page .blackmarket-category__upgrade-info h3 {
+    margin-bottom: 5px;
+    font-size: 14px;
+  }
+  .blackmarket-page .blackmarket-category__upgrade-info p {
+    font-size: 11px;
+  }
+  .blackmarket-page .blackmarket-category__upgrade-learnmore {
+    margin-top: 0;
+    width: 33%;
+    padding: 8px 25px;
+  }
+  .blackmarket-page .blackmarket-category__upgrade-button {
+    margin-top: 0;
+    width: 33%;
+    padding: 9px 0;
+  }
+}
+.blackmarket-page .season-container {
+  position: relative;
+}
+.blackmarket-page .season-time-left {
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 20px;
+  font-family: "Open Sans", Verdana, Arial, Helvetica, sans-serif;
+  font-size-adjust: 0.42;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+@media only screen and (max-width: 1024px) {
+  .blackmarket-page .season-time-left {
+    display: none;
+  }
+}
+.blackmarket-page .blackmarket-category__name {
+  font-family: "Montserrat", Verdana, Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+  font-size: 24px;
+  text-shadow: 0px 0px 5px #000000;
+}
+@media only screen and (max-width: 767px) {
+  .blackmarket-page .blackmarket-category__name {
+    font-size: 14px;
+  }
+}
+.blackmarket-page .blackmarket-category__title {
+  font-family: "Open Sans Condensed", Verdana, Arial, Helvetica, sans-serif;
+  font-size-adjust: 0.42;
+  font-weight: bold;
+  font-style: normal;
+  text-transform: uppercase;
+  font-size: 45px;
+  margin-bottom: 5px;
+  text-shadow: 0px 0px 5px #000000;
+}
+@media only screen and (max-width: 767px) {
+  .blackmarket-page .blackmarket-category__title {
+    font-size: 30px;
+  }
+}
+.blackmarket-page .blackmarket-loot-container {
+  padding: 20px 50px;
+  background: #111;
+}
+.blackmarket-page .blackmarket-controls {
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  display: -webkit-box;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  display: flex;
+  align-items: center;
+  font-family: "Montserrat", Verdana, Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  color: #fff;
+  background-color: #252525;
+  font-size: 18px;
+  height: 50px;
+}
+@media only screen and (max-width: 767px) {
+  .blackmarket-page .blackmarket-controls {
+    height: auto;
+    font-size: 16px;
+  }
+}
+.blackmarket-page .blackmarket-controls__title {
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 500;
+  width: 100%;
+}
+.blackmarket-page .blackmarket-controls__prev,
+.blackmarket-page .blackmarket-controls__next {
+  max-width: 16px;
+  background-repeat: no-repeat;
+  white-space: nowrap;
+  text-indent: 9999px;
+  overflow: hidden;
+  padding: 10px 20px;
+  background-size: 16px;
+  background-position: center center;
+  cursor: pointer;
+  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAUCAYAAACEYr13AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyVpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTQ4IDc5LjE2NDAzNiwgMjAxOS8wOC8xMy0wMTowNjo1NyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIDIxLjAgKE1hY2ludG9zaCkiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6QTExOUM0N0QxNDZFMTFFQTkxNUNBMDZCNTQ2REJCMTciIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6QTExOUM0N0UxNDZFMTFFQTkxNUNBMDZCNTQ2REJCMTciPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDpBMTE5QzQ3QjE0NkUxMUVBOTE1Q0EwNkI1NDZEQkIxNyIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDpBMTE5QzQ3QzE0NkUxMUVBOTE1Q0EwNkI1NDZEQkIxNyIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PoKhJJcAAACcSURBVHjaYvz//z8DMcBqwT8NILUfiCWAGKRpMxCHMJGhGQS2AnHosQSm30xkaN4CxMFAzb9AHCZKNOM1gBjNOA0gVjNWA0jRjGEAqZpRDCBHM9wAcjUTjEZiANgAoE03gJQjEL+AivsA8Vqgy9iIdgG5hqB4gRxDMMKAVEOwBiIphuCMBWINwRuNxBhCMB0QMoSRzCINnloBAgwAjRd04CNd/iEAAAAASUVORK5CYII=');
+}
+.blackmarket-page .blackmarket-controls__prev.disabled,
+.blackmarket-page .blackmarket-controls__next.disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+.blackmarket-page .blackmarket-controls__next {
+  text-align: right;
+  transform: rotate(180deg);
+}
+.blackmarket-page .blackmarket-progression {
+  height: 10px;
+  width: 100%;
+  padding: 0 4px;
+}
+.blackmarket-page .blackmarket-progression__bar {
+  height: 100%;
+  background-image: linear-gradient(to right, #747474, #848484 25%, #ffffff 75%, #878686);
+}
+.blackmarket-page .blackmarket-progression__bar.premium {
+  background-image: linear-gradient(to right, #ae8625, #f7ef8a 74%, #d2ac47 109%, #edc967 147%);
+}
+.blackmarket-page .blackmarket-progression__bar.mobile {
+  display: none;
+  width: 10px;
+  background-image: linear-gradient(to bottom, #747474, #848484 25%, #ffffff 75%, #878686);
+}
+.blackmarket-page .blackmarket-progression__bar.mobile.premium {
+  background-image: linear-gradient(to bottom, #ae8625, #f7ef8a 74%, #d2ac47 109%, #edc967 147%);
+}
+@media only screen and (max-width: 1024px) {
+  .blackmarket-page .blackmarket-progression {
+    width: 3%;
+    height: 681px;
+    float: left;
+    padding: 0;
+  }
+  .blackmarket-page .blackmarket-progression .mobile {
+    display: block;
+  }
+  .blackmarket-page .blackmarket-progression .desktop {
+    display: none;
+  }
+}
+.blackmarket-page .blackmarket-chase-listing {
+  -webkit-box-orient: horizontal;
+  -moz-box-orient: horizontal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-lines: multiple;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+@media only screen and (max-width: 1024px) {
+  .blackmarket-page .blackmarket-chase-listing__item {
+    max-width: 33.3333%;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .blackmarket-page .blackmarket-chase-listing__item {
+    max-width: 100%;
+  }
+}
+.blackmarket-page .blackmarket-loot__set {
+  font-family: "Montserrat", Verdana, Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-weight: 400;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 10px;
+  margin-top: 10px;
+  line-height: 1.2;
+}
+.blackmarket-page .blackmarket-lootbox {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  display: flex;
+  align-items: center;
+}
+.blackmarket-page .blackmarket-lootbox__img {
+  width: 100px;
+  height: 125px;
+  background-image: url(../../../../../../../content/dam/atvi/callofduty/mycod/lootstream/crate.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  margin-right: 20px;
+}
+.blackmarket-page .blackmarket-lootbox__content {
+  font-family: "Montserrat", Verdana, Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  margin-bottom: 8px;
+  font-size: 18px;
+  color: #fff;
+  letter-spacing: 1px;
+  font-weight: 400;
+  line-height: 1.25;
+}
+@media only screen and (max-width: 767px) {
+  .blackmarket-page .blackmarket-lootbox__content {
+    font-size: 15px;
+  }
+}
+.blackmarket-page .blackmarket-lootbox__title {
+  font-family: "Open Sans Condensed", Verdana, Arial, Helvetica, sans-serif;
+  font-size-adjust: 0.42;
+  font-style: normal;
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+}
+@media only screen and (max-width: 767px) {
+  .blackmarket-page .blackmarket-lootbox__title {
+    font-size: 18px;
+  }
+}
+.blackmarket-page .loot-tag {
+  font-family: "Montserrat", Verdana, Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  position: relative;
+  text-transform: uppercase;
+  overflow: hidden;
+}
+.blackmarket-page .loot-tag__type {
+  color: #fff;
+  background-color: #bbfa76;
+  font-size: 12px;
+  padding: 5px 45% 5px 10px;
+}
+.blackmarket-page .loot-tag__type.rare {
+  background-color: #7cbad4;
+}
+.blackmarket-page .loot-tag__type.legendary {
+  background-color: #f39700;
+}
+.blackmarket-page .loot-tag__type.epic {
+  background-color: #d8aefd;
+}
+.blackmarket-page .loot-tag__type.ultra {
+  color: #000;
+  background-color: #f9e16d;
+}
+.blackmarket-page .loot-tag__rarity {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  z-index: 0;
+  background-color: #8af614;
+}
+.blackmarket-page .loot-tag__rarity.rare {
+  background-color: #3a8db0;
+}
+.blackmarket-page .loot-tag__rarity.legendary {
+  background-color: #8d5800;
+}
+.blackmarket-page .loot-tag__rarity.epic {
+  background-color: #a84afb;
+}
+.blackmarket-page .loot-tag__rarity.ultra {
+  color: #000;
+  background-color: #f5cd0b;
+}
+.blackmarket-page .loot-tag__rarity span {
+  position: relative;
+  display: block;
+  padding: 0px 5px 0px 0px;
+  font-size: 9px;
+}
+.blackmarket-page .loot-tag__rarity::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 150%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transform-origin: top right;
+  transform: skew(-45deg, 0deg);
+  background-color: #8af614;
+}
+.blackmarket-page .loot-tag__rarity.rare::after {
+  background-color: #3a8db0;
+}
+.blackmarket-page .loot-tag__rarity.legendary::after {
+  background-color: #8d5800;
+}
+.blackmarket-page .loot-tag__rarity.epic::after {
+  background-color: #a84afb;
+}
+.blackmarket-page .loot-tag__rarity.ultra::after {
+  background-color: #f5cd0b;
+}
+.battlepass-upgrade-modal .modal__container {
+  background-color: #252525;
+  margin: 50px auto 0;
+}
+.battlepass-upgrade-modal .battlepass-header {
+  width: 100%;
+  padding-top: 50%;
+  position: relative;
+  background-image: url('../../../../../../../content/dam/atvi/callofduty/mycod/lootstream/battlepass-emblem-gold.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-bottom: 50px;
+}
+.battlepass-upgrade-modal .battlepass-header:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  padding-top: 55%;
+  top: 0px;
+  left: 0;
+  background-image: url('../../../../../../../content/dam/atvi/callofduty/mycod/lootstream/battle-pass-title.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.battlepass-upgrade-modal .battlepass-available-currency {
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+  padding: 15px 0;
+  font-size: 14px;
+  color: #777;
+  text-align: center;
+}
+.battlepass-upgrade-modal .battlepass-available-currency span {
+  display: inline-block;
+  color: #f5a623;
+  font-family: "Electrolize", Verdana, Arial, Helvetica, sans-serif;
+  font-size-adjust: 0.42;
+  font-style: normal;
+  font-size: 18px;
+  position: relative;
+  top: 1px;
+  padding-left: 20px;
+}
+.battlepass-upgrade-modal .battlepass-available-currency span:after {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  left: 0;
+  top: 0;
+  background-image: url('../../../../../../../content/dam/atvi/callofduty/mycod/lootstream/currency-icon.html');
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.battlepass-upgrade-modal .battlepass-season-info {
+  text-align: center;
+  padding: 15px 0;
+  margin-bottom: 15px;
+}
+.battlepass-upgrade-modal .battlepass-season-info__title {
+  font-family: "Montserrat", Verdana, Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  text-transform: uppercase;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.battlepass-upgrade-modal .battlepass-season-info__remaining {
+  font-family: "Montserrat", Verdana, Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 14px;
+}
+.battlepass-upgrade-modal .battlepass-bundle {
+  width: 95%;
+  background-color: rgba(0, 0, 0, 0.7);
+  margin: 0 auto 30px;
+  position: relative;
+  border-radius: 5px;
+  background-image: linear-gradient(to bottom, #ae8625, #f7ef8a 74%, #d2ac47 109%, #edc967 147%);
+  padding: 2px;
+}
+.battlepass-upgrade-modal .battlepass-bundle.selected {
+  background-color: #1e9ffd;
+  background-image: none;
+}
+.battlepass-upgrade-modal .battlepass-bundle .battlepass-bundle-container {
+  width: 100%;
+  height: 100%;
+  background: #000;
+  border-radius: inherit;
+  padding: 30px 20px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+  background-image: url('../../../../../../../content/dam/atvi/callofduty/mycod/lootstream/cod-points.jpg');
+  background-position: center center;
+  background-size: cover;
+}
+.battlepass-upgrade-modal .battlepass-bundle .battlepass-upgrade__title {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  color: #000;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  background-image: linear-gradient(to bottom, #ae8625, #f7ef8a 74%, #d2ac47 109%, #edc967 147%);
+  padding: 8px 16px;
+  line-height: 20px;
+  border-radius: 20px;
+  font-family: "Montserrat", Verdana, Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+.battlepass-upgrade-modal .battlepass-bundle .battlepass-upgrade__select {
+  width: 36px;
+  height: 36px;
+  border-radius: 36px;
+  background-image: linear-gradient(to bottom, #ae8625, #f7ef8a 74%, #d2ac47 109%, #edc967 147%);
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+  -moz-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  -o-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+}
+.battlepass-upgrade-modal .battlepass-bundle .battlepass-upgrade__select .battlepass-upgrade__check {
+  width: 32px;
+  height: 32px;
+  border-radius: 32px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  background: #000;
+}
+.battlepass-upgrade-modal .battlepass-bundle .battlepass-upgrade__select.checked .battlepass-upgrade__check {
+  background-image: linear-gradient(to bottom, #ae8625, #f7ef8a 74%, #d2ac47 109%, #edc967 147%);
+  border: 3px solid #000;
+}
+.battlepass-upgrade-modal .battlepass-bundle .battlepass-upgrade__select.checked .battlepass-upgrade__check:before {
+  content: "";
+  width: 4px;
+  height: 8px;
+  background-color: #000;
+  position: absolute;
+  left: 7px;
+  bottom: 6px;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+.battlepass-upgrade-modal .battlepass-bundle .battlepass-upgrade__select.checked .battlepass-upgrade__check:after {
+  content: "";
+  width: 4px;
+  height: 15px;
+  background-color: #000;
+  position: absolute;
+  left: 13px;
+  bottom: 5px;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.battlepass-upgrade-modal .battlepass-bundle .battlepass-upgrade__cost {
+  position: relative;
+  color: #f5a623;
+  font-family: "Electrolize", Verdana, Arial, Helvetica, sans-serif;
+  font-size-adjust: 0.42;
+  font-style: normal;
+  font-size: 28px;
+  padding-left: 32px;
+  width: 120px;
+}
+.battlepass-upgrade-modal .battlepass-bundle .battlepass-upgrade__cost:after {
+  content: "";
+  width: 28px;
+  height: 28px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-image: url('../../../../../../../content/dam/atvi/callofduty/mycod/lootstream/currency-icon.html');
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.battlepass-upgrade-modal .battlepass-bundle .battlepass-upgrade__subtitle {
+  font-family: "Montserrat", Verdana, Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  text-transform: uppercase;
+  margin: 0 0 10px;
+}
+.battlepass-upgrade-modal .battlepass-bundle .battlepass-upgrade__cta {
+  color: #1e9ffd;
+  background-color: #252525;
+  border: 1px solid #1e9ffd;
+  padding: 5px 15px;
+  display: inline-block;
+  margin-top: 15px;
+  text-transform: uppercase;
+  border-radius: 15px;
+}
+.battlepass-upgrade-modal .battlepass-price {
+  width: 95%;
+  margin: 0 auto 30px;
+  font-family: "Montserrat", Verdana, Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 18px;
+}
+.battlepass-upgrade-modal .battlepass-price__total {
+  margin-bottom: 20px;
+}
+.battlepass-upgrade-modal .battlepass-price__total:after {
+  visibility: hidden;
+  display: block;
+  content: '';
+  clear: both;
+  height: 0;
+}
+.battlepass-upgrade-modal .battlepass-price__total.insufficient {
+  color: #ff0000;
+}
+.battlepass-upgrade-modal .battlepass-price__remain:after {
+  visibility: hidden;
+  display: block;
+  content: '';
+  clear: both;
+  height: 0;
+}
+.battlepass-upgrade-modal .battlepass-price__num {
+  float: right;
+  position: relative;
+  color: #f5a623;
+  font-family: "Electrolize", Verdana, Arial, Helvetica, sans-serif;
+  font-size-adjust: 0.42;
+  font-style: normal;
+  font-size: 28px;
+  padding-left: 32px;
+}
+.battlepass-upgrade-modal .battlepass-price__num:after {
+  content: "";
+  width: 28px;
+  height: 28px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-image: url('../../../../../../../content/dam/atvi/callofduty/mycod/lootstream/currency-icon.html');
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.battlepass-upgrade-modal .battlepass-error {
+  color: #ff0000;
+  width: 95%;
+  margin: 0 auto 10px;
+}
+.battlepass-upgrade-modal .battlepass-upgrade-button {
+  color: #000;
+  font-family: "Montserrat", Verdana, Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  background-image: linear-gradient(to bottom, #ae8625, #f7ef8a 74%, #d2ac47 109%, #edc967 147%);
+  padding: 20px 0;
+  width: 95%;
+  margin: 0 auto 20px;
+  text-align: center;
+  border-radius: 7px;
+  cursor: pointer;
+}
+.battlepass-upgrade-modal .battlepass-text {
+  width: 80%;
+  opacity: 0.9;
+  font-family: "Montserrat", Verdana, Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 1.45;
+  text-align: center;
+  margin: 0 auto 20px;
+  padding-bottom: 20px;
+}
+.blackmarket-listing-container {
+  overflow: hidden;
+  margin-left: -4px;
+  margin-right: -4px;
+}
+@media only screen and (max-width: 1024px) {
+  .blackmarket-listing-container {
+    margin-left: 0;
+  }
+}
+.blackmarket-listing {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -moz-box-orient: horizontal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+@media only screen and (max-width: 1024px) {
+  .blackmarket-listing {
+    width: 97%;
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+}
+.blackmarket-listing__item {
+  position: relative;
+  width: 100%;
+  max-width: 20%;
+  padding-left: 4px;
+  padding-right: 4px;
+  margin-bottom: 8px;
+}
+@media only screen and (max-width: 1024px) {
+  .blackmarket-listing__item {
+    max-width: 100%;
+    height: 130px;
+  }
+}
+.blackmarket-listing__item .modal__bg {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.blackmarket-listing__item .modal__container {
+  padding: 40px 60px;
+  max-width: 400px;
+}
+.blackmarket-listing__item .modal__close {
+  margin: 0;
+}
+.blackmarket-loot {
+  position: relative;
+  cursor: pointer;
+  z-index: 0;
+  background-color: #111;
+  overflow: hidden;
+  border: 1px solid #848484;
+}
+.blackmarket-loot.premium {
+  border: 1px solid #F7EF8A;
+}
+.blackmarket-loot.locked .blackmarket-loot__content::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.65);
+  /* background-image: url(../../../../../../../content/dam/atvi/callofduty/mycod/lootstream/lock-gold.svg);
+                background-position: 5px 298px;
+                background-repeat: no-repeat;
+                background-size: 14px auto;*/
+  z-index: 100;
+}
+@media only screen and (max-width: 1024px) {
+  .blackmarket-loot.locked .blackmarket-loot__content::before {
+    background-size: 13px auto;
+    background-position: 10px calc(100% - 10px);
+  }
+}
+.blackmarket-loot__locked {
+  color: #edc967;
+  position: absolute;
+  top: 292px;
+  left: 0px;
+  font-size: 14px;
+  z-index: 100;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 100%);
+  width: 100%;
+  padding: 15px 0 5px 25px;
+}
+.blackmarket-loot__locked:before {
+  content: "";
+  width: 10px;
+  height: 15px;
+  position: absolute;
+  left: 9px;
+  top: 14px;
+  background-image: url(../../../../../../../content/dam/atvi/callofduty/mycod/lootstream/lock-gold.svg);
+  background-size: 100% auto;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+@media only screen and (max-width: 767px) {
+  .blackmarket-loot__locked {
+    top: 85px;
+    left: 30%;
+  }
+}
+.blackmarket-loot__free {
+  position: absolute;
+  padding: 7px 0;
+  background-color: rgba(60, 108, 43, 0.5);
+  border-top: 1px solid #c4f5a7;
+  border-bottom: 1px solid #c4f5a7;
+  width: 100%;
+  z-index: 100;
+  text-align: center;
+  font-size: 13px;
+  color: #c4f5a7;
+  top: 296px;
+}
+@media only screen and (max-width: 1024px) {
+  .blackmarket-loot__free {
+    top: 0;
+    width: 25%;
+    padding: 4px 0;
+  }
+}
+.blackmarket-loot__container {
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  display: -webkit-box;
+  display: flex;
+  justify-content: space-between;
+  min-height: 300px;
+  margin-left: 0;
+  width: 100%;
+}
+@media only screen and (max-width: 1024px) {
+  .blackmarket-loot__container.mobile {
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    display: -webkit-box;
+    display: flex;
+    justify-content: flex-start;
+    min-height: 150px;
+    margin-left: 25%;
+    width: 75%;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .blackmarket-loot__container.mobile {
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    display: -webkit-box;
+    display: flex;
+    justify-content: flex-start;
+    min-height: 125px;
+    margin-left: 35%;
+    width: 65%;
+  }
+}
+.blackmarket-loot__content {
+  padding: 10px;
+  position: relative;
+  border-top: 4px solid #3c3836;
+  overflow: hidden;
+}
+.blackmarket-loot__content.common {
+  border-color: #bbfa76;
+}
+.blackmarket-loot__content.rare {
+  border-color: #7cbad4;
+}
+.blackmarket-loot__content.legendary {
+  border-color: #f39700;
+}
+.blackmarket-loot__content.epic {
+  border-color: #d8aefd;
+}
+.blackmarket-loot__content.ultra {
+  border-color: #f9e16d;
+}
+@media only screen and (max-width: 1024px) {
+  .blackmarket-loot__content {
+    width: 75%;
+    height: 130px;
+    float: left;
+  }
+}
+.blackmarket-loot__title {
+  font-family: "Open Sans Condensed", Verdana, Arial, Helvetica, sans-serif;
+  font-size-adjust: 0.42;
+  font-weight: bold;
+  font-style: normal;
+  text-transform: uppercase;
+  line-height: 1.2;
+  color: #fff;
+  font-size: 20px;
+  text-shadow: 0px 0px 5px #000000;
+  position: relative;
+  z-index: 2;
+}
+@media only screen and (max-width: 767px) {
+  .blackmarket-loot__title {
+    font-size: 18px;
+  }
+}
+.blackmarket-loot__description {
+  font-family: "Montserrat", Verdana, Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-weight: 400;
+  color: #fff;
+  font-size: 13px;
+  margin: 5px 0 25px;
+  line-height: 15px;
+  height: 15px;
+  position: relative;
+  z-index: 2;
+}
+@media only screen and (max-width: 1024px) {
+  .blackmarket-loot__description {
+    margin: 5px 0 50px;
+  }
+}
+.blackmarket-loot__type {
+  font-size: 14px;
+  text-transform: uppercase;
+  position: relative;
+  z-index: 2;
+}
+.blackmarket-loot__rarity {
+  position: absolute;
+  bottom: 15px;
+  right: 10px;
+  text-transform: uppercase;
+  font-size: 10px;
+  text-align: center;
+  z-index: 2;
+}
+.blackmarket-loot__rarity.common {
+  color: #bbfa76;
+}
+.blackmarket-loot__rarity.common:after {
+  background-image: url('../../../../../../../content/dam/atvi/callofduty/mycod/lootstream/icons/loot-common.html');
+}
+.blackmarket-loot__rarity.rare {
+  color: #7cbad4;
+}
+.blackmarket-loot__rarity.rare:after {
+  background-image: url('../../../../../../../content/dam/atvi/callofduty/mycod/lootstream/icons/loot-rare.html');
+}
+.blackmarket-loot__rarity.legendary {
+  color: #f39700;
+}
+.blackmarket-loot__rarity.legendary:after {
+  background-image: url('../../../../../../../content/dam/atvi/callofduty/mycod/lootstream/icons/loot-legendary.html');
+}
+.blackmarket-loot__rarity.epic {
+  color: #d8aefd;
+}
+.blackmarket-loot__rarity.epic:after {
+  background-image: url('../../../../../../../content/dam/atvi/callofduty/mycod/lootstream/icons/loot-epic.html');
+}
+.blackmarket-loot__rarity:after {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  top: -8px;
+  left: -14px;
+  -webkit-transform: translate(-50%, 0);
+  -moz-transform: translate(-50%, 0);
+  -ms-transform: translate(-50%, 0);
+  -o-transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
+}
+.blackmarket-loot__bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  -webkit-filter: blur(5px);
+  filter: blur(5px);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  backface-visibility: hidden;
+  transform: translateZ(0) scale(1.5);
+  opacity: .5;
+}
+@media only screen and (max-width: 1024px) {
+  .blackmarket-loot__bg {
+    display: block;
+  }
+}
+.blackmarket-loot__img {
+  position: relative;
+  width: 100%;
+  height: 325px;
+  background-color: rgba(0, 0, 0, 0.25);
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: transform 0.3s ease-in-out;
+}
+@media only screen and (max-width: 1024px) {
+  .blackmarket-loot__img.mobile {
+    transition-property: none;
+    width: 25%;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .blackmarket-loot__img.mobile {
+    transition-property: none;
+    float: left;
+    height: 130px;
+    background-position: center center;
+  }
+}
+.blackmarket-loot__tier {
+  font-family: "Montserrat", Verdana, Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  position: absolute;
+  width: 34px;
+  height: 34px;
+  top: 0px;
+  left: 0px;
+  font-size: 14px;
+  background-color: #3c3836;
+  font-weight: 600;
+  color: #fff;
+  z-index: 100;
+  text-align: center;
+  padding-top: 11px;
+}
+.blackmarket-loot__tier.got {
+  background-image: linear-gradient(to bottom, #747474, #848484 25%, #ffffff 75%, #878686);
+  color: #000;
+}
+.blackmarket-loot__tier.got:after {
+  content: "";
+  width: 18px;
+  height: 15px;
+  position: absolute;
+  left: 42px;
+  top: 10px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url('../../../../../../../content/dam/atvi/callofduty/mycod/lootstream/silver-check.svg');
+}
+.blackmarket-loot__tier.got.premium {
+  background-image: linear-gradient(to bottom, #ae8625, #f7ef8a 74%, #d2ac47 109%, #edc967 147%);
+}
+.blackmarket-loot__tier.got.premium:after {
+  background-image: url('../../../../../../../content/dam/atvi/callofduty/mycod/lootstream/gold-check.svg');
+}
+.blackmarket-loot__tier.current:before {
+  content: "";
+  height: 15px;
+  width: 43px;
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAdCAYAAAC9pNwMAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyVpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTQ4IDc5LjE2NDAzNiwgMjAxOS8wOC8xMy0wMTowNjo1NyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIDIxLjAgKE1hY2ludG9zaCkiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6M0ZDNzQwMDQxNEM2MTFFQTkxNUNBMDZCNTQ2REJCMTciIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6M0ZDNzQwMDUxNEM2MTFFQTkxNUNBMDZCNTQ2REJCMTciPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDozRkM3NDAwMjE0QzYxMUVBOTE1Q0EwNkI1NDZEQkIxNyIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDozRkM3NDAwMzE0QzYxMUVBOTE1Q0EwNkI1NDZEQkIxNyIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/Ps/pL7EAAAHkSURBVHjavFfNSgMxEJ5Nd7EivRXaSx/Ed/DqRaEgKLroQQWrUo9aFMF6UKRUEPwrePYdfI5S+gAWPIjtrl9qRtKwXmqSwHSmw5Zvvi87kzSo1WobYRh2oih6h6dcLkeFQoFKpRIVi0Uql8tUqVQon89Tr9ejfr9P3W6XBoMBxXFM0y6RJMkS7BHxDHlcAvaRpukCwB8Qz3oDDoIglQGAF0ejURth5IsxAZwU+DLAb32AC8g8DqSXBcBXh8NhyzW4YLYMLg3MV8D8WorhVGpdbl4AX0MRNwhDJ8AAIJZbZ63idbimM6l1thnMtyB7E3nhZI+5ALMQtefb8OfW32r9zdZlNxTYhZ1a7+Osvf6NfxLycx++YU1q7mE2/q6zTlUx2O9D+GPkImuTKwt0zFzm+Dn5TJLUkZ+3Nrm06fUrNRehyY1fiRPk3/4DHOrj0mRstpZ6poHskfkSTt1Oqm3MuW3u8xnCutVDQu/frF7G9wvYgfVZPcHM6G0hxCXCPZsDJMxiZxRyBbfj7XRSuZYL0DFjXdKJioRow2LuJCenkwmKK+4d8puuQP96ue5xv5bn8JfzOxezhrRPAF11DcqMAwkKwBeYvO44B+WROQemrwCtIv70daEPAfqM/00dn6ByfQswAD3mEaQX1IgMAAAAAElFTkSuQmCC);
+  position: absolute;
+  top: 10px;
+  left: 70px;
+  background-size: auto 100%;
+}
+.blackmarket-loot__tier.current.premium:before {
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAdCAYAAAC9pNwMAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyVpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTQ4IDc5LjE2NDAzNiwgMjAxOS8wOC8xMy0wMTowNjo1NyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIDIxLjAgKE1hY2ludG9zaCkiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6MDgwQkNDRjcxNEM5MTFFQTkxNUNBMDZCNTQ2REJCMTciIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6MDgwQkNDRjgxNEM5MTFFQTkxNUNBMDZCNTQ2REJCMTciPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDozRkM3NDAwNjE0QzYxMUVBOTE1Q0EwNkI1NDZEQkIxNyIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDowODBCQ0NGNjE0QzkxMUVBOTE1Q0EwNkI1NDZEQkIxNyIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PqWhIMoAAAKSSURBVHjaYrAxFOH5//8/A70xk64yh31FonICA50BEwszI5utAW9CTbpGGl0tZvjPwMDIyGhvbyyY3FKgX0Q/i0EAFOaMjGZ2xsLJ3VVm1XSzGOhjIAHkMDFq2RiJJPTW2NbRxeL/UAKY3hhYmJlUbM1Fk2d2ukygfVCjAXY2ZjkLI/HYSW1u7TSOYxiXEdlyIScb2cz+Vs9GGsYxurUQwM3Fyu/jrlK9cEboHOpbzMgEt/U/wuvwgODiYmW2t5ZPnjstfJq5uTIztSxmYWD4B09cYNuhDmEEQ0hW4+FhY/D30czk5eMQtTBXiThx8s5fyi3+jwhiiEX/oCkcbCckq4HjnIXB3UklhOHP7xVAbihVUzVyGmNkQFgKdyULI4OLvVLInH7faTTJTjBHgGsSZLH/wOBn/M/g6Sif2V3jWE1h4kIkZ0Y0q9F9zMAIcca7Dz8+vnz77Q7FcQyKViTrUP39H+pnsCP+Mzx98eXjtEVXIqbPO7mDOvmYkQEtMzEgWQgBT558/r5o5eWs6fNO7KA4joGW/f3PAEnJjHgUPnry4ePS1RcKuvr3LaNKPgZaxozNQlAuhoXy06efXi9acy23d8K+ldQrQBhBbQEmeFAzQgP8PzSxPXv++dGazXdqeifsX0nNIpMFkXdQcjKY/frd90cLVt1MnzaX8jjFbjE8SzHC8+vHz7/vz15xK3HOkrMHaVE7sSCKSkQh8fHTr8trdz+poZWlqJUEFHz9/uvCqu3PK6cvubSDgYaABbnU/PL195G1+17Wz1lxZR+t21wsoGIQFNRvPvxav/XYm+5F628dp0crE1hkMjJ8+PJnza4zHycuWn+PLpaC01WEh6Txr7+M39fuenqNnj0JgAADALQaQpb//mGcAAAAAElFTkSuQmCC);
+}
+@media only screen and (max-width: 1024px) {
+  .blackmarket-loot__tier {
+    top: calc(72%);
+    width: 28px;
+    height: 28px;
+    padding-top: 7px;
+  }
+}
+
+

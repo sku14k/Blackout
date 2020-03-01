@@ -1,0 +1,2022 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Open+Sans|Open+Sans+Condensed:700');
+@import url('https://fonts.googleapis.com/css?family=Electrolize');
+.operation-hero {
+  margin-top: 100px;
+  background-color: black;
+  position: relative;
+  /*@media screen and (max-width: 380px) {
+		.aspect-ratio(640, 900);
+    }*/
+}
+.operation-hero:before {
+  display: block;
+  content: '';
+  width: 100%;
+  height: 0;
+  padding-top: 51.14583333%;
+}
+@media screen and (max-width: 1024px) {
+  .operation-hero {
+    margin-top: 50px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .operation-hero {
+    position: relative;
+  }
+  .operation-hero:before {
+    display: block;
+    content: '';
+    width: 100%;
+    height: 0;
+    padding-top: 100%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .operation-hero {
+    position: relative;
+  }
+  .operation-hero:before {
+    display: block;
+    content: '';
+    width: 100%;
+    height: 0;
+    padding-top: 140.625%;
+  }
+  .operation-hero:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    height: 10em;
+    width: 100%;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), #000000 85%);
+  }
+}
+@media screen and (max-width: 320px) {
+  .operation-hero {
+    position: relative;
+  }
+  .operation-hero:before {
+    display: block;
+    content: '';
+    width: 100%;
+    height: 0;
+    padding-top: 148.4375%;
+  }
+}
+.operation-hero .hero-background {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.operation-hero .hero-background .bg {
+  height: 100%;
+  margin: auto;
+}
+@media screen and (max-width: 1024px) {
+  .operation-hero .hero-background .bg {
+    max-width: 1280px;
+  }
+}
+.operation-hero .hero-background .bg.mobile {
+  display: none;
+  background-position: top !important;
+}
+@media screen and (max-width: 768px) {
+  .operation-hero .hero-background .bg.mobile {
+    display: block;
+  }
+}
+.operation-hero .hero-background .bg.desktop:before,
+.operation-hero .hero-background .bg.desktop:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  height: 57em;
+  width: 3%;
+}
+.operation-hero .hero-background .bg.desktop:before {
+  left: 0;
+}
+.operation-hero .hero-background .bg.desktop:after {
+  right: 0;
+}
+@media screen and (max-width: 768px) {
+  .operation-hero .hero-background .bg.desktop {
+    display: none;
+  }
+}
+.operation-hero .content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  max-width: 960px;
+  width: 50%;
+  padding: 0;
+  text-align: center;
+  z-index: 100;
+}
+@media screen and (max-width: 768px) {
+  .operation-hero .content {
+    top: 65vw;
+    width: 80%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .operation-hero .content {
+    top: 85vw;
+  }
+}
+.operation-hero .content .play-btn {
+  content: "";
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  cursor: pointer;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  margin: 0 auto;
+  background: #191919 url(../../../../../../../../content/dam/atvi/callofduty/blackops4/splash/button-tile.svg) center center repeat;
+  border: 2px solid #565656;
+  -webkit-transition: all ease 0.3s;
+  -moz-transition: all ease 0.3s;
+  -ms-transition: all ease 0.3s;
+  -o-transition: all ease 0.3s;
+  transition: all ease 0.3s;
+  position: relative;
+  top: unset;
+  left: unset;
+  transform: unset;
+  margin-bottom: 15px;
+}
+.operation-hero .content .play-btn:after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid #fff;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.operation-hero .content .play-btn:hover {
+  width: 66px;
+  height: 66px;
+  background-color: #3c3c3c;
+  border: 2px solid #fff;
+}
+.operation-hero .content .play-btn:hover {
+  width: 60px;
+  height: 60px;
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  transform: scale(1.1);
+}
+.operation-hero .content .logo {
+  margin: 25px auto;
+  display: block;
+  width: 60%;
+  min-width: 275px;
+  max-width: 700px;
+}
+.operation-hero .content .cta-btn {
+  min-width: 250px;
+  height: 40px;
+  background-color: #713000;
+  display: inline-block;
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+.operation-hero .content .cta-btn a {
+  color: #ffffff;
+  background-color: #713000;
+  border: 2px solid #f07113;
+  font-family: "Electrolize", Verdana, Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 13px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 10px;
+  width: 100%;
+  height: 100%;
+  background: url(../../../../../../../../content/dam/atvi/callofduty/blackops4/splash/button-tile.svg) center center repeat;
+  box-shadow: 3px 3px 10px 1px rgba(240, 113, 19, 0.6);
+  display: block;
+  letter-spacing: 3px;
+  text-shadow: 0px 0px 18px #f07113;
+  -webkit-transition: all ease 0.8s;
+  -moz-transition: all ease 0.8s;
+  -ms-transition: all ease 0.8s;
+  -o-transition: all ease 0.8s;
+  transition: all ease 0.8s;
+  cursor: pointer;
+}
+.operation-hero .content .cta-btn a:hover {
+  color: #ffffff;
+  background-color: #aa4800;
+}
+.operation-hero .content .cta-btn a {
+  padding: 13px;
+}
+@media screen and (max-width: 768px) {
+  .operation-hero .content .cta-btn {
+    max-width: 250px;
+    display: block;
+  }
+}
+.operation-hero .content .header {
+  font-family: "Electrolize", Verdana, Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 30px;
+  letter-spacing: 5px;
+  text-shadow: 0px 0px 10px #34322e, 0px 0px 10px #dbbd40;
+  text-transform: uppercase;
+  color: #dbbd40;
+  margin-bottom: 20px;
+  animation-delay: 1s;
+}
+.operation-hero .content .description {
+  margin-bottom: 15px;
+  color: white;
+  font-family: "Electrolize", Verdana, Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 11px;
+  color: #adabab;
+  letter-spacing: 2px;
+  text-shadow: 0px 0px 18px black;
+  line-height: 130%;
+  animation-delay: 1.5s;
+}
+.operation-hero .content .logo-container {
+  width: 50%;
+  margin: 50px auto 0;
+  animation-delay: 7s;
+}
+.operation-hero .content .logo-container .company-logo {
+  display: inline-block;
+  width: 30%;
+}
+.operation-hero .content .logo-container .company-logo img {
+  width: 80%;
+  vertical-align: middle;
+}
+@media screen and (max-width: 1280px) {
+  .operation-hero .content .logo-container {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .operation-hero .content .logo-container {
+    display: none;
+  }
+}
+.operation-video-wrapper .video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: none;
+  background-color: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+}
+.operation-video-wrapper .video .cq-Editable-dom,
+.operation-video-wrapper .video .atvi-component.atvi-video,
+.operation-video-wrapper .video > div {
+  height: 100%;
+}
+.operation-video-wrapper .video .close-btn {
+  position: absolute;
+  top: 0;
+  right: 5px;
+  font-size: 60px;
+  color: white;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+}
+.operation-video-wrapper .video .controls {
+  position: relative;
+}
+.operation-video-wrapper .video .controls .controls-container {
+  display: block !important;
+}
+.operation-video-wrapper .video .external-link-overlay {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .operation-video-wrapper .video .atvi-video {
+    width: 100%;
+    position: absolute;
+    max-width: 1000px;
+    top: 0;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
+    -moz-transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0);
+    -o-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+  }
+}
+/*body.menu-active {
+    .operation-hero {
+        .hero-background .bg {
+@media screen and (max-width: 1024px) {
+				max-width: 1280px;
+            }
+        }
+    }
+}*/
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Open+Sans|Open+Sans+Condensed:700');
+@import url('https://fonts.googleapis.com/css?family=Electrolize');
+/* Arrows */
+.slick-prev,
+.slick-next {
+  position: absolute;
+  display: block;
+  width: 70px;
+  height: 200px;
+  background: transparent;
+  line-height: 0px;
+  font-size: 0px;
+  cursor: pointer;
+  color: transparent;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+  -moz-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  -o-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  padding: 0;
+  border: none;
+  outline: none;
+  z-index: 10;
+}
+.slick-prev.slick-disabled:before,
+.slick-next.slick-disabled:before {
+  opacity: 0.25;
+}
+@media screen and (max-width: 1023px) {
+  .slick-prev,
+  .slick-next {
+    width: 35px;
+    height: 145px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .slick-prev,
+  .slick-next {
+    width: 30px;
+    height: 96px;
+  }
+}
+.slick-next {
+  width: 67px;
+  height: 51px;
+  background-image: url(../../../../../../../../content/dam/atvi/callofduty/blackops4/operations/absolutezero/lootstream/arrow-right.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  -webkit-transform: translate(0, -50%);
+  -moz-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  -o-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  display: inline-block;
+  cursor: pointer;
+  right: -67px;
+}
+.slick-next:after,
+.slick-next:before {
+  content: "";
+  position: absolute;
+  height: calc(319%);
+  width: 5px;
+  right: 50%;
+  -webkit-transform: translate(150%, 0);
+  -moz-transform: translate(150%, 0);
+  -ms-transform: translate(150%, 0);
+  -o-transform: translate(150%, 0);
+  transform: translate(150%, 0);
+}
+.slick-next:after {
+  bottom: 60px;
+  border-top: 1px solid #adabab;
+  border-right: 1px solid #adabab;
+}
+.slick-next:before {
+  top: 60px;
+  border-bottom: 1px solid #adabab;
+  border-right: 1px solid #adabab;
+}
+@media screen and (max-width: 768px) {
+  .slick-next {
+    right: -57px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .slick-next {
+    right: -40px;
+  }
+}
+.slick-prev {
+  width: 67px;
+  height: 51px;
+  background-image: url(../../../../../../../../content/dam/atvi/callofduty/blackops4/operations/absolutezero/lootstream/arrow-left.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  -webkit-transform: translate(0, -50%);
+  -moz-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  -o-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  display: inline-block;
+  cursor: pointer;
+  left: -67px;
+}
+.slick-prev:after,
+.slick-prev:before {
+  content: "";
+  position: absolute;
+  height: calc(320%);
+  width: 5px;
+  left: 50%;
+  -webkit-transform: translate(-150%, 0);
+  -moz-transform: translate(-150%, 0);
+  -ms-transform: translate(-150%, 0);
+  -o-transform: translate(-150%, 0);
+  transform: translate(-150%, 0);
+}
+.slick-prev:after {
+  bottom: 60px;
+  border-top: 1px solid #adabab;
+  border-left: 1px solid #adabab;
+}
+.slick-prev:before {
+  top: 60px;
+  border-bottom: 1px solid #adabab;
+  border-left: 1px solid #adabab;
+}
+@media screen and (max-width: 768px) {
+  .slick-prev {
+    left: -57px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .slick-prev {
+    left: -40px;
+  }
+}
+.slick-prev:before,
+.slick-next:before {
+  font-size: 20px;
+  line-height: 1;
+  color: #ffffff;
+  opacity: 0.75;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+/* Dots */
+.slick-dotted .slick-slider {
+  margin-bottom: 30px;
+}
+.slick-dots {
+  position: absolute;
+  bottom: -50px;
+  list-style: none;
+  display: block;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  z-index: 50;
+}
+.slick-dots li {
+  position: relative;
+  display: inline-block;
+  height: 15px;
+  width: 15px;
+  margin: 0 5px;
+  padding: 0;
+  cursor: pointer;
+}
+.slick-dots li button {
+  border: 0;
+  background: transparent;
+  display: block;
+  height: 15px;
+  width: 15px;
+  outline: none;
+  line-height: 0px;
+  font-size: 0px;
+  color: transparent;
+  padding: 5px;
+  cursor: pointer;
+  /*&:before {
+                position: absolute;
+                top: 0;
+                left: 0;
+                content: @slick-dot-character;
+                width: 20px;
+                height: 20px;
+                font-size: @slick-dot-size;
+                line-height: 20px;
+                text-align: center;
+                color: @slick-dot-color;
+                opacity: @slick-opacity-not-active;
+                -webkit-font-smoothing: antialiased;
+                -moz-osx-font-smoothing: grayscale;
+            }*/
+}
+.slick-dots li button:hover,
+.slick-dots li button:focus {
+  outline: none;
+}
+.slick-dots li button:hover:before,
+.slick-dots li button:focus:before {
+  opacity: 1;
+}
+.slick-dots li.slick-active button:before {
+  color: #000000;
+  opacity: 0.75;
+}
+/* Slider */
+.slick-slider {
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -ms-touch-action: pan-y;
+  touch-action: pan-y;
+  -webkit-tap-highlight-color: transparent;
+}
+.slick-list {
+  position: relative;
+  display: block;
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+.slick-list:focus {
+  outline: none;
+}
+.slick-list.dragging {
+  cursor: pointer;
+  cursor: hand;
+}
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+.slick-track {
+  position: relative;
+  left: 0;
+  top: 0;
+  display: block;
+}
+.slick-track:before,
+.slick-track:after {
+  content: "";
+  display: table;
+}
+.slick-track:after {
+  content: "";
+  clear: both;
+  height: 0;
+  visibility: hidden;
+  display: block;
+}
+.slick-loading .slick-track {
+  visibility: hidden;
+}
+.slick-slide {
+  float: left;
+  height: 100%;
+  margin: 0 10px;
+  min-height: 0px;
+  position: relative;
+  display: none;
+}
+[dir="rtl"] .slick-slide {
+  float: right;
+}
+.slick-slide img {
+  display: block;
+}
+.slick-slide.slick-loading img {
+  display: none;
+}
+.slick-slide.dragging img {
+  pointer-events: none;
+}
+.slick-initialized .slick-slide {
+  display: block;
+}
+.slick-loading .slick-slide {
+  visibility: hidden;
+}
+.slick-vertical .slick-slide {
+  display: block;
+  height: auto;
+  border: 1px solid transparent;
+}
+.slick-slide:not(.slick-active):before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 5;
+}
+.slick-slide:focus {
+  outline: none;
+}
+.slick-arrow.slick-hidden {
+  display: none;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Open+Sans|Open+Sans+Condensed:700');
+@import url('https://fonts.googleapis.com/css?family=Electrolize');
+.operation-lootstream {
+  color: #fff;
+  position: relative;
+  background: url(../../../../../../../../content/dam/atvi/callofduty/blackops4/common/bg-tile-text-v2.png) #000000 top center repeat;
+  overflow-x: hidden;
+}
+.operation-lootstream .operation-lootstream-inner {
+  width: 100%;
+  max-width: 80%;
+  margin: 100px auto;
+}
+.operation-lootstream .header-container {
+  width: 50%;
+  text-align: center;
+  position: relative;
+  margin: 0 auto 45px;
+}
+@media screen and (max-width: 768px) {
+  .operation-lootstream .header-container {
+    width: 80%;
+  }
+}
+.operation-lootstream .header-container .header {
+  font-family: "Electrolize", Verdana, Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 28px;
+  color: #dbbd40;
+  line-height: 30px;
+  letter-spacing: 5px;
+  text-shadow: 0px 0px 10px #34322e, 0px 0px 10px #dbbd40;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+.operation-lootstream .header-container .description {
+  font-family: "Electrolize", Verdana, Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 11px;
+  color: #adabab;
+  letter-spacing: 2px;
+  text-shadow: 0px 0px 18px black;
+  line-height: 130%;
+}
+.operation-lootstream .lootstream-carousel .slick-list {
+  overflow: hidden;
+}
+.operation-lootstream .lootstream-carousel .lootstream-item video {
+  width: 100%;
+  pointer-events: none;
+}
+.operation-lootstream .lootstream-carousel .lootstream-item img {
+  width: 100%;
+}
+.operation-lootstream .lootstream-carousel .lootstream-item.slick-current:after {
+  border: 1px solid #fff;
+}
+.operation-lootstream .lootstream-carousel .lootstream-item .item-bg {
+  background-size: 100% 99%;
+  background-repeat: no-repeat;
+  background-position: top left;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+.operation-lootstream .lootstream-carousel .lootstream-item:after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 99%;
+  border: 1px solid #ffffff50;
+  top: 0;
+  left: 0;
+}
+.operation-lootstream .lootstream-desc-carousel {
+  margin: 45px auto;
+}
+.operation-lootstream .lootstream-desc-carousel .loot-description {
+  width: 100%;
+  text-align: center;
+}
+.operation-lootstream .lootstream-desc-carousel .loot-name {
+  font-family: "Electrolize", Verdana, Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 28px;
+  color: #fff;
+  line-height: 30px;
+  letter-spacing: 5px;
+  text-shadow: 0px 0px 10px #34322e, 0px 0px 10px #ffffff;
+  text-transform: uppercase;
+  font-size: 16px;
+  margin: 40px auto 25px;
+}
+.operation-lootstream .lootstream-desc-carousel .loot-description {
+  font-family: "Electrolize", Verdana, Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 11px;
+  color: #adabab;
+  letter-spacing: 2px;
+  text-shadow: 0px 0px 18px black;
+  line-height: 130%;
+}
+.operation-lootstream .loot-index {
+  display: none;
+  text-align: center;
+  font-family: "Electrolize", Verdana, Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 11px;
+  color: #adabab;
+  letter-spacing: 2px;
+  text-shadow: 0px 0px 18px black;
+  line-height: 130%;
+  margin-top: 25px;
+}
+@media screen and (max-width: 768px) {
+  .operation-lootstream .loot-index {
+    display: block;
+  }
+}
+@media screen and (max-width: 768px) {
+  .operation-lootstream ul.slick-dots {
+    display: none !important;
+  }
+}
+.operation-lootstream ul.slick-dots li button {
+  background-color: transparent;
+  border: 1px solid #fff;
+}
+.operation-lootstream ul.slick-dots li.slick-active button {
+  background-color: #fff;
+}
+.operation-lootstream .border-top {
+  width: 100%;
+  height: 8px;
+  content: "";
+  background: url(../../../../../../../../content/dam/atvi/callofduty/blackops4/home/break-tile.svg) top center repeat;
+  background-size: 4px;
+  background-color: transparent;
+  position: absolute;
+  position: relative;
+  top: 0;
+}
+.operation-lootstream .border-bottom {
+  width: 100%;
+  height: 8px;
+  content: "";
+  background: url(../../../../../../../../content/dam/atvi/callofduty/blackops4/home/break-tile.svg) top center repeat;
+  background-size: 4px;
+  background-color: transparent;
+  position: absolute;
+  position: relative;
+  bottom: 0;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Open+Sans|Open+Sans+Condensed:700');
+@import url('https://fonts.googleapis.com/css?family=Electrolize');
+.operation-bg-video .bg-video-container {
+  position: relative;
+  width: 100%;
+  min-height: 80vh;
+  overflow: hidden;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  display: -webkit-box;
+  display: flex;
+  justify-content: flex-end;
+}
+@media screen and (max-width: 767px) {
+  .operation-bg-video .bg-video-container {
+    min-height: 100vw;
+  }
+}
+.operation-bg-video .content-container {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+@media screen and (max-width: 767px) {
+  .operation-bg-video .content-container {
+    width: 80%;
+  }
+}
+.operation-bg-video .content-container .header {
+  font-family: "Electrolize", Verdana, Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 28px;
+  color: #dbbd40;
+  line-height: 30px;
+  letter-spacing: 5px;
+  text-shadow: 0px 0px 10px #34322e, 0px 0px 10px #dbbd40;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+.operation-bg-video .content-container .description {
+  font-family: "Electrolize", Verdana, Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 11px;
+  color: #adabab;
+  letter-spacing: 2px;
+  text-shadow: 0px 0px 18px black;
+  line-height: 130%;
+  margin-bottom: 100px;
+}
+@media screen and (max-width: 767px) {
+  .operation-bg-video .content-container .description {
+    margin-bottom: 40px;
+  }
+}
+.operation-bg-video .bg-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+}
+@media screen and (max-width: 690px) {
+  .operation-bg-video .bg-video {
+    width: 100%;
+  }
+}
+.operation-bg-video .bg-video-backdrop {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -2;
+}
+.operation-bg-video .mobile {
+  display: none;
+}
+.operation-bg-video .desktop {
+  display: block;
+}
+@media screen and (max-width: 767px) {
+  .operation-bg-video .mobile {
+    display: block;
+  }
+  .operation-bg-video .desktop {
+    display: none;
+  }
+}
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Open+Sans|Open+Sans+Condensed:700');
+@import url('https://fonts.googleapis.com/css?family=Electrolize');
+.feature-container {
+  color: #fff;
+  position: relative;
+  background-color: #000;
+  /**************
+    ANIMATE FEATURE
+    **************/
+  /************
+    END ANIMATION
+    *************/
+}
+.feature-container .main-container {
+  position: relative;
+  padding-bottom: 50%;
+  -webkit-transition: all ease 0.7s;
+  -moz-transition: all ease 0.7s;
+  -ms-transition: all ease 0.7s;
+  -o-transition: all ease 0.7s;
+  transition: all ease 0.7s;
+  -webkit-transition-delay: 0.3s;
+  -moz-transition-delay: 0.3s;
+  -o-transition-delay: 0.3s;
+  transition-delay: 0.3s;
+  -webkit-filter: grayscale(100%);
+  /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+  opacity: 0.5;
+}
+.feature-container .main-container .bg-desktop {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.feature-container .main-container .bg-mobile {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: none;
+  height: 400px;
+}
+.feature-container .main-container .feature-inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 40px;
+  text-align: center;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -ms-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
+  /*********************
+            BORDERS TOP AND BOTTOM
+            **********************/
+  /*********
+            BORDER TOP
+            *********/
+  /*******************
+            BORDER BOTTOM NO CTA
+            *******************/
+  /********************
+            BORDERS RIGHT AND LEFT
+            *********************/
+  /*END BORDERS RIGHT AND LEFT*/
+  /******************
+            END BORDERS STYLES
+            ******************/
+}
+.feature-container .main-container .feature-inner .text-line-break {
+  margin: 0 auto 4px;
+  width: 0%;
+  height: 8px;
+  content: "";
+  background: url(../../../../../../../../content/dam/atvi/callofduty/blackops4/home/break-tile.svg) top center repeat;
+  background-size: 4px;
+  background-color: transparent;
+  -webkit-transition: all ease 0.8s;
+  -moz-transition: all ease 0.8s;
+  -ms-transition: all ease 0.8s;
+  -o-transition: all ease 0.8s;
+  transition: all ease 0.8s;
+  /*BORDER WITH CTA*/
+}
+.feature-container .main-container .feature-inner .text-line-break.border-bottom-cta {
+  position: absolute;
+  bottom: 0;
+  height: 4px;
+  margin-bottom: 4px;
+  width: 0;
+  -webkit-transition: all ease 0.7s;
+  -moz-transition: all ease 0.7s;
+  -ms-transition: all ease 0.7s;
+  -o-transition: all ease 0.7s;
+  transition: all ease 0.7s;
+  -webkit-transition-delay: 1.7s;
+  -moz-transition-delay: 1.7s;
+  -o-transition-delay: 1.7s;
+  transition-delay: 1.7s;
+}
+.feature-container .main-container .feature-inner .text-line-break.border-bottom-cta.right {
+  right: 0;
+}
+.feature-container .main-container .feature-inner .text-line-break.border-bottom-cta.right:after {
+  content: "";
+  width: 0;
+  height: 2px;
+  background-color: #ffffff;
+  display: block;
+  position: absolute;
+  right: 0;
+}
+.feature-container .main-container .feature-inner .text-line-break.border-bottom-cta.right:before {
+  content: "";
+  width: 0;
+  height: 4px;
+  border-radius: 1px;
+  background-color: #ffffff;
+  display: block;
+  margin-top: -1px;
+  position: absolute;
+  left: 0;
+}
+.feature-container .main-container .feature-inner .text-line-break.border-bottom-cta.left {
+  left: 0;
+}
+.feature-container .main-container .feature-inner .text-line-break.border-bottom-cta.left:before {
+  content: "";
+  width: 0;
+  height: 2px;
+  background-color: #ffffff;
+  display: block;
+  position: absolute;
+  left: 0;
+}
+.feature-container .main-container .feature-inner .text-line-break.border-bottom-cta.left:after {
+  content: "";
+  width: 0;
+  height: 4px;
+  border-radius: 1px;
+  background-color: #ffffff;
+  display: block;
+  margin-top: -1px;
+  position: absolute;
+  right: 0;
+}
+.feature-container .main-container .feature-inner .border-top {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -moz-box-orient: horizontal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+}
+.feature-container .main-container .feature-inner .border-top .bt {
+  margin-right: 4px;
+  position: relative;
+}
+.feature-container .main-container .feature-inner .border-top .break-left {
+  -webkit-box-flex: 0 0 2px;
+  -moz-box-flex: 0 0 2px;
+  -webkit-flex: 0 0 2px;
+  -ms-flex: 0 0 2px;
+  flex: 0 0 2px;
+  height: 2px;
+  background-color: #ffffff;
+}
+.feature-container .main-container .feature-inner .border-top .break-midleft {
+  -webkit-box-flex: 423 0 0;
+  -moz-box-flex: 423 0 0;
+  -webkit-flex: 423 0 0;
+  -ms-flex: 423 0 0;
+  flex: 423 0 0;
+  height: 1px;
+}
+.feature-container .main-container .feature-inner .border-top .break-midleft span {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+}
+.feature-container .main-container .feature-inner .border-top .break-middle {
+  -webkit-box-flex: 93 0 0;
+  -moz-box-flex: 93 0 0;
+  -webkit-flex: 93 0 0;
+  -ms-flex: 93 0 0;
+  flex: 93 0 0;
+  height: 2px;
+  background-color: #ffffff;
+}
+.feature-container .main-container .feature-inner .border-top .break-middle span {
+  width: 100%;
+}
+.feature-container .main-container .feature-inner .border-top .break-midright {
+  -webkit-box-flex: 423 0 0;
+  -moz-box-flex: 423 0 0;
+  -webkit-flex: 423 0 0;
+  -ms-flex: 423 0 0;
+  flex: 423 0 0;
+  height: 1px;
+}
+.feature-container .main-container .feature-inner .border-top .break-midright span {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+}
+.feature-container .main-container .feature-inner .border-top .break-right {
+  -webkit-box-flex: 0 0 2px;
+  -moz-box-flex: 0 0 2px;
+  -webkit-flex: 0 0 2px;
+  -ms-flex: 0 0 2px;
+  flex: 0 0 2px;
+  height: 2px;
+  margin-right: 0;
+  background-color: #ffffff;
+}
+.feature-container .main-container .feature-inner .border-top span {
+  background-color: rgba(255, 255, 255, 0.3);
+  display: block;
+  width: 0;
+  height: 100%;
+  -webkit-transition: all ease 0.8s;
+  -moz-transition: all ease 0.8s;
+  -ms-transition: all ease 0.8s;
+  -o-transition: all ease 0.8s;
+  transition: all ease 0.8s;
+}
+.feature-container .main-container .feature-inner .border-bottom-no-cta {
+  position: absolute;
+  bottom: 0;
+  height: 4px;
+  width: 100%;
+  margin-bottom: 4px;
+  -webkit-transition: all ease 0.7s;
+  -moz-transition: all ease 0.7s;
+  -ms-transition: all ease 0.7s;
+  -o-transition: all ease 0.7s;
+  transition: all ease 0.7s;
+}
+.feature-container .main-container .feature-inner .border-bottom-no-cta span {
+  position: absolute;
+  display: block;
+  height: 100%;
+  -webkit-transition-delay: 1.7s;
+  -moz-transition-delay: 1.7s;
+  -o-transition-delay: 1.7s;
+  transition-delay: 1.7s;
+}
+.feature-container .main-container .feature-inner .border-bottom-no-cta span.border-bottom-left {
+  left: 0;
+  width: 0;
+}
+.feature-container .main-container .feature-inner .border-bottom-no-cta span.border-bottom-right {
+  right: 0;
+  width: 0;
+}
+.feature-container .main-container .feature-inner .border-bottom-no-cta:after {
+  content: "";
+  width: 0px;
+  height: 2px;
+  background-color: #ffffff;
+  display: block;
+  position: absolute;
+  right: 0;
+  -webkit-transition-delay: 1.7s;
+  -moz-transition-delay: 1.7s;
+  -o-transition-delay: 1.7s;
+  transition-delay: 1.7s;
+}
+.feature-container .main-container .feature-inner .border-bottom-no-cta:before {
+  content: "";
+  width: 0px;
+  height: 2px;
+  background-color: #ffffff;
+  display: block;
+  position: absolute;
+  left: 0;
+  -webkit-transition-delay: 1.7s;
+  -moz-transition-delay: 1.7s;
+  -o-transition-delay: 1.7s;
+  transition-delay: 1.7s;
+}
+.feature-container .main-container .feature-inner:after,
+.feature-container .main-container .feature-inner:before {
+  -webkit-transition: all ease 1s;
+  -moz-transition: all ease 1s;
+  -ms-transition: all ease 1s;
+  -o-transition: all ease 1s;
+  transition: all ease 1s;
+  -webkit-transition-delay: 0.7s;
+  -moz-transition-delay: 0.7s;
+  -o-transition-delay: 0.7s;
+  transition-delay: 0.7s;
+}
+.feature-container .main-container .feature-inner:after {
+  content: "";
+  position: absolute;
+  right: 0;
+  width: 1px;
+  top: 20px;
+  bottom: 100%;
+  border-right: 1px solid rgba(255, 255, 255, 0.3);
+}
+.feature-container .main-container .feature-inner:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 1px;
+  top: 20px;
+  bottom: 100%;
+  border-left: 1px solid rgba(255, 255, 255, 0.3);
+}
+.feature-container .main-container .feature-inner .feature-info {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+.feature-container .main-container .feature-inner .feature-info .feature-header {
+  font-family: "Electrolize", Verdana, Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 28px;
+  color: #dbbd40;
+  line-height: 30px;
+  letter-spacing: 5px;
+  text-shadow: 0px 0px 10px #34322e, 0px 0px 10px #dbbd40;
+  text-transform: uppercase;
+}
+.feature-container .main-container .feature-inner .feature-info .feature-description {
+  margin: 40px auto 50px;
+  width: 50%;
+  font-family: "Electrolize", Verdana, Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 11px;
+  color: #adabab;
+  letter-spacing: 2px;
+  text-shadow: 0px 0px 18px black;
+  line-height: 130%;
+}
+.feature-container .main-container .feature-inner .feature-info .cta-container {
+  min-width: 250px;
+  height: 40px;
+  background-color: #191919;
+  display: inline-block;
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+.feature-container .main-container .feature-inner .feature-info .cta-container a {
+  color: #adabab;
+  border: 2px solid #565656;
+  font-family: "Electrolize", Verdana, Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 11px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 10px;
+  width: 100%;
+  height: 100%;
+  background: url(../../../../../../../../content/dam/atvi/callofduty/blackops4/splash/button-tile.svg) center center repeat;
+  box-shadow: 3px 3px 10px 1px rgba(125, 125, 125, 0.2);
+  display: block;
+  letter-spacing: 3px;
+  text-shadow: 0px 0px 18px #ffffff;
+  -webkit-transition: all ease 0.8s;
+  -moz-transition: all ease 0.8s;
+  -ms-transition: all ease 0.8s;
+  -o-transition: all ease 0.8s;
+  transition: all ease 0.8s;
+  cursor: pointer;
+}
+.feature-container .main-container .feature-inner .feature-info .cta-container a:hover {
+  color: #ffffff;
+  background-color: #3c3c3c;
+  border: 2px solid #ffffff;
+}
+.feature-container .main-container .feature-inner .feature-info .cta-container a {
+  padding: 13px;
+}
+.feature-container.animate-active .main-container {
+  -webkit-filter: grayscale(0%);
+  /* Safari 6.0 - 9.0 */
+  filter: grayscale(0%);
+  opacity: 1;
+}
+.feature-container.animate-border .main-container .feature-inner:after,
+.feature-container.animate-border .main-container .feature-inner:before {
+  bottom: 10px;
+}
+.feature-container.animate-border .main-container .feature-inner .top-line-break {
+  width: 100%;
+}
+.feature-container.animate-border .main-container .feature-inner .border-top .break-left span,
+.feature-container.animate-border .main-container .feature-inner .border-top .break-midleft span,
+.feature-container.animate-border .main-container .feature-inner .border-top .break-midright span,
+.feature-container.animate-border .main-container .feature-inner .border-top .break-right span {
+  width: 100%;
+}
+.feature-container.animate-border .main-container .feature-inner .border-bottom-cta {
+  width: calc(50% - 140px);
+}
+.feature-container.animate-border .main-container .feature-inner .border-bottom-cta.right:after {
+  width: 2px;
+  -webkit-transition-delay: 1s;
+  -moz-transition-delay: 1s;
+  -o-transition-delay: 1s;
+  transition-delay: 1s;
+}
+.feature-container.animate-border .main-container .feature-inner .border-bottom-cta.right:before {
+  width: 4px;
+  -webkit-transition-delay: 1s;
+  -moz-transition-delay: 1s;
+  -o-transition-delay: 1s;
+  transition-delay: 1s;
+}
+.feature-container.animate-border .main-container .feature-inner .border-bottom-cta.left:after {
+  width: 4px;
+  -webkit-transition-delay: 1s;
+  -moz-transition-delay: 1s;
+  -o-transition-delay: 1s;
+  transition-delay: 1s;
+}
+.feature-container.animate-border .main-container .feature-inner .border-bottom-cta.left:before {
+  width: 2px;
+  -webkit-transition-delay: 1s;
+  -moz-transition-delay: 1s;
+  -o-transition-delay: 1s;
+  transition-delay: 1s;
+}
+.feature-container.animate-border .main-container .feature-inner .border-bottom-no-cta span {
+  width: 50%;
+}
+.feature-container.animate-border .main-container .feature-inner .border-bottom-no-cta:after,
+.feature-container.animate-border .main-container .feature-inner .border-bottom-no-cta:before {
+  width: 2px;
+  -webkit-transition-delay: 1s;
+  -moz-transition-delay: 1s;
+  -o-transition-delay: 1s;
+  transition-delay: 1s;
+}
+@media screen and (max-width: 1400px) {
+  .feature-container .main-container {
+    padding-bottom: 60%;
+  }
+}
+@media screen and (max-width: 1280px) {
+  .feature-container .main-container {
+    padding-bottom: 75%;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .feature-container .main-container {
+    padding-bottom: 100%;
+  }
+  .feature-container .main-container .feature-inner {
+    margin: 25px;
+  }
+  .feature-container .main-container .feature-inner .feature-info .feature-description {
+    width: 75%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .feature-container .main-container {
+    padding-bottom: 120%;
+    /*.bg-desktop {
+				display: none;
+            }
+
+            .bg-mobile {
+				display: block;
+            }*/
+  }
+  .feature-container .main-container .feature-inner .feature-info .feature-description {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 569px) {
+  .feature-container .main-container {
+    padding-bottom: 150%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .feature-container .main-container {
+    padding-bottom: 200%;
+  }
+  .feature-container .main-container .bg-desktop {
+    display: none;
+  }
+  .feature-container .main-container .bg-mobile {
+    display: block;
+  }
+}
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Open+Sans|Open+Sans+Condensed:700');
+@import url('https://fonts.googleapis.com/css?family=Electrolize');
+.operation-tile-container .operation-flex-wrapper {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -moz-box-orient: horizontal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+@media screen and (max-width: 768px) {
+  .operation-tile-container .operation-flex-wrapper {
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+}
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Open+Sans|Open+Sans+Condensed:700');
+@import url('https://fonts.googleapis.com/css?family=Electrolize');
+.operation-tile {
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+.feature-container .main-container {
+  padding-bottom: 100%;
+}
+.feature-container .main-container .feature-inner .feature-info .feature-description {
+  width: 80%;
+  margin-bottom: 100px;
+}
+.feature-container .main-container .video-modal {
+  position: absolute;
+}
+@media screen and (max-width: 1280px) {
+  .feature-container .main-container {
+    padding-bottom: 150%;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .feature-container .main-container {
+    padding-bottom: 170%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .feature-container .main-container {
+    padding-bottom: 130%;
+  }
+  .feature-container .main-container .bg-desktop {
+    display: block;
+  }
+  .feature-container .main-container .feature-inner .feature-info {
+    /*.mode-logo {
+                        img { width: 33%; }
+                    }*/
+  }
+  .feature-container .main-container .feature-inner .feature-info .feature-description {
+    margin: 40px auto 60px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .feature-container .main-container {
+    padding-bottom: 180%;
+  }
+}
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Open+Sans|Open+Sans+Condensed:700');
+@import url('https://fonts.googleapis.com/css?family=Electrolize');
+.operations-banner {
+  background: url(../../../../../../../../content/dam/atvi/callofduty/blackops4/common/bg-tile-text-v2.png) #000000 top center repeat;
+  text-align: center;
+  position: relative;
+}
+.operations-banner .copy-container {
+  width: 50%;
+  padding: 100px 0;
+  margin: 0 auto;
+}
+.operations-banner .copy-container .banner-image-wrapper {
+  max-width: 400px;
+  width: 50%;
+  margin: 0 auto;
+}
+.operations-banner .copy-container .banner-image-wrapper img {
+  width: 100%;
+}
+.operations-banner .copy-container .description {
+  font-family: "Electrolize", Verdana, Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 11px;
+  color: #adabab;
+  letter-spacing: 2px;
+  text-shadow: 0px 0px 18px black;
+  line-height: 130%;
+  margin: 40px 0;
+}
+@media screen and (max-width: 768px) {
+  .operations-banner .copy-container {
+    width: 80%;
+  }
+}
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Open+Sans|Open+Sans+Condensed:700');
+@import url('https://fonts.googleapis.com/css?family=Electrolize');
+.blackout-characters-container {
+  position: relative;
+}
+.blackout-characters-container .characters-main {
+  min-height: 900px;
+  padding: 100px 0;
+  position: relative;
+}
+.blackout-characters-container .desktop-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.blackout-characters-container .characters-header-container {
+  position: relative;
+  text-align: center;
+}
+.blackout-characters-container .characters-header-container .header {
+  font-family: "Electrolize", Verdana, Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 28px;
+  color: #dbbd40;
+  line-height: 30px;
+  letter-spacing: 5px;
+  text-shadow: 0px 0px 10px #34322e, 0px 0px 10px #dbbd40;
+  text-transform: uppercase;
+}
+.blackout-characters-container .characters-header-container .description {
+  width: 50%;
+  margin: 40px auto;
+  font-family: "Electrolize", Verdana, Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 11px;
+  color: #adabab;
+  letter-spacing: 2px;
+  text-shadow: 0px 0px 18px black;
+  line-height: 130%;
+}
+.blackout-characters-container .characters-container {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /***FIX FOR IE11***/
+}
+@media all and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .blackout-characters-container .characters-container {
+    max-width: 1920px;
+  }
+}
+.blackout-characters-container .characters-container .characters-flex {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -moz-box-orient: horizontal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  width: 80%;
+  margin: 50px auto;
+}
+.blackout-characters-container .characters-container .characters-flex .character-container {
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-box-ordinal-group: 1;
+  -moz-box-ordinal-group: 1;
+  -ms-flex-order: 1;
+  -webkit-order: 1;
+  order: 1;
+  text-align: center;
+}
+.blackout-characters-container .characters-container .characters-flex .character-container .mobile-bg {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.blackout-characters-container .characters-container .characters-flex .character-container .play-button {
+  content: "";
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  cursor: pointer;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  margin: 0 auto;
+  background: #191919 url(../../../../../../../../content/dam/atvi/callofduty/blackops4/splash/button-tile.svg) center center repeat;
+  border: 2px solid #565656;
+  -webkit-transition: all ease 0.3s;
+  -moz-transition: all ease 0.3s;
+  -ms-transition: all ease 0.3s;
+  -o-transition: all ease 0.3s;
+  transition: all ease 0.3s;
+  position: relative;
+  left: unset;
+  top: unset;
+  -webkit-transform: translate(0, 0);
+  -moz-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  -o-transform: translate(0, 0);
+  transform: translate(0, 0);
+  margin: 100px auto;
+}
+.blackout-characters-container .characters-container .characters-flex .character-container .play-button:after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid #fff;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.blackout-characters-container .characters-container .characters-flex .character-container .play-button:hover {
+  width: 66px;
+  height: 66px;
+  background-color: #3c3c3c;
+  border: 2px solid #fff;
+}
+.blackout-characters-container .characters-container .characters-flex .character-container .play-button:hover {
+  width: 60px;
+  height: 60px;
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  transform: scale(1.1);
+}
+.blackout-characters-container .characters-container .characters-flex .character-container .character-name {
+  font-family: "Electrolize", Verdana, Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 28px;
+  color: #dbbd40;
+  line-height: 30px;
+  letter-spacing: 5px;
+  text-shadow: 0px 0px 10px #34322e, 0px 0px 10px #dbbd40;
+  text-transform: uppercase;
+}
+.blackout-characters-container .characters-container .characters-flex .character-container .character-description {
+  font-family: "Electrolize", Verdana, Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 11px;
+  color: #adabab;
+  letter-spacing: 2px;
+  text-shadow: 0px 0px 18px black;
+  line-height: 130%;
+  width: 80%;
+  margin: 40px auto;
+}
+.blackout-characters-container .characters-container .characters-flex .character-container.active {
+  -webkit-box-ordinal-group: 0;
+  -moz-box-ordinal-group: 0;
+  -ms-flex-order: 0;
+  -webkit-order: 0;
+  order: 0;
+}
+.blackout-characters-container .characters-container .nav-arrows {
+  display: none;
+  position: absolute;
+  width: 100%;
+  top: 50%;
+}
+.blackout-characters-container .characters-container .nav-arrows .right-container,
+.blackout-characters-container .characters-container .nav-arrows .left-container {
+  border: 1px solid #adabab;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  padding: 15px;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.blackout-characters-container .characters-container .nav-arrows .right-container {
+  right: 15px;
+}
+.blackout-characters-container .characters-container .nav-arrows .right-container:after,
+.blackout-characters-container .characters-container .nav-arrows .right-container:before {
+  content: "";
+  position: absolute;
+  height: 300%;
+  width: 5px;
+  right: 50%;
+}
+.blackout-characters-container .characters-container .nav-arrows .right-container:after {
+  bottom: 60px;
+  border-top: 1px solid #adabab;
+  border-right: 1px solid #adabab;
+}
+.blackout-characters-container .characters-container .nav-arrows .right-container:before {
+  top: 60px;
+  border-bottom: 1px solid #adabab;
+  border-right: 1px solid #adabab;
+}
+.blackout-characters-container .characters-container .nav-arrows .left-container {
+  left: 15px;
+}
+.blackout-characters-container .characters-container .nav-arrows .left-container:after,
+.blackout-characters-container .characters-container .nav-arrows .left-container:before {
+  content: "";
+  position: absolute;
+  height: 300%;
+  width: 5px;
+  left: 50%;
+}
+.blackout-characters-container .characters-container .nav-arrows .left-container:after {
+  bottom: 60px;
+  border-top: 1px solid #adabab;
+  border-left: 1px solid #adabab;
+}
+.blackout-characters-container .characters-container .nav-arrows .left-container:before {
+  top: 60px;
+  border-bottom: 1px solid #adabab;
+  border-left: 1px solid #adabab;
+}
+.blackout-characters-container .characters-container .nav-arrows .left {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  background-image: url(../../../../../../../../content/dam/atvi/callofduty/blackops4/common/BlackOps4-dropdown-arrow.svg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);
+  display: inline-block;
+  cursor: pointer;
+}
+.blackout-characters-container .characters-container .nav-arrows .right {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  background-image: url(../../../../../../../../content/dam/atvi/callofduty/blackops4/common/BlackOps4-dropdown-arrow.svg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  display: inline-block;
+  cursor: pointer;
+}
+@media screen and (max-width: 480px) {
+  .blackout-characters-container .characters-container .nav-arrows .left-container {
+    left: 0;
+  }
+  .blackout-characters-container .characters-container .nav-arrows .right-container {
+    right: 0;
+  }
+}
+@media screen and (max-width: 1480px) {
+  .blackout-characters-container .characters-main {
+    min-height: 650px;
+    padding: 50px 0 100px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .blackout-characters-container .characters-main {
+    min-height: 550px;
+    padding: 50px 0 100px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .blackout-characters-container .desktop-bg {
+    background-size: contain !important;
+  }
+  .blackout-characters-container .characters-main {
+    padding: 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  .blackout-characters-container .desktop-bg {
+    display: none;
+  }
+  .blackout-characters-container .characters-main {
+    min-height: 1000px;
+    padding: 50px 0 100px;
+  }
+  .blackout-characters-container .characters-container .characters-flex {
+    width: 100%;
+    margin: 0;
+  }
+  .blackout-characters-container .characters-header-container {
+    width: 80%;
+    margin: 0 auto;
+    z-index: 1;
+  }
+  .blackout-characters-container .characters-header-container .description {
+    width: 100%;
+  }
+  .blackout-characters-container .characters-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  .blackout-characters-container .characters-container .character-info {
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+  }
+  .blackout-characters-container .characters-container .characters-flex {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin-bottom: 0;
+  }
+  .blackout-characters-container .characters-container .characters-flex .character-container {
+    width: 100%;
+  }
+  .blackout-characters-container .characters-container .characters-flex .character-container .character-info {
+    display: none;
+  }
+  .blackout-characters-container .characters-container .characters-flex .character-container.active .mobile-bg {
+    display: block;
+  }
+  .blackout-characters-container .characters-container .characters-flex .character-container.active .character-info {
+    display: block;
+    text-align: center;
+    width: 100%;
+  }
+  .blackout-characters-container .characters-container .characters-flex .character-container.active .character-info .character-name {
+    margin-bottom: 100px;
+  }
+  .blackout-characters-container .characters-container .nav-arrows {
+    display: block;
+  }
+}
+@media screen and (max-width: 480px) {
+  .blackout-characters-container .characters-main {
+    min-height: 800px;
+  }
+}
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Open+Sans|Open+Sans+Condensed:700');
+@import url('https://fonts.googleapis.com/css?family=Electrolize');
+.operation-hero .content {
+  max-width: 100%;
+  width: 100%;
+  margin: 0 auto;
+  top: 65%;
+}
+.operation-hero .content .logo {
+  display: none;
+}
+.operation-hero .content .copy-wrapper {
+  max-width: 80%;
+  width: 50%;
+  margin: 40px auto;
+}
+.operation-hero .content .copy-wrapper:before {
+  content: "";
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 200%;
+  background-image: url(../../../../../../../../content/dam/atvi/callofduty/blackops4/operations/grand-heist/hero/text-shadow.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  z-index: -1;
+}
+@media screen and (max-width: 1280px) {
+  .operation-hero .content .copy-wrapper:before {
+    background-size: 100% 100%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .operation-hero .content .copy-wrapper:before {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  .operation-hero .content .copy-wrapper {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .operation-hero .hero-background .bg.mobile {
+    background-size: 100% !important;
+  }
+}
+@media screen and (max-width: 768px) {
+  .operation-bg-video.operation-bg-video-2 .content-container .logo-container {
+    max-width: 150px;
+    margin: 0 auto;
+  }
+  .operation-bg-video.operation-bg-video-2 .content-container .logo-container img {
+    width: 100%;
+  }
+}
+

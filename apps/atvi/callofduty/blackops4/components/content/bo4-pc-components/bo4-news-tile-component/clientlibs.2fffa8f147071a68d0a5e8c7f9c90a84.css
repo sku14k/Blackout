@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Open+Sans|Open+Sans+Condensed:700');
+@import url('https://fonts.googleapis.com/css?family=Electrolize');
+.bo4-news-tile-component {
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+.news-tile {
+  position: relative;
+}
+.news-tile .main-tile-container {
+  min-height: 800px;
+  position: relative;
+}
+.news-tile .bg-desktop {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.news-tile .bg-mobile {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: none;
+  min-height: 400px;
+}
+.news-tile .news-inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 40px;
+  text-align: center;
+}
+.news-tile .news-inner .news-info {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin-bottom: 45px;
+}
+.news-tile .news-inner .news-info .news-header {
+  font-family: "Electrolize", Verdana, Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 28px;
+  color: #dbbd40;
+  line-height: 30px;
+  letter-spacing: 5px;
+  text-shadow: 0px 0px 10px #34322e, 0px 0px 10px #dbbd40;
+  text-transform: uppercase;
+}
+.news-tile .news-inner .news-info .news-description {
+  font-family: "Electrolize", Verdana, Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 11px;
+  color: #adabab;
+  letter-spacing: 2px;
+  text-shadow: 0px 0px 18px black;
+  line-height: 130%;
+  width: 50%;
+  margin: 40px auto 50px;
+}
+.news-tile .news-inner .news-info .cta-container {
+  min-width: 250px;
+  height: 40px;
+  background-color: #191919;
+  display: inline-block;
+  margin: 0 auto;
+}
+.news-tile .news-inner .news-info .cta-container a {
+  color: #adabab;
+  border: 2px solid #565656;
+  font-family: "Electrolize", Verdana, Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 11px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 10px;
+  width: 100%;
+  height: 100%;
+  background: url(../../../../../../../../content/dam/atvi/callofduty/blackops4/splash/button-tile.svg) center center repeat;
+  box-shadow: 3px 3px 10px 1px rgba(125, 125, 125, 0.2);
+  display: block;
+  letter-spacing: 3px;
+  text-shadow: 0px 0px 18px #ffffff;
+  -webkit-transition: all ease 0.8s;
+  -moz-transition: all ease 0.8s;
+  -ms-transition: all ease 0.8s;
+  -o-transition: all ease 0.8s;
+  transition: all ease 0.8s;
+  cursor: pointer;
+}
+.news-tile .news-inner .news-info .cta-container a:hover {
+  color: #ffffff;
+  background-color: #3c3c3c;
+  border: 2px solid #ffffff;
+}
+.news-tile .news-inner .news-info .cta-container a {
+  padding: 13px;
+}
+.news-tile .border-top {
+  width: 100%;
+  height: 8px;
+  content: "";
+  background: url(../../../../../../../../content/dam/atvi/callofduty/blackops4/home/break-tile.svg) top center repeat;
+  background-size: 4px;
+  background-color: transparent;
+  position: absolute;
+  top: 0;
+  position: relative;
+}
+@media screen and (max-width: 768px) {
+  .news-tile .main-tile-container {
+    min-height: 600px;
+  }
+  .news-tile .bg-desktop {
+    display: none;
+  }
+  .news-tile .bg-mobile {
+    display: block;
+  }
+  .news-tile .news-inner .news-info .news-description {
+    width: 100%;
+  }
+}
+
+.bo4-flex-layout-container .game-news {
+  display: none;
+}
+
