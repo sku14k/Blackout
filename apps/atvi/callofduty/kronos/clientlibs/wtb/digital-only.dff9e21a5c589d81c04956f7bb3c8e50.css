@@ -1,8 +1,0 @@
-[lang="ru"] #wtb-digital-only .wtb-select.platforms-entry li.ps4,
-#wtb-digital-only[data-current-region="ru"] .wtb-select.platforms-entry li.ps4 {
-  display: none;
-}
-[lang="ru"] #wtb-digital-only .wtb-select.platforms-entry li.xboxone,
-#wtb-digital-only[data-current-region="ru"] .wtb-select.platforms-entry li.xboxone {
-  margin-left: 0;
-}
